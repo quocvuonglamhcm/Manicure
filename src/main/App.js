@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
+import logo from '../logo.svg';
 import './App.css';
-import MainRoute from '../routers/main-router';
-import Background from '../components/Banner/banner.js';
-import '../components/Banner/banner.css';
+import HeaderComponent from '../components/header/header';
+import BodyComponent from '../components/body/body';
+import MainRoute from '../routers/routers';
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-            <Background/>
-        </header>
-        <div className="App-container">
-          <MainRoute/>
-        </div>
-        <footer className="App-footer">
-        </footer>
-      </div>
+    	<div className="App">
+  			<HeaderComponent/>
+    		<BodyComponent/>
+    		<MainRoute/>
+    	</div>
     );
   }
 }
