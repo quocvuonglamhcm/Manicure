@@ -1,0 +1,16 @@
+.header
+{
+		width: 100%;
+}
+.header ul 
+{
+	list-style: none;
+	height: 50px;
+}
+.header ul li
+{	
+	font-size: 30px;
+	float:left;
+	display: inline-block;
+	margin-right: 20px;
+}
