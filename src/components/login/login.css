@@ -1,0 +1,21 @@
+.box-content{
+    background-color: #2995cc;
+    height: 8rem;
+    width: 87%;
+    border-radius: 10px;
+    text-align: center;
+}
+input.mavung{
+    width:30%;
+    font-size: 14px;
+    margin-left: 1rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.box-content> *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
