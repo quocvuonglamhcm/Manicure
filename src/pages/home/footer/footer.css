@@ -29,7 +29,7 @@
 .aboutUsContent, .supportMail {
     border-bottom: 1px #fafafa solid;
     padding-bottom: 4%;
-    }
+}
 
 .footSocial {
     font-size: 22px;
@@ -42,4 +42,9 @@ a {
 
 a:hover { 
   color: #29b6f6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
