@@ -22,6 +22,10 @@
     line-height: 30px;
 }
 
+.btn {
+    width: 50%;
+}
+
 .aboutUsContent, .supportMail {
     border-bottom: 1px #fafafa solid;
     padding-bottom: 4%;
