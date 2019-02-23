@@ -4,7 +4,7 @@ import './footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGooglePlay, faAppStoreIos  } from '@fortawesome/free-brands-svg-icons'
 
-export default function Footer() {
+export default function FooterComponent() {
     const ic_appStore = <FontAwesomeIcon className="fontSize25 mr-2" icon={faAppStoreIos} />
     const ic_googlePlay = <FontAwesomeIcon className="fontSize25 mr-2" icon={faGooglePlay} />
     return (
