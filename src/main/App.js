@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
+import logo from '../assets/logo.svg';
 import './App.css';
 import HeaderComponent from '../components/header/header';
+import FooterComponent from '../components/footer/footer';
 import BodyComponent from '../components/body/body';
 import MainRoute from '../routers/routers';
 
@@ -12,6 +13,7 @@ class App extends Component {
   			<HeaderComponent/>
     		<BodyComponent/>
     		<MainRoute/>
+        <FooterComponent/>
     	</div>
     );
   }
