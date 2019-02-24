@@ -31,7 +31,7 @@ export default function FooterComponent() {
                     </Col>
                     <Col md={3}>
                         <form>
-                            <div className="form-group font-weight-bold">
+                            <div className="font-weight-bold">
                                 <label htmlFor="exampleInputEmail1">Gửi Email phản hồi</label>
                                 <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="mail@example.com" />
                                 <small id="emailHelp" className="form-text text-muted">Email của bạn sẽ được bảo mật</small>

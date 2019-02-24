@@ -5,11 +5,7 @@
     font-size: 15px;
 }
 
-<<<<<<< HEAD
 .footer .row {
-=======
-.row {
->>>>>>> 47334f2fd4b7ab242ad80af0cc20dddac1ef172b
     background-color: #6645C5;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -24,6 +20,7 @@
 .copywright {
     font-size: 12px;
     line-height: 30px;
+    text-align: center;
 }
 
 .btn {
@@ -55,4 +52,8 @@ img {
 
 .white{
     color: #FFF;
+}
+textarea {
+    max-height: 50px;
+    min-height: 50px;
 }
