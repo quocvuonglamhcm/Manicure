@@ -24,7 +24,7 @@ export default class LoginPage extends Component {
 							<Login />
 						</Tab>
 						<Tab eventKey="profile" title="Đăng ký">
-							<p>haha1111ss</p>
+							<Login />
 						</Tab>
 						
 					</Tabs>
