@@ -1,43 +1,50 @@
-img{
-  position: absolute;
-  width: 1440px;
-  height: 865px;
-  left: 0px;
-  top: 50px;
+.banner{
+	height: 80vh;
+	background-image: url('https://uphinhnhanh.com/images/2019/02/24/bg20ffc9e9986b2b11.png');
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto!important ;
+}
+.banner__content{
+	width: 80%;
+}
+.banner__content p {
+	font-size: 2rem;
+}
+.banner__content .btn{
+	width: 12rem;
+	margin: 0 2rem;
+	outline: none;
+}
+.banner__content .btn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 1rem 2rem rgba(#000,0.2);
+}
+.banner__content .btn:active{
+	transform: translateY(-1px);
+	box-shadow: 0 .5rem 1rem rgba(#000,0.2)
 }
 p:first-letter{
 	text-transform:capitalize;
 }
-p{
+
+.banner__content {
 	position: absolute;
-	width: 363px;
-	height: 37px;
-	left: 539px;
-	top: 526px;
-	font-family: Open Sans;
-	font-style: normal;
-	font-weight: 300;
-	line-height: normal;
-	font-size: 27px;
-	color: #000000;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
-.btnSignup{
-	position: absolute;
-	width: 250px;
-	height: 50px;
-	left: 455px;
-	top: 596px;
+
+.banner__content .btn-signup{
 	background: #FF773C;
-	color:white;
-	border-radius: 5px;
+	color: #fff;
+
 }
-.btnLogin{
-	position: absolute;
-	width: 250px;
-	height: 50px;
-	left: 735px;
-	top: 596px;
-	background: #119B7A;
-	color:white;
-	border-radius: 5px;
+.banner__content .btn-login{
+	background-color: #119B7A;
+	color:#fff;
+
 }
