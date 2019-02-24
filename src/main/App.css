@@ -1,6 +1,6 @@
-.App{
-	padding: 1rem;
-
+.App {
+  text-align: center;
+  position: relative;
 }
 
 /* .App-header {
@@ -13,9 +13,8 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-*/
 
-/*.App-footer {
+.App-footer {
   background-color: #282c34;
   min-height: 300px;
   position: fixed;
@@ -28,4 +27,11 @@
   color: #61dafb;
 }
 
-
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
