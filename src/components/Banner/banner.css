@@ -6,14 +6,17 @@
 	position: relative;
 	width: 100%;
 	text-align: center;
-	margin: 0 auto!important ;
+	margin: 0 auto !important ;
 }
+
 .banner__content{
 	width: 80%;
 }
+
 .banner__content p {
 	font-size: 2rem;
 }
+
 .banner__content .btn{
 	width: 12rem;
 	margin: 0 2rem;
