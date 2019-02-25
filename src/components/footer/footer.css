@@ -14,13 +14,12 @@
 .footBar {
     height: 30px;
     max-width: 100%;
-    background-color: #4D2BAF
+    background-color: #4D2BAF;
 }
 
 .copywright {
     font-size: 12px;
     line-height: 30px;
-    text-align: center;
 }
 
 .btn {

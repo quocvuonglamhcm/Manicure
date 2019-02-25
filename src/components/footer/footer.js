@@ -34,22 +34,21 @@ export default function FooterComponent() {
                             <div className="font-weight-bold">
                                 <label htmlFor="exampleInputEmail1">Gửi Email phản hồi</label>
                                 <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="mail@example.com" />
-                                <small id="emailHelp" className="form-text text-muted">Email của bạn sẽ được bảo mật</small>
                             </div>
                             <div className="form-group font-weight-bold">
                                 <label htmlFor="exampleFormControlTextarea1">Nội dung</label>
                                 <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
-                            <button type="submit" className="btn btn-primary float-right">Submit</button>
+                            <button type="submit" className="btn btn-primary">GỬI</button>
                         </form>
                     </Col>
                     <Col md={3}>
                         <div className="download font-weight-bold pb-2">Tải App</div>
                         <div className="chPlay pb-1">
-                            <img src={img1} alt="ChPlay" />
+                            <img src={img2} alt="ChPlay" />
                         </div>
                         <div className="appStore">
-                            <img src={img2} alt="Appstore" />
+                            <img src={img1} alt="Appstore" />
                         </div>
                     </Col>
                     <Col md={3}>
