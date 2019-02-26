@@ -22,7 +22,6 @@ class HeaderComponent extends Component {
         			<li> Đăng ký/Đăng nhập </li>
         			<li> VI | EN</li>
         			<li> <input type='text' className='search'/></li>
-
         		</ul>
         	</div>
         	<div className="navbar justify-content-end">

@@ -83,3 +83,12 @@
 	border: none;
 	border-bottom: 1px solid #FFFFFF;
 }
+
+a {
+	color: white !important;
+	text-decoration: none !important;
+}
+a:hover {
+	color: blue !important;
+	text-decoration: none !important;
+}

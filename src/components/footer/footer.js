@@ -39,7 +39,7 @@ export default function FooterComponent() {
                                 <label htmlFor="exampleFormControlTextarea1">Nội dung</label>
                                 <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
-                            <button type="submit" className="btn btn-primary">GỬI</button>
+                            <button type="submit" className="btn btn-primary float-right">GỬI</button>
                         </form>
                     </Col>
                     <Col md={3}>
