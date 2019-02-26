@@ -7,6 +7,14 @@
 	width: 100%;
 	text-align: center;
 	margin: 0 auto !important ;
+	margin-bottom: 10px;
+}
+
+.banner .banner-opacity {
+	background: rgba(248, 194, 243, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 .banner__content{
@@ -36,7 +44,8 @@ p:first-letter{
 
 .banner__content {
 	position: absolute;
-	top: 50%;
+	top: 70%;
+	bottom: 25%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
