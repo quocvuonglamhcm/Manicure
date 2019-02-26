@@ -9,8 +9,16 @@ class HeaderComponent extends Component {
         <div className="header">
         	<div className="navbar2">
         		<ul>
-        			<li> &#9990; +84 39123 9123 </li>
-        			<li> &#9993; nail.system.2019@gmail.com </li>
+        			<li> 
+                <a href='tel:084391239123'>
+                  &#9990; +84 39123 9123 
+                </a>
+              </li>
+        			<li> 
+                <a href='mailto: nail.system.2019@gmail.com'>
+                  &#9993; nail.system.2019@gmail.com 
+                </a>
+              </li>
         			<li> Đăng ký/Đăng nhập </li>
         			<li> VI | EN</li>
         			<li> <input type='text' className='search'/></li>
