@@ -60,29 +60,31 @@ export default function FooterComponent() {
                             {ic_mobileAlt} +84 3123 9123
                         </div>
                         <div className="supportMail">
-                            {ic_envelope} nail.system.2019@gmail.com
+                            <a href="mailto:nail.system.2019@gmail.com">
+                                {ic_envelope} nail.system.2019@gmail.com
+                            </a>
                         </div>
                         <Row className="footSocial">
                             <Col sm={3}>
-                                <a href="https://www.twitter.com" rel="noopener noreferrer">
+                                <a href="https://www.twitter.com" rel="noopener noreferrer" target="_blank">
                                     {ic_twitter}
                                 </a>
                             </Col>
-                            <div className="col-sm-3">
-                                <a href="https://www.linkedin.com" rel="noopener noreferrer">
+                            <Col sm={3}>
+                                <a href="https://www.linkedin.com" rel="noopener noreferrer" target="_blank">
                                     {ic_linkedin}
                                 </a>
-                            </div>
-                            <div className="col-sm-3">
-                                <a href="https://www.facebook.com" rel="noopener noreferrer">
+                            </Col>
+                            <Col sm={3}>
+                                <a href="https://www.facebook.com" rel="noopener noreferrer" target="_blank">
                                     {ic_facebook}
                                 </a>
-                            </div>
-                            <div className="col-sm-3">
-                                <a href="https://www.skype.com" rel="noopener noreferrer">
+                            </Col>
+                            <Col sm={3}>
+                                <a href="https://www.skype.com" rel="noopener noreferrer" target="_blank">
                                     {ic_skype}
                                 </a>
-                            </div>
+                            </Col>
                         </Row>
                     </Col>
                 </Row>
