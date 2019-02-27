@@ -23,10 +23,13 @@ class App extends Component {
        console.log('signOut'); })
 	fireBase.auth().signInWithEmailAndPassword(
 		'quocvuonglamhcm@gmail.com', 'Vuong12345').then(() => {
-       fireBase.database().ref('nails/users').push({
-       	email: 'quocvuonglamhcm@gmail.com',
-       	phone: '0969942689'
-       });
+       // fireBase.database().ref('nails/users').push({
+       // 	email: 'quocvuonglamhcm@gmail.com',
+       // 	phone: '0969942689'
+       // });
+      fireBase.database().ref('nails/users').on('value', function(dataSnapshot) {
+        console.log(dataSnapshot.val());
+      })
 	});
 }
   render() {
