@@ -28,7 +28,7 @@ class HeaderComponent extends Component {
         	<div className="navbar justify-content-end">
       	 		<ul>
       	 			<li> <Link to='/' className="whiteColor"> TRANG CHỦ </Link> </li>
-      	 			<li> <Link to='/about' className="whiteColor"> GIỚI THIỆU </Link> </li>
+      	 			<li> <Link to='/login' className="whiteColor"> GIỚI THIỆU </Link> </li>
       	 			<li> <Link to='/service' className="whiteColor"> DỊCH VỤ </Link> </li>
       	 			<li> <Link to='/product' className="whiteColor">TÁC PHẨM</Link></li>
       	 			<li> <Link to='/nailer' className="whiteColor">THỢ NAIL</Link></li>
