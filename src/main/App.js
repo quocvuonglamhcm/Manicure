@@ -30,6 +30,9 @@ class App extends Component {
           phone: '0908899470'
         });
       });
+      fireBase.database().ref('nails/users').on('child_removed',function(datasSnapshot){
+      		  console.log(datasSnapshot);
+      		});
   }
   render() {
     return (
