@@ -4,6 +4,7 @@ import HeaderComponent from '../components/header/header';
 import FooterComponent from '../components/footer/footer';
 import BodyComponent from '../components/body/body';
 import MainRoute from '../routers/routers';
+// import fireBase from '../js/firebase';
 import fireBase from '../js/firebase';
 
 class App extends Component {
