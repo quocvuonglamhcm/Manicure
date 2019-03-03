@@ -13,7 +13,8 @@
 
 .box-content{
     background-color: #2995cc;
-    height: 8rem;
+    /* height: 9rem; */
+    padding: 2rem 0;
     width: 45%;
     border-radius: 10px;
     text-align: center;
@@ -42,4 +43,21 @@ input.mavung{
     right: 0.5rem;
     cursor: pointer;
     padding: 5px ;
+}
+
+.form-input-password{
+    width:85%;
+    justify-content: flex-start;
+    text-align: start;
+}
+input.password{
+    font-size: 14px;
+    margin-left: 1rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.button-success {
+    justify-content: flex-end;
 }
