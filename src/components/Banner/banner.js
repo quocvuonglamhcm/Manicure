@@ -32,7 +32,7 @@ class Background extends Component {
                     </button>
                 </div>
             </Row>
-            {this.state.isDisplayLogin ? <LoginContainer /> : null}
+            {this.state.isDisplayLogin ? <LoginContainer displayLogin = {this.displayLogin}/> : null}
             </React.Fragment>
         );
     }

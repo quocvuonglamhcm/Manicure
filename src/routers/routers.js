@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+
 import HomePage from '../pages/home/home';
 import ContactPage from '../pages/contact/contact';
 import AboutPage from '../pages/about/about';
@@ -7,7 +8,6 @@ import ServicePage from '../pages/service/service';
 import ProductPage from '../pages/product/product';
 import NailerPage from '../pages/nailer/nailer';
 import SupportPage from '../pages/support/support';
-import LoginPage from '../pages/account/loginPage';
 
 
 const MainRoute = () => (
@@ -21,7 +21,6 @@ const MainRoute = () => (
      <Route path='/nailer' component={NailerPage}/>
      <Route path='/support' component={SupportPage}/>
      <Route path='/contact' component={ContactPage}/>
-     <Route path='/login' component={LoginPage}/>
    </Switch>
  </main>
 )

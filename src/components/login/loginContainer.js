@@ -32,28 +32,28 @@ export default class LoginContainer extends Component {
         switch (step) {
             case 1:
                 return (
-                    <div className='overlay' >
+                    <div className='overlay' onClick={this.props.displayLogin}>
                         <Row className='box-content' >
                             <Login nextStep ={this.nextStep}/>
-                            <span className='btn-cancel'>{ic_cancel}</span>
+                            <span className='btn-cancel' onClick={this.props.displayLogin} >{ic_cancel}</span>
                         </Row>
                     </div>
                 )
             case 2:
                 return (
-                    <div className='overlay' >
+                    <div className='overlay' onClick={this.props.displayLogin} >
                         <Row className='box-content' >
                             <Validation nextStep={this.nextStep} prevStep = {this.prevStep} />
-                            <span className='btn-cancel'>{ic_cancel}</span>
+                            <span className='btn-cancel' onClick={this.props.displayLogin} >{ic_cancel}</span>
                         </Row>
                     </div>
                 )
             case 3:
                 return (
-                    <div className='overlay' >
+                    <div className='overlay' onClick={this.props.displayLogin}>
                         <Row className='box-content' >
                         <InputPassword prevStep = {this.prevStep} />
-                            <span className='btn-cancel'>{ic_cancel}</span>
+                            <span className='btn-cancel' onClick = {this.props.displayLogin}>{ic_cancel}</span>
                         </Row>
                     </div>
                 )
