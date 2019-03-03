@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './banner.css'
 import { Row } from 'react-bootstrap';
 
-import LoginPage from '../../pages/account/loginPage';
+// import LoginPage from '../../pages/account/loginPage';
+import LoginPage from '../login/login';
 
 class Background extends Component {
     constructor(props) {
