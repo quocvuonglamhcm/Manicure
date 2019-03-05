@@ -1,5 +1,5 @@
 .footer {
-    max-width: 100%;
+    width: 100%;
     background-color: #6645C5;
     color: #fafafa;
     font-size: 15px;
@@ -36,12 +36,17 @@
     text-align: center;
 }
 
+.footSocial a:hover {
+    color: #29b6f6 !important;
+}
+
 a {
-    color: #fafafa;
+    color: #fafafa !important;
 }
 
 a:hover { 
-  color: #29b6f6;
+  color: #29b6f6 !important;
+  text-decoration: none !important;
 }
 
 img {
@@ -52,6 +57,7 @@ img {
 .white{
     color: #FFF;
 }
+
 textarea {
     max-height: 50px;
     min-height: 50px;

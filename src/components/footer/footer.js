@@ -37,9 +37,9 @@ export default function FooterComponent() {
                             </div>
                             <div className="form-group font-weight-bold">
                                 <label htmlFor="exampleFormControlTextarea1">Nội dung</label>
-                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Nhập nội dung cần tư vấn"rows="4"></textarea>
                             </div>
-                            <button type="submit" className="btn btn-primary">GỬI</button>
+                            <button type="submit" className="btn btn-primary float-right">GỬI</button>
                         </form>
                     </Col>
                     <Col md={3}>
@@ -54,13 +54,19 @@ export default function FooterComponent() {
                     <Col md={3}>
                         <div className="contactTitle font-weight-bold pb-2">Thông tin liên hệ</div>
                         <div className="address pb-1">
-                           {ic_mapMaker} 38 Nail Street, New York, USA
+                        	<a href='https://www.google.com/maps' rel="noopener noreferrer" target="_blank">
+                        		{ic_mapMaker} 38 Nail Street, New York, USA
+                        	</a>
                         </div>
                         <div className="phoneNumber pb-1">
-                            {ic_mobileAlt} +84 3123 9123
+                        	<a href='tel:+84 3123 9123'>
+                        		{ic_mobileAlt} +84 3123 9123
+                            </a>
                         </div>
                         <div className="supportMail">
-                            {ic_envelope} nail.system.2019@gmail.com
+                        	<a href='mailto:nail.system.2019@gmail.com'>
+                        		{ic_envelope} nail.system.2019@gmail.com
+                            </a>
                         </div>
                         <Row className="footSocial">
                             <Col sm={3}>
@@ -68,21 +74,21 @@ export default function FooterComponent() {
                                     {ic_twitter}
                                 </a>
                             </Col>
-                            <div className="col-sm-3">
+                            <Col sm={3}>
                                 <a href="https://www.linkedin.com" rel="noopener noreferrer">
                                     {ic_linkedin}
                                 </a>
-                            </div>
-                            <div className="col-sm-3">
+                            </Col>
+                            <Col sm={3}>
                                 <a href="https://www.facebook.com" rel="noopener noreferrer">
                                     {ic_facebook}
                                 </a>
-                            </div>
-                            <div className="col-sm-3">
+                            </Col>
+                            <Col sm={3}>
                                 <a href="https://www.skype.com" rel="noopener noreferrer">
                                     {ic_skype}
                                 </a>
-                            </div>
+                            </Col>
                         </Row>
                     </Col>
                 </Row>

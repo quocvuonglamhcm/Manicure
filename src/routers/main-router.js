@@ -1,7 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import HomePage from '../pages/home/home';
-import LoginPage from '../pages/account/loginPage';
 
 const MainRoute = () => (
   <main>
