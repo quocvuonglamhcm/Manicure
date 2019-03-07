@@ -3,9 +3,19 @@ import './App.css';
 import HeaderComponent from '../components/header/header';
 import FooterComponent from '../components/footer/footer';
 import MainRoute from '../routers/routers';
-// import fireBase from '../js/firebase';
+import fireBase from '../js/firebase';
 
 class App extends Component {
+  componentDidMount() {
+    fireBase.auth().signOut();
+    fireBase.auth().onAuthStateChanged((user) =>{
+      if (user) {
+      console.log(user);
+    } else {
+      console.log('chua dang nhap');
+    }
+    })
+  }
   // componentDidMount() {
   //   console.log('componentDidMount Hi');
   //   console.log(fireBase);

@@ -12,22 +12,56 @@ export default class Login extends Component {
         }
     }
 
+    createProfile(uid, phone) {
+        fireBase.database().ref(`nails/users/${uid}`).set(
+        {
+            ho_ten: '',
+            phone: phone,
+            address: '',
+            services: [{
+                cat_toc: {
+                    name: 'fff'
+                },
+                lammong: {
+                    name: 'fff'
+                }
+            }],
+            products: [],
+        }).then((data) => {
+            console.log('Khoi tao thong tin thanh cong')
+        }).catch((error) => {
+            console.log('Error');
+            console.log(error);
+        })
+    }
     Continue = () =>{
-        const data = {
-                phone_number: this.state.phone,
-                verify_number: Math.random().toString().substr(2, 4),
-                status: false,
-                created_at: Date.now()
-        };
-
-        fireBase.database().ref(`nails/signup/${this.state.phone}`)
-            .set(data)
-            .then(function(){
-                console.log('ok');
+        const email = `${this.state.phone}@nails.com`;
+        fireBase.auth().createUserWithEmailAndPassword(
+            email,
+            '12345qwert'
+            ).then((data) => {
+                console.log(data);
+                console.log(data.user.uid);
+                this.createProfile(data.user.uid, this.state.phone);
+            }).catch((error) => {
+                console.log('Error', error);
             })
-            .catch(function(){
-                console.log('no');
-            });
+        // const data = {
+        //         phone_number: this.state.phone,
+        //         verify_number: Math.random().toString().substr(2, 4),
+        //         status: false,
+        //         created_at: Date.now()
+        // };
+
+        // fireBase.database().ref(`nails/signup/${this.state.phone}`)
+        //     .set(data)
+        //     .then(function(){
+        //         console.log('ok');
+        //     })
+        //     .catch(function(){
+        //         console.log('no');
+        //     });
+        //     this.props.nextStep()
         }
 
     handleOnChange = (e) => {
