@@ -3,9 +3,9 @@ const router = express.Router()
 const randomstring = require('randomstring')
 
 const TWILIO = {
-  accountSID: 'AC977d848d906928ef3527b4e7762ae4ec',
-  phone_number: '+14055719159',
-  authToken: 'ede848bbac13f22fa130b37b21fedc85'
+  accountSID: 'ACa10351c021a6c4b50692d401da28f324',
+  phone_number: '+15127725694',
+  authToken: '216900306ffdf929645ee36c93d4fcf0'
 }
 
 const twilioClient = require('twilio')(
