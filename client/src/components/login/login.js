@@ -34,18 +34,35 @@ export default class Login extends Component {
             console.log(error);
         })
     }
+
+    verify() {
+      fetch('/sms/verify_number', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          to: this.state.phone
+        })
+      })
+      .then((data) => {
+        console.log(data);
+      })
+    }
+
     Continue = () =>{
-        const email = `${this.state.phone}@nails.com`;
-        fireBase.auth().createUserWithEmailAndPassword(
-            email,
-            '12345qwert'
-            ).then((data) => {
-                console.log(data);
-                console.log(data.user.uid);
-                this.createProfile(data.user.uid, this.state.phone);
-            }).catch((error) => {
-                console.log('Error', error);
-            })
+      this.verify()
+      // const email = `${this.state.phone}@nails.com`;
+      // fireBase.auth().createUserWithEmailAndPassword(
+      //     email,
+      //     '12345qwert'
+      //     ).then((data) => {
+      //         console.log(data);
+      //         console.log(data.user.uid);
+      //         this.createProfile(data.user.uid, this.state.phone);
+      //     }).catch((error) => {
+      //         console.log('Error', error);
+      //     })
         // const data = {
         //         phone_number: this.state.phone,
         //         verify_number: Math.random().toString().substr(2, 4),
@@ -62,7 +79,7 @@ export default class Login extends Component {
         //         console.log('no');
         //     });
         //     this.props.nextStep()
-        }
+    }
 
     handleOnChange = (e) => {
         console.log(e.target.name, e.target.value);
