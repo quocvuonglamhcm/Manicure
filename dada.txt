@@ -1,0 +1,8 @@
+﻿ma xn
+xuong xac nhan (verify) -> timeout dung ve lai nhap ma xn
+(verify) -> timeout sai -> ktra ma dung -> tao mk
+ktra ma sai -> bao loi -> tro ve verify
+tao mk xong -> tao tk
+
+
+Ktra trang thai -> da login chua
