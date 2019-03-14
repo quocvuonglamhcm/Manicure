@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './banner.css'
 import { Row } from 'react-bootstrap';
-
 import LoginContainer from '../login/loginContainer';
-
 class Background extends Component {
     constructor(props) {
         super(props)
@@ -11,8 +9,6 @@ class Background extends Component {
             isDisplayLogin : false
         }
     }
-
-
     displayLogin = () => {
         this.setState({
             isDisplayLogin : !this.state.isDisplayLogin

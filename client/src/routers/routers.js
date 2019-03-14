@@ -8,7 +8,7 @@ import ServicePage from '../pages/service/service';
 import ProductPage from '../pages/product/product';
 import NailerPage from '../pages/nailer/nailer';
 import SupportPage from '../pages/support/support';
-
+import BangGiaDichVu from '../pages/banggiadichsvu/banggiadichvu';
 
 const MainRoute = () => (
  <main>
@@ -21,6 +21,7 @@ const MainRoute = () => (
      <Route path='/nailer' component={NailerPage}/>
      <Route path='/support' component={SupportPage}/>
      <Route path='/contact' component={ContactPage}/>
+     <Route path='/banggiadichvu' component={BangGiaDichVu}/>
    </Switch>
  </main>
 )
