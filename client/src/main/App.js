@@ -4,15 +4,35 @@ import HeaderComponent from '../components/header/header';
 import FooterComponent from '../components/footer/footer';
 import MainRoute from '../routers/routers';
 import fireBase from '../js/firebase';
+import { Redirect } from 'react-router-dom'
 
 class App extends Component {
+    state = {
+        redirect: false
+      }
+
+  setRedirect = () => {
+      this.setState({
+        redirect: true
+      })
+    }
+
+    renderRedirect = () => {
+       if (this.state.redirect) {
+         return <Redirect to='/login' />
+       }
+     }
+
   componentDidMount() {
+    const self = this;
     fireBase.auth().signOut();
     fireBase.auth().onAuthStateChanged((user) =>{
       if (user) {
       console.log(user);
     } else {
-      console.log('chua dang nhap');
+      // self.setState({
+      //   redirect: true
+      // })
     }
     })
   }
@@ -46,6 +66,7 @@ class App extends Component {
   render() {
     return (
     	<div className="App">
+        {this.renderRedirect()}
   			<HeaderComponent/>
     		<MainRoute/>
         <FooterComponent/>
