@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {Row,Col} from 'react-bootstrap';
+import './service.css'
 
 class ServicePage extends Component {
   render() {
