@@ -6,6 +6,8 @@ import MainRoute from '../routers/routers';
 import fireBase from '../js/firebase';
 import { Redirect } from 'react-router-dom'
 
+// library.add(fab, fas)
+
 class App extends Component {
     state = {
         redirect: false
@@ -19,7 +21,7 @@ class App extends Component {
 
     renderRedirect = () => {
        if (this.state.redirect) {
-         return <Redirect to='/login' />
+         return <Redirect to='/contact' />
        }
      }
 
