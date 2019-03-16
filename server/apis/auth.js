@@ -1,5 +1,6 @@
 const express = require('express')
 const FireBase = require('./firebase');
+const httpCode = require('./http_code')
 
 var Auth = {
   login: function(phone, password) {
@@ -17,38 +18,11 @@ router.post('/auth/login', (req, res) => {
 
   Auth.login(phone, pass).then(
     () => {
-      res.send(JSON.stringify({
-        code: 200,
-        message: 'Login success'
-      }))
+      res.send(JSON.stringify(httpCode.authStatus()))
       res.end()
     }
   ).catch(error => {
-    let statusCode, message
-
-    switch (error.code) {
-      case 'auth/user-not-found':
-        statusCode = 500
-        message = 'User not found'
-        break;
-      case 'auth/wrong-password':
-        statusCode = 401
-        message = 'Wrong password'
-        break;
-      case 'auth/invalid-email':
-        statusCode = 402
-        message = 'Invalid email'
-        break;
-      case 'auth/user-disabled':
-        statusCode = 403
-        message = 'Account disabled'
-        break;
-    }
-
-    res.send(JSON.stringify({
-      status: statusCode,
-      message: message
-    }))
+    res.send(JSON.stringify(httpCode.authStatus()))
   })
 })
 
