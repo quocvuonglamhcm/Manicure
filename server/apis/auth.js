@@ -10,6 +10,13 @@ var Auth = {
 
 const router  = express.Router()
 
+/**
+ * Auth login to system
+ * @param {Object} body - Body data
+ * @param {string} phone - The phone number will login
+ * @param {string} password - The password for account
+ * @returns {Object}
+ */
 router.post('/auth/login', (req, res) => {
   const phone = req.body.phone
   const pass = req.body.password
