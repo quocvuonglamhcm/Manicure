@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class SupportPage extends Component {
 	state = {
-		nameService = [
+		nameService:[
 			{
 				name:'đặt lịch',
 				image:''
@@ -20,7 +20,7 @@ class SupportPage extends Component {
 				image:''
 			},
 		],
-		question=[
+		question:[
 			'Tại sao tôi chỉ có 30 phút để đặt mua vé ?',
 			'Tôi có được đặt lịch với nhiều thợ trong cùng một đơn giao dịch không ?',
 			'Tôi có được hủy lịch không ?'
