@@ -8,7 +8,7 @@ import ServicePage from '../pages/service/service';
 import ProductPage from '../pages/product/product';
 import NailerPage from '../pages/nailer/nailer';
 import SupportPage from '../pages/support/support';
-
+import ModalDialog from '../components/modal/modal';
 
 const MainRoute = () => (
  <main>
@@ -17,10 +17,11 @@ const MainRoute = () => (
      <Route path='/home' component={HomePage}/>
      <Route path='/about' component={AboutPage}/>
      <Route path='/service' component={ServicePage}/>
-     <Route path='/product' component={ProductPage}/>
+     <Route path='/product/:id' component={ProductPage}/>
      <Route path='/nailer' component={NailerPage}/>
      <Route path='/support' component={SupportPage}/>
-     <Route path='/contact' component={ContactPage}/>
+     <Route path='/contact1' component={ContactPage}/>
+     <Route path='/contact' component={ModalDialog}/>
    </Switch>
  </main>
 )
