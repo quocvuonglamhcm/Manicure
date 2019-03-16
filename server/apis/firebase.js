@@ -1,9 +1,31 @@
 const express = require('express')
+const fb = require('firebase');
 
-var name = 'NHP';
+const config = {
+  test: {
+    apiKey: "AIzaSyDUmBiyuJgOUzYvghXjkn_8MBKwFRMzV4U",
+  	authDomain: "nails-test.firebaseapp.com",
+  	databaseURL: "https://nails-test.firebaseio.com",
+  	projectId: "nails-test",
+  	storageBucket: "nails-test.appspot.com",
+  	messagingSenderId: "62775543575"
+  }
+};
+
+const extensionEmail = '@nails.com'
+
+const fireBaseClient = fb.initializeApp(config.test);
+
 var FireBase = {
-  hello: function() {
-    console.log(`Hello ${name}`)
+  login: function(phone_number, password) {
+    const email = `${phone_number}${extensionEmail}`
+    return fireBaseClient.auth().signInWithEmailAndPassword(email, password)
+  },
+  logout: function() {
+
+  },
+  logged: function() {
+
   }
 }
 module.exports = FireBase;
