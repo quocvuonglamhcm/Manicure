@@ -33,14 +33,14 @@ router.post('/auth/login', (req, res) => {
         break;
       case 'auth/wrong-password':
         statusCode = 401
-        message = 'Password wrong'
+        message = 'Wrong password'
         break;
       case 'auth/invalid-email':
-        statusCode = 401
+        statusCode = 402
         message = 'Invalid email'
         break;
       case 'auth/user-disabled':
-        statusCode = 401
+        statusCode = 403
         message = 'Account disabled'
         break;
     }
