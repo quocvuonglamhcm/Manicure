@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 import './service.css'
 
 import ChamSocPopUp from '../../components/ServiceDetail/ChamSocPopUp';
-import DapBotPopUp from '../../components/ServiceDetail/DapBotPopUpp';
+import DapBotPopUp from '../../components/ServiceDetail/DapBotPopUp';
 import DapGelPopUp from '../../components/ServiceDetail/DapGelPopUp';
 import DinhDaPopUp from '../../components/ServiceDetail/DinhDaPopUp';
 import TronGoiPopUp from '../../components/ServiceDetail/TronGoiPopUp';
