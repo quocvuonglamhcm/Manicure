@@ -45,13 +45,12 @@ class ModalDialog extends Component {
      }
    }
 
-
   render() {
     return (
       <React.Fragment>
         {this.goHome()}
         <Modal
-        isOpen={this.state.showModal}
+        isOpen={true}
         contentLabel="onRequestClose Example"
         onRequestClose={this.handleCloseModal}
           >

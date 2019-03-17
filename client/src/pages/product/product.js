@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class ProductPage extends Component {
   componentDidMount() {
+    console.log(this.props)
     const { id } = this.props.match.params;
     console.log(id);
   }
