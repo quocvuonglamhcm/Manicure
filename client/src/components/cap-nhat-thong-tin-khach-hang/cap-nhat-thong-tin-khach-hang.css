@@ -1,0 +1,103 @@
+#center{
+	position: absolute;
+	width: 700px;
+	height: 965px;
+	left: 355px;
+	top: 140px;
+	border: 1px solid #C4C4C4;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.exit{
+	position: absolute;
+	top: -8px;
+	right: -4px;
+	font-size: 25px;
+}
+
+#line{
+	position: absolute;
+	width: 699px;
+	height: 0px;
+	top: 50;
+	border: 1px solid #C4C4C4;
+	transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#tieude{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 18px;
+	color: #000000;
+	line-height: 50px;
+	text-align: center;
+
+}
+#height-50{
+	height: 50px;
+	width: 100%;
+	margin: auto;
+}
+
+#height-500px{
+	height: 900px;
+	width:100%;
+	margin: auto; 
+}
+
+#avt{
+	margin: auto;
+	line-height: 10px;
+	width: 200px;
+	height: 200px;
+	margin-top: 10px;
+	border-radius:50px;
+	background-image: url();
+	background-size: contain;
+}
+
+#text-avt{
+	text-align: center;
+}
+
+.card-1{
+	padding-left:20px;
+	padding-right: 30px;
+	padding-top: 20px;
+}
+
+.height-50{
+	height: 50px;
+	border: 1px solid #C4C4C4;
+	border-radius: 5px;
+	line-height: 50px;
+}
+
+.text-card{
+	line-height: 50px;
+}
+
+.text-card-3{
+	color:#c4c4c4;
+	position: absolute;
+	color:red;
+	margin-top: 50;
+    margin-left: 178px;
+}
+
+.text-card-2{
+	color:#C4C4C4;
+}
+
+.button3{
+	background-color: #DEBF1D;
+	width: 200px;
+	margin: auto;
+	border-radius: 5px;
+	height: 50px;
+	color: white;
+	font-size: 25px;
+}
