@@ -155,3 +155,12 @@
 			background-repeat: no-repeat;
 			height: 200px;
 		}
+		.IconCheck{
+			font-family: Open Sans;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 19px;
+			font-size: 12px;
+			color: #6645C5;
+			margin-top: 5px;
+		}
