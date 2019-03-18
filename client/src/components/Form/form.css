@@ -1,0 +1,31 @@
+.SignIn--Nailer
+{
+    margin:7px;
+}
+.SignIn--Nailer--form{
+    width:750px;
+    height:450px;
+    border:1px solid lightgray;
+    background:white;
+    margin:auto;
+    margin-top:2px;
+}
+.SignIn--Title{
+    text-align:center;
+    color:blue;
+}
+.SignIn--Title::first-letter{
+    text-transform: capitalize;
+}
+.SignIn--Label{
+    display:inline;
+    margin-left:10px;
+}
+.SignIn--Nailer--Dist{
+    margin-top:-50px;
+}
+.SignIn--btn{
+    width:720px;
+    color:orange;
+    background:green;
+}
