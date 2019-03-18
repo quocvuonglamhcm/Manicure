@@ -1,0 +1,63 @@
+.overlay {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 99;
+}
+
+.box-content{
+    background-color: #2995cc;
+    /* height: 9rem; */
+    padding: 2rem 0;
+    width: 45%;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+.box-content button {
+    width: 35%;
+}
+input.mavung{
+    width:40%;
+    font-size: 14px;
+    margin-left: 1rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.box-content> *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-cancel {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+    padding: 5px ;
+}
+
+.form-input-password{
+    width:85%;
+    justify-content: flex-start;
+    text-align: start;
+}
+input.password{
+    font-size: 14px;
+    margin-left: 1rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.button-success {
+    justify-content: flex-end;
+}
