@@ -1,14 +1,18 @@
 .SignIn--Nailer
 {
-    margin:7px;
+    right: 0;
+    position: absolute;
+    top: 40px;
+    right: 40px;
 }
 .SignIn--Nailer--form{
-    width:750px;
-    height:450px;
+    width:350px;
     border:1px solid lightgray;
     background:white;
     margin:auto;
     margin-top:2px;
+    border-radius: 20px;
+    padding: 2rem;
 }
 .SignIn--Title{
     text-align:center;
@@ -25,7 +29,7 @@
     margin-top:-50px;
 }
 .SignIn--btn{
-    width:720px;
+    /* width:720px; */
     color:orange;
     background:green;
 }
