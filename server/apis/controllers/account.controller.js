@@ -14,8 +14,8 @@ var Auth = {
     getOneUser: function (phone) {
         return FireBase.getOneAccount(phone)
     },
-    connectDatabase: function () {
-        return FireBase.connectFirebaseDatabase();
+    connectDatabaseRegister: function (phone) {
+        return FireBase.connectFirebaseDatabaseRegister(phone);
     }
 }
 
@@ -38,6 +38,7 @@ module.exports.authLogin = function (req, res) {
 
 
 module.exports.sms = (req, res) => {
+    var phone_number = req.body.to;
     const TWILIO = {
         accountSID: 'ACa10351c021a6c4b50692d401da28f324',
         phone_number: '+15127725694',
@@ -52,9 +53,16 @@ module.exports.sms = (req, res) => {
         length: 4,
         charset: 'numeric'
     });
-    // console.log(number)
     res.header('Content-Type', 'appication/json');
-
+// -------------------------------------------------------
+    Auth.connectDatabaseRegister(phone_number).once('value')
+    .then((data) => {
+        console.log(data.val())
+        console.log(data.val().smsCode)
+ 
+    }).catch(e => console.log(e))
+// ----------------------------------------------
+    // Send sms code
     twilioClient.messages.create({
         from: TWILIO.phone_number,
         to: req.body.to,
@@ -69,27 +77,36 @@ module.exports.sms = (req, res) => {
 
         })
 
-    Auth.connectDatabase().push({
+
+    // save data into firebase
+    Auth.connectDatabaseRegister(phone_number).set({
         smsCode: number,
-        phone: req.body.to
+        phone_number: req.body.to
     })
 }
 
 module.exports.verifySmsCode = (req, res) => {
-    let smsCode = req.body.smsCode;
-    let phone_number = req.body.phone_number;
+    var Code = req.body.smsCode;
+    var phone_number = req.body.to;
+    // console.log(req.body)
 
     res.header('Content-Type', 'application/json');
 
-    Auth.getOneUser(phone_number)
-        .then((data) => {
-            let value = data.hasChild(smsCode); // true
-            console.log(value)
-            res.send({ success: true })
-        })
-        .catch(err => {
-            res.send({ success: false })
-        })
+    Auth.connectDatabaseRegister(phone_number).once('value')
+    .then((data) => {
+        // let smsCodeOnDatabase = data.val().smsCode;
+        console.log(data.key)
+        console.log(data.val())
+        // console.log('2'+smsCodeOnDatabase)
+        // if(smsCodeOnDatabase === Code){
+        //     console.log('true');
+        //     res.send({success: true})
+        // }else {
+        //     console.log('faulse')
+        //     res.send({success: false})
+        // }
+ 
+    }).catch(e => console.log(e))
 
 }
 
