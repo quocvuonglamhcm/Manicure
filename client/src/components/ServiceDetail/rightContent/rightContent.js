@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import { Row, } from 'react-bootstrap';
 
-import Item from './Item';
+import TronGoi from './TronGoi';
+import ChamSoc from './ChamSoc';
+import DapBot from './DapBot';
+import DapGel from './DapGel';
+import Ve from './Ve';
+import DinhDa from './DinhDa';
 
 class RightContent extends Component {
     constructor(props) {
@@ -11,24 +16,15 @@ class RightContent extends Component {
     render() {
         return (
             <div id="right-service">
-                <h3 className="title">Danh sách dịch vụ</h3>
+                <div className="title1">Danh sách dịch vụ</div>
                 <Row>
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
+                    <TronGoi />
+                    <ChamSoc />
+                    <DapBot />
+                    <DapGel/>
+                    <Ve />
+                    <DinhDa />
+                    
                     
                 </Row>
             </div>
