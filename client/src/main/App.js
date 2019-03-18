@@ -5,8 +5,10 @@ import FooterComponent from '../components/footer/footer';
 import MainRoute from '../routers/routers';
 import fireBase from '../js/firebase';
 import { Redirect } from 'react-router-dom';
-import Form from '../components/Form/form';
-import '../components/Form/form.css';
+import SignIn1 from '../components/SignIn/SignIn';
+import '../components/SignIn/SignIn.css';
+{/*import Form from '../components/Form/form';*/}
+{/*import '../components/Form/form.css';*/}
 // library.add(fab, fas)
 
 class App extends Component {
@@ -73,7 +75,8 @@ class App extends Component {
   			<HeaderComponent/>
     		<MainRoute/>
         <FooterComponent/>
-        <Form/>
+        {/*<Form/>*/}
+        <SignIn1/>
     	</div>
     );
   }

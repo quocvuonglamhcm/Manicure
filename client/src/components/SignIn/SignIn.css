@@ -1,0 +1,45 @@
+.Login{
+    width:728px;
+    height:450px;
+    border:1px solid white;
+    border-radius:10px;
+    background:lightgray;
+    margin:auto;
+}
+.Login h1{
+   font-size:18px;
+   font-family: Roboto;
+   text-align:center;   
+}
+.Login h1::first-letter{
+    text-transform:capitalize;
+}
+.Login .textfield{
+    width:300px;
+    margin-left:100px;
+}
+.Login .txt1{
+    width:300px;
+    margin-left:100px;
+}
+.Login .reminder::first-letter{
+     text-transform:capitalize;
+}
+.Login .reminder{
+    font-size:18px;
+    font-family:Roboto;
+    margin-left:250px;
+}
+.Login .enable{
+    color:black;
+    opacity:0.2;
+}
+.Login .btnSignin{
+    width:350px;
+    margin-left:140px;
+    color:white;
+    border-radius:5px;
+}
+.Login .btnSignin:hover{
+    color:white;
+}
