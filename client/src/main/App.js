@@ -73,7 +73,6 @@ class App extends Component {
   			<HeaderComponent/>
     		<MainRoute/>
         <FooterComponent/>
-        <Form/>
     	</div>
     );
   }

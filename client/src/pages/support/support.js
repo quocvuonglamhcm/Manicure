@@ -79,8 +79,7 @@ class SupportPage extends Component {
 						</li>
 
 					</ul>
-				</div>
-
+			</div>
 			</div>
     );
   }

@@ -37,11 +37,11 @@
     color: #29b6f6 !important;
 }
 
-/* a {
+.footer a {
     color: #fafafa !important;
-} */
+} 
 
-a:hover { 
+.footer a:hover { 
   color: #29b6f6 !important;
   text-decoration: none !important;
 }
@@ -55,7 +55,6 @@ img {
     color: #FFF;
 }
 
-textarea {
-    max-height: 50px;
-    min-height: 50px;
+.btn1 {
+    width: 50%;
 }
