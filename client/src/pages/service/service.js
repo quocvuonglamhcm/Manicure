@@ -38,8 +38,9 @@ class ServicePage extends Component {
 					<div className="title2">Danh sách dịch vụ</div>
 					<Row>
 						<Col sm={4} md={4} sx={4}>
-							{this.state.status ? <TronGoiPopUp /> : null}
+							
 							<Col sm={12} md={12} sx={12}>
+              {this.state.status ? <TronGoiPopUp /> : null}
 								<img width="100%" height="200px" src="https://muachungcdn.com/thumb_w/960,99/product/thumbnail/2017/06/26/0.734900001498475106.jpg" />
 								<div className="text2">Trọn gói cho tay hoặc chân</div>
 								<Row>
