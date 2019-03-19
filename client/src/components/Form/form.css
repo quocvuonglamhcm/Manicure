@@ -6,8 +6,12 @@
     right: 40px;
 }
 .SignIn--Nailer--form{
+<<<<<<< HEAD
     width:550px;
     height:400px;
+=======
+    width:350px;
+>>>>>>> edit form
     border:1px solid lightgray;
     background:white;
     margin:auto;
