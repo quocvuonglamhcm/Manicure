@@ -7,9 +7,9 @@ const HomePage = () => (
 		<Banner />
 		<div className='container'>
 			<div className='register-title'>
-				<div className='body-loi-ich'>
-						<Bodyloiich/>
-				</div>
+			</div>
+			<div className='body-loi-ich'>
+				<Bodyloiich />
 			</div>
 		</div>
 	</div>
