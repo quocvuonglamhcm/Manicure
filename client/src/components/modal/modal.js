@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Modal from 'react-modal';
 import { Redirect } from 'react-router-dom'
-
 const JSX_MODAL = (
   <div className="modal fade" role="dialog">
     <div className="ui standard modal visible active">

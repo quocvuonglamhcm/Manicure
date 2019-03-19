@@ -1,42 +1,40 @@
-.container{
-}
-
 .body-loi-ich{
-	width: 920px;
+	width: 100%;
     height: 300px;
-    margin: auto;
-
-}
-
-.font-size-12{
-	font-size: 12px;
-}
-.text-align-left{
-	text-align: start end;
 }
 .text-tieu-de{
-	font-family: Roboto;
+	font-family: Open Sans;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 18px;
 	line-height: normal;
+	font-size: 15px;
+	color: #000000;
+	margin-bottom: 9px;
 	text-align: center;
+	width: 100%; 
 }
 #card-1{
-	width: 320px;
-	height: 148px;
+	width: 40%;
+	height: fit-content;
 	border: 1px solid #c4c4c4;
-	padding: 10px;
 	padding-left: 20px;
-	margin-left: 120px;
+	margin-right: 10%;
 	margin-top: 30px;
+	padding-top: 9px;
+	padding-bottom: 9px;
 	float: left;
 }
-
-.color-red{
-	color: red;
+#card-2{
+	width: 40%;
+	height: fit-content;
+	border: 1px solid #c4c4c4;
+	padding-left: 20px;
+	float: left;
+	margin-left: 10%;
+	margin-top: 97px;
+	padding-top: 9px;
+	padding-bottom: 9px;
 }
-
 .margin-left-10{
 	margin-left: 10px;
 }
@@ -44,14 +42,21 @@
 .float-left{
 	float: left;
 }
-
-#card-2{
-	width: 320px;
-	height: 148px;
-	border: 1px solid #c4c4c4;
-	padding: 10px;
-	padding-left: 20px;
+.ContentLoiIch{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 19px;
+	font-size: 12px;
+	color: #000000;
+	margin-left:10px;
 	float: left;
-	margin-left: 30px;
-	margin-top: 97px;
+}
+.IconCheck{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 19px;
+	font-size: 12px;
+	color: #6645C5;
 }

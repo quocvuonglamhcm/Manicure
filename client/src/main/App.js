@@ -6,6 +6,7 @@ import MainRoute from '../routers/routers';
 import fireBase from '../js/firebase';
 import { Redirect } from 'react-router-dom';
 
+import '../components/Form/form.css';
 // library.add(fab, fas)
 
 class App extends Component {

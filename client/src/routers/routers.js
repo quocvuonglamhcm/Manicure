@@ -9,6 +9,7 @@ import ProductPage from '../pages/product/product';
 import NailerPage from '../pages/nailer/nailer';
 import SupportPage from '../pages/support/support';
 import ModalDialog from '../components/modal/modal';
+import Khachhang from '../components/cap-nhat-thong-tin-khach-hang/cap-nhat-thong-tin-khach-hang'
 
 const MainRoute = () => (
  <main>
@@ -19,9 +20,10 @@ const MainRoute = () => (
      <Route path='/service' component={ServicePage}/>
      <Route path='/product/:id' component={ProductPage}/>
      <Route path='/nailer' component={NailerPage}/>
-     <Route path='/support' component={SupportPage}/>
+     {/* <Route path='/support' component={SupportPage}/> */}
      <Route path='/contact1' component={ContactPage}/>
      <Route path='/contact' component={ModalDialog}/>
+     <Route path='/ABC/xyz' component={Khachhang}/>
    </Switch>
  </main>
 )
