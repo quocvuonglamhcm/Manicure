@@ -74,7 +74,7 @@ class App extends Component {
   			<HeaderComponent/>
     		<MainRoute/>
         <FooterComponent/>
-        <SignIn1/>
+        {/* <SignIn1/> */}
     	</div>
     );
   }

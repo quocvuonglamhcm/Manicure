@@ -1,5 +1,15 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import './support.css';
+import InputGroup from 'react-bootstrap/InputGroup'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
+
+import datlich from '../../assets/images/ic_datlich.svg';
+import kythuat from '../../assets/images/ic_.svg';
+import taikhoan from '../../assets/images/ic_taikhoan.svg';
+import tho from '../../assets/images/ic_tho.svg';
 class SupportPage extends Component {
 	// state = {
 	// 	nameService:[
@@ -28,23 +38,29 @@ class SupportPage extends Component {
 	// }
 
 	render() {
+		let ic_search = <FontAwesomeIcon className="fontSize25 white " icon={faSearch} />
 		return (
-			<div id="sp_main">
-				<div className="search-bar">
+			<div id="sp-main">
+				<div className="sp-search-bar">
 					<div className="par">
 						Xin chào, Nail Partner có thể giúp gì cho bạn?
-							</div>
-					<div className="container">
-						<span className="icon"><i className="fa fa-search"></i></span>
-						<input className="input" type="search" placeholder="Bạn thắc mắc gì về Nail Partner ?"></input>
 					</div>
+
+					<InputGroup className="mb-3 sp-input" >
+						<Form.Control
+							placeholder="Bạn thắc mắc gì về Nail Partner?"
+						/>
+						<InputGroup.Append>
+							<Button variant="sp-ic_search">{ic_search}</Button>
+						</InputGroup.Append>
+					</InputGroup>
 				</div>
 
-				<div className="menu" >
-					<ul className="menu_ul">
+				<div className="sp-menu" >
+					<ul className="sp-menu_ul">
 						<li>
 							<div className="images">
-								<img src="ic_datlich.svg" />
+								<img src={datlich} />
 							</div>
 							<div className="mn_text">
 								Đặt lịch
@@ -53,7 +69,7 @@ class SupportPage extends Component {
 
 						<li>
 							<div className="images">
-								<img src="ic_.svg" />
+								<img src={kythuat} />
 							</div>
 							<div className="mn_text">
 								Kỹ thuật
@@ -62,7 +78,7 @@ class SupportPage extends Component {
 
 						<li>
 							<div className="images">
-								<img src="ic_taikhoan.svg" />
+								<img src={taikhoan} />
 							</div>
 							<div className="mn_text">
 								Tài khoản
@@ -71,7 +87,7 @@ class SupportPage extends Component {
 
 						<li>
 							<div className="images">
-								<img src="ic_tho.svg" />
+								<img src={tho} />
 							</div>
 							<div className="mn_text">
 								Từ người thợ

@@ -19,9 +19,9 @@ const MainRoute = () => (
      <Route path='/service' component={ServicePage}/>
      <Route path='/product/:id' component={ProductPage}/>
      <Route path='/nailer' component={NailerPage}/>
-     {/* <Route path='/support' component={SupportPage}/> */}
+     <Route path='/support' component={SupportPage}/>
      <Route path='/contact1' component={ContactPage}/>
-     <Route path='/contact' component={ModalDialog}/>
+     {/* <Route path='/contact' component={ModalDialog}/> */}
    </Switch>
  </main>
 )

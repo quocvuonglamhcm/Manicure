@@ -26,7 +26,7 @@ class Background extends Component {
             <React.Fragment>
                 <Row className="banner">
                     <div className='banner__content'>
-                        <p>Tham gia ngay</p>
+                        <p>Tham gia ngay!</p>
                         <button className="btn btn-signup">Đăng ký</button>
                         <button className="btn btn-login" onClick={this.displayLogin}>
                             Đăng nhập
