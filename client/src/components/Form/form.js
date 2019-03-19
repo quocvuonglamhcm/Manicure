@@ -25,7 +25,7 @@ class Form1 extends Component {
                                 <Form.Group controlId="exampleForm.ControlSelect1">
                                     <label className="SignIn--Label">
                                         Nơi đăng ký hoạt động
-                                                    </label>
+                                    </label>
                                     <Form.Control as="select">
                                         <option>Thành phố Hồ Chí Minh</option>
                                     </Form.Control>
