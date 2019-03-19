@@ -1,0 +1,157 @@
+#main-service{
+			display: flex;
+			margin-left: 5%;
+    		margin-right: 5%;
+    		margin-top: 18px;
+    		margin-bottom: 18px;
+    		width: 90%;
+    	}
+    	#square2{
+			font-family: Open Sans;
+			font-style: normal;
+			font-weight: normal;
+			line-height: normal;
+			font-size: 12px;
+			color: #FFFFFF;
+			width: fit-content 100%;
+			left: 460px;
+			top: 457px;
+			background: #6645C5;
+			border-radius: 15px;
+			text-align: center;
+			padding-top: 7px;
+			padding-bottom: 7px;
+			margin-bottom: 10px;
+			cursor: pointer;
+			height: fit-content;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		#square2:hover {
+			background-color: #6b00b6;
+		}
+		#left-service{
+			width: 25%;
+			border-radius: 9px;
+			box-shadow: 5px 5px 5px #666;
+			-moz-box-shadow: 5px 5px 5px #666;
+  			-webkit-box-shadow: 5px 5px 5px #666;
+  			padding-left: 10px;
+  			padding-top: 10px;
+  			margin-right: 5%;
+  			padding-bottom: 21px;
+  			border-top: 2px solid #666;
+  			border-left: 2px solid #666;
+			  float: left;
+			  height: fit-content;
+		}
+		#left-service .text1 {
+			font-family: Open Sans;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 19px;
+			font-size: 12px;
+			color: #000000;
+			margin-top: 5px;
+		}
+		#right-service{
+			width: 70%;
+			border-radius: 9px;
+			box-shadow: 5px 5px 5px #666;
+			-moz-box-shadow: 5px 5px 5px #666;
+  			-webkit-box-shadow: 5px 5px 5px #666;
+  			padding-top: 9px;
+  			border-top: 2px solid #666;
+  			border-left: 2px solid #666;
+  			float: left;
+		}
+		#left-service .title{
+			font-family: Open Sans;
+			font-style: normal;
+			font-weight: bold;
+			line-height: normal;
+			font-size: 15px;
+			color: #6645C5;
+			margin-bottom: 6px;
+		}
+		#right-service .title1{
+			font-family: Open Sans;
+			font-style: normal;
+			font-weight: bold;
+			line-height: normal;
+			font-size: 22px;
+			color: #6645C5;
+			margin-bottom: 9px;
+			padding-left: 15px;
+		}
+		.box-service{
+			background: #FFFFFF;
+			border: 1px solid #000000;
+			padding-top: 10px;
+			margin-left: 15px;
+			margin-right: 15px;
+			margin-bottom: 30px;
+		}
+		#right-service .text2{
+			font-family: Open Sans;
+			font-style: normal;
+			font-weight: bold;
+			line-height: normal;
+			font-size: 15px;
+			color: #000000;
+			margin-bottom: 14px;
+			margin-top: 14px; 
+		}
+		#right-service .row {
+			margin-top: 18x;
+			width: 100%;
+			
+		}
+		.AnhTronGoi {
+			background-image: url('../../assets/images/TronGoi.svg');
+			background-size: cover;
+			position: relative;
+			width: 100%;
+			background-repeat: no-repeat;
+			height: 200px;
+		}
+		.AnhChamSoc {
+			background-image: url('../../assets/images/ChamSoc.svg');
+			background-size: cover;
+			position: relative;
+			width: 100%;
+			background-repeat: no-repeat;
+			height: 200px;
+		}
+		.AnhDapBot {
+			background-image: url('../../assets/images/DapBot.svg');
+			background-size: cover;
+			position: relative;
+			width: 100%;
+			background-repeat: no-repeat;
+			height: 200px;
+		}
+		.AnhDapGel {
+			background-image: url('../../assets/images/DapGel.svg');
+			background-size: cover;
+			position: relative;
+			width: 100%;
+			background-repeat: no-repeat;
+			height: 200px;
+		}
+		.AnhVeTrangTri {
+			background-image: url('../../assets/images/VeTrangTri.svg');
+			background-size: cover;
+			position: relative;
+			width: 100%;
+			background-repeat: no-repeat;
+			height: 200px;
+		}
+		.AnhDinhDa {
+			background-image: url('../../assets/images/DinhDa.svg');
+			background-size: cover;
+			position: relative;
+			width: 100%;
+			background-repeat: no-repeat;
+			height: 200px;
+		}
