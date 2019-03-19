@@ -27,8 +27,8 @@ class Background extends Component {
                 <Row className="banner">
                     <div className='banner__content'>
                         <p>Tham gia ngay</p>
-                        <button className="btn btn-signup">Đăng ký</button>
-                        <button className="btn btn-login" onClick={this.displayLogin}>
+                        <button className="btn btn-signup"  onClick={this.displayLogin}>Đăng ký</button>
+                        <button className="btn btn-login" >
                             Đăng nhập
                     </button>
                     </div>

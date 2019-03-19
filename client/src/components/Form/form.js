@@ -9,6 +9,9 @@ class Form1 extends Component {
                     <h1 className="SignIn--Title">form đăng ký thợ nail</h1>
                     <Form>
                         <Form.Row>
+                             <div className="information">vui lòng điền đầy đủ thông tin và chính xác</div>
+                        </Form.Row>
+                        <Form.Row>
                             <Col sm='6'>
                                 <Form.Group controlId="exampleForm.ControlInput1">
                                     <Form.Control type="firstname" placeholder="Tên" />
@@ -21,19 +24,18 @@ class Form1 extends Component {
                             </Col>
                         </Form.Row>
                         <Form.Row>
+                            <div className="name">nơi đăng ký hoạt động</div>
+                        </Form.Row>
+                        <Form.Row>
                             <Col>
                                 <Form.Group controlId="exampleForm.ControlSelect1">
-                                    <label className="SignIn--Label">
-                                        Nơi đăng ký hoạt động
-                                    </label>
                                     <Form.Control as="select">
-                                        <option>Thành phố Hồ Chí Minh</option>
+                                        <option className="inputfield">Thành phố Hồ Chí Minh</option>
                                     </Form.Control>
                                 </Form.Group>
                             </Col>
                             <Col>
                                 <Form.Group controlId="exampleForm.ControlSelect1">
-                                    <label className="SignIn--Nailer--Dist"></label>
                                     <Form.Control as="select">
                                         <option>Quận 1</option>
                                         <option>Quận 2</option>
@@ -53,7 +55,8 @@ class Form1 extends Component {
                                 </Form.Group>
                             </Col>
                         </Form.Row>
-                        <Button variant="success">Tiếp tục</Button>
+                            <Button variant="success" className="btn">Tiếp tục</Button>
+                            <Button variant="success" className="btn1">Quay lại</Button>
                     </Form>
                 </div>
             </div>

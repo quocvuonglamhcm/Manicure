@@ -26,11 +26,36 @@
     display:inline;
     margin-left:-50px;
 }
-.SignIn--Nailer--Dist{
-    margin-left:-50px;
-}
 .SignIn--btn{
     /* width:720px; */
     color:orange;
     background:green;
+}
+.SignIn--Nailer .btn1{
+    color:white;
+    background:green;
+    margin:5px;
+}
+.SignIn--Nailer .btn:hover{
+     color:white;
+}
+.SignIn--Nailer .name::first-letter{
+    text-transform: capitalize;
+    margin-left:3px;
+}
+.SignIn--Nailer .inputfield{
+     display: inline;
+}
+.SignIn--Nailer .information::first-letter{
+    text-transform: capitalize;
+}
+.SignIn--Nailer .information{
+   font-size:18px;
+   font-family:Open-Sans;
+   margin-left:5px;
+}
+.SignIn--Nailer .name{
+     font-size:18px;
+     font-family:Open-Sans;
+     margin-left:5px;
 }
