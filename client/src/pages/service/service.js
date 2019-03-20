@@ -24,7 +24,8 @@ class ServicePage extends Component {
 			'Đắp móng gel',
 			'Vẽ trang trí',
 			'Đính đá'
-		]
+		],
+		
 	}
 	// showPopup = () => {
 	// 	this.setState({

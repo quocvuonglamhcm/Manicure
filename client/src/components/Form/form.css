@@ -2,14 +2,21 @@
 {
     margin:7px;
 }
+
 .SignIn--Nailer--form{
-    width:750px;
-    height:450px;
-    border:1px solid lightgray;
+    min-width: 20rem;
+    max-width:40rem;
+    min-height:20.5rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
     background:white;
     margin:auto;
     margin-top:2px;
+    border-radius: 10px;
+    padding: 2rem;
 }
+
 .SignIn--Title{
     text-align:center;
     color:blue;
@@ -18,14 +25,22 @@
     text-transform: capitalize;
 }
 .SignIn--Label{
-    display:inline;
-    margin-left:10px;
+    display: inline;
 }
+
 .SignIn--Nailer--Dist{
-    margin-top:-50px;
+    margin-left:-50px;
 }
+
 .SignIn--btn{
-    width:720px;
+    height: 2rem;
+    border: 0px;
+    width: 8rem;
     color:orange;
     background:green;
+    border-radius: 0.2rem;
+}
+
+.SignIn--btn:hover {
+    background-color: #006400;
 }

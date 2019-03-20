@@ -6,6 +6,8 @@ import MainRoute from '../routers/routers';
 import fireBase from '../js/firebase';
 import { Redirect } from 'react-router-dom';
 import Form from '../components/Form/form';
+import SignIn1 from '../components/SignIn/SignIn';
+import '../components/SignIn/SignIn.css';
 import '../components/Form/form.css';
 // library.add(fab, fas)
 
@@ -73,6 +75,7 @@ class App extends Component {
   			<HeaderComponent/>
     		<MainRoute/>
         <FooterComponent/>
+        <SignIn1/>
     	</div>
     );
   }
