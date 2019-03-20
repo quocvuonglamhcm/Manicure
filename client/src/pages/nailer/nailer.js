@@ -1,8 +1,29 @@
 import React, { Component } from 'react';
+import { Row, Col, Container } from 'react-bootstrap';
+import './nailer.css'
+import NailerID from '../../components/nailer-id/nailer-id'
+import NailerFilterRate from '../../components/nailer-id/nailer-filter-rate'
+import NailerFilterLocation from '../../components/nailer-id/nailer-filter-location'
+
 class NailerPage extends Component {
   render() {
     return (
-      <h1>Trang tho Nail</h1>
+      <Container>
+        <Row>
+          <NailerFilterRate/>
+          <NailerFilterLocation/>
+        </Row>
+        <Row>
+          <div className='col-sm-2'>
+            <NailerID/>
+          </div>
+        </Row>
+        <Row>
+        <div className='col-sm-3 center mt-3'>
+          <button type="button" class="btn btn-primary btn-block">Xem thêm </button>
+        </div>
+        </Row>
+      </Container>
     );
   }
 }

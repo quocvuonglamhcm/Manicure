@@ -17,7 +17,7 @@ export default function FooterComponent() {
     const ic_mobileAlt = <FontAwesomeIcon className="fontSize25 mr-2" icon={faMobileAlt} />
     const ic_envelope = <FontAwesomeIcon className="fontSize25 mr-2" icon={faEnvelope} />
     return (
-        <div className="footer">
+        <div className="footer mt-3">
             <Container>
                 <Row>
                     <Col md={3}>

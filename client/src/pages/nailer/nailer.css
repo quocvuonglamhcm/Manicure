@@ -1,0 +1,36 @@
+.box {
+    border-radius: 5px;
+    border: 1px solid #e7e7e7;
+}
+
+.nailer-box {
+    height: 200px;
+}
+
+.nailer-avatar {
+    background-image: url('https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png');
+    background-size: cover;
+
+    width: 90px;
+    height: 90px;
+}
+
+.nailer-name {
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: normal;
+
+    color: #000000;
+}
+
+.nailer-rate {
+    text-align: center;
+    color: #fff000;
+}
+
+.center {
+    margin: auto;
+}
