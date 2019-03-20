@@ -55,8 +55,8 @@ class Form1 extends Component {
                                 </Form.Group>
                             </Col>
                         </Form.Row>
-                            <Button variant="success" className="btn">Tiếp tục</Button>
-                            <Button variant="success" className="btn1">Quay lại</Button>
+                            <Button variant="success" className="btn">Quay lại</Button>
+                            <Button variant="success" className="btn1">Tiếp tục</Button>
                     </Form>
                 </div>
             </div>
