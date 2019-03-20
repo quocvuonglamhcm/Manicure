@@ -23,7 +23,6 @@ const MainRoute = () => (
      {/* <Route path='/support' component={SupportPage}/> */}
      <Route path='/contact1' component={ContactPage}/>
      <Route path='/contact' component={ModalDialog}/>
-     <Route path='/ABC/xyz' component={Khachhang}/>
    </Switch>
  </main>
 )

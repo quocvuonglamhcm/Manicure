@@ -4,7 +4,7 @@ import './cap-nhat-thong-tin-khach-hang.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
-export default function capnhatthongtinkhachhangComponent() {
+export default function ProfileUser() {
     const ic_exit = <FontAwesomeIcon className="float-left color-red" icon={faTimesCircle} />
     return (
         <div>
