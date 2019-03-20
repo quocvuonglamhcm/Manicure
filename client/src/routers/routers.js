@@ -9,6 +9,8 @@ import ProductPage from '../pages/product/product';
 import NailerPage from '../pages/nailer/nailer';
 import SupportPage from '../pages/support/support';
 import ModalDialog from '../components/modal/modal';
+import NailerPageNew from '../pages/nailer/nailer-new';
+import NailerPageSocial from '../pages/nailer/nailer-social.js';
 
 const MainRoute = () => (
  <main>
@@ -22,6 +24,11 @@ const MainRoute = () => (
      {/* <Route path='/support' component={SupportPage}/> */}
      <Route path='/contact1' component={ContactPage}/>
      <Route path='/contact' component={ModalDialog}/>
+
+     <Route path='/nailer-new' component={NailerPageNew}/>
+     <Route path='/nailer-social' component={NailerPageSocial}/>
+
+
    </Switch>
  </main>
 )
