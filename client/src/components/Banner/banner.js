@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './banner.css'
 import { Row } from 'react-bootstrap';
 
-import LoginContainer from '../login/loginContainer';
+import SignUpContainer from '../login/SignUpContainer';
 import SigninForm from '../Form/form'
 
 class Background extends Component {
@@ -27,14 +27,14 @@ class Background extends Component {
                 <Row className="banner">
                     <div className='banner__content'>
                         <p>Tham gia ngay</p>
-                        <button className="btn btn-signup">Đăng ký</button>
-                        <button className="btn btn-login" onClick={this.displayLogin}>
+                        <button className="btn btn-signup" onClick={this.displayLogin}>Đăng ký</button>
+                        <button className="btn btn-login" >
                             Đăng nhập
                     </button>
                     </div>
                     <SigninForm />
                 </Row>
-                {this.state.isDisplayLogin ? <LoginContainer displayLogin={this.displayLogin} /> : null}
+                {this.state.isDisplayLogin ? <SignUpContainer displayLogin={this.displayLogin} /> : null}
             </React.Fragment>
         );
     }
