@@ -1,0 +1,29 @@
+#main-profile-user{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    width: 40%; 
+        }
+
+        #main-profile-user .row{
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+        }
+
+        #profil-euser-detail{
+           width:100%; 
+            height: 900px;
+            border: 1px solid #c4c4c4;
+        }
+
+        #profil-euser-detail .pu-title{
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: normal;
+            border-radius: 5px;
+            text-align: center !important;
+            color: #000000;
+        }
