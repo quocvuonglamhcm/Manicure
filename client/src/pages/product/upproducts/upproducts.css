@@ -11,7 +11,7 @@
 }
 
 .uploadProduct .pictureView {
-    height: 47.5%;
+    height: 95%;
     width: 100%;
     background-color: #D17CFA;
     border-radius: 0.4rem;
@@ -20,4 +20,12 @@
 .uploadProduct .saveButton {
     width: 100%;
     margin-top: 1.6rem;
+}
+
+.uploadProduct .saveButton {
+	background-color: #8001FF;
+}
+
+.uploadProduct .saveButton:hover {
+	background-color: #5b00b7;
 }

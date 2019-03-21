@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import upProductsPage from './upproducts/upproducts'
+import UpProductsPage from './upproducts/upproducts'
 class ProductPage extends Component {
   componentDidMount() {
     console.log(this.props)
@@ -8,7 +8,7 @@ class ProductPage extends Component {
   }
   render() {
     return (
-    	<upProductsPage />
+    	<UpProductsPage />
     );
   }
 }

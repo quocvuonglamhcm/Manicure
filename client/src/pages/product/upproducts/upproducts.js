@@ -45,7 +45,7 @@ class upProductsPage extends Component {
             <div className='row'>
                 <div className="col-md-5"></div>
                 <div className="col-md-2">
-                    <input className="btn btn-primary saveButton" type="submit" value="LƯU"/>
+                    <input className="btn btn-primary saveButton mb-5" type="submit" value="LƯU"/>
                 </div>
             </div>
         </Container>
