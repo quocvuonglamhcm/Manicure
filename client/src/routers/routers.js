@@ -8,7 +8,7 @@ import ServicePage from '../pages/service/service';
 import ProductPage from '../pages/product/product';
 import NailerPage from '../pages/nailer/nailer';
 import SupportPage from '../pages/support/support';
-import BangGiaDichVu from '../pages/banggiadichsvu/banggiadichvu';
+import BangGiaDichVu from '../pages/banggiadichvu/banggiadichvu';
 
 const MainRoute = () => (
  <main>
