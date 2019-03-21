@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Container, Col, Row, card, } from 'react-bootstrap'
-import './cap-nhat-thong-tin-khach-hang.css';
+import {  Row } from 'react-bootstrap'
+import './profileuser.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 

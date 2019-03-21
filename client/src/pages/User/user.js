@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import ProfileUser from '../../components/profileuser/profileuser';
 
-import ProfileUser from '../../components/cap-nhat-thong-tin-khach-hang/cap-nhat-thong-tin-khach-hang'
+class User extends Component {
+    render() {
+        return (
+            <ProfileUser />
+        );
+      }
+}
 
-const user = () => (
-    <div className='cap-nhat-thong-tin-khach-hang'>
-        <ProfileUser />
-    </div>
-
-)
-export default user;
+export default User

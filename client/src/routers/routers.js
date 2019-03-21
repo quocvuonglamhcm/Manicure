@@ -9,7 +9,7 @@ import ProductPage from '../pages/product/product';
 import NailerPage from '../pages/nailer/nailer';
 import SupportPage from '../pages/support/support';
 import ModalDialog from '../components/modal/modal';
-import Khachhang from '../components/cap-nhat-thong-tin-khach-hang/cap-nhat-thong-tin-khach-hang'
+import User from '../pages/User/user';
 
 const MainRoute = () => (
  <main>
@@ -23,6 +23,7 @@ const MainRoute = () => (
      {/* <Route path='/support' component={SupportPage}/> */}
      <Route path='/contact1' component={ContactPage}/>
      <Route path='/contact' component={ModalDialog}/>
+     <Route path='/user' component={User}/>
    </Switch>
  </main>
 )
