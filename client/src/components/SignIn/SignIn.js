@@ -1,37 +1,42 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import Form from 'react-bootstrap/Form';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Button from 'react-bootstrap/Button';
-class SignIn1 extends Component {
+import { Row, Col } from 'react-bootstrap';
+class FormSignInComponent extends Component {
     render() {
-      return (
-        <div className="Login">
-            <h1>đăng nhập bằng</h1>
-           <Form>
-                <Form.Group as={Row} controlId="formHorizontalPhone">
-                    <Form.Label column sm={2}>
-                            Số điện thoại
-                    </Form.Label>
-                    <Col sm={10}>
-                        <Form.Control type="phone" placeholder="Nhập số điện thoại" className="textfield" />
+        return (
+            <div className="SignInComponent--Nailer">
+                <Form>
+                    <Col>
+                        <div className="title">đăng nhập bằng</div>
                     </Col>
-                </Form.Group>
-
-                <Form.Group as={Row} controlId="formHorizontalPassword">
-                    <Form.Label column sm={2}>
-                        Mật khẩu
-                    </Form.Label>
-                    <Col sm={10}>
-                        <Form.Control type="password" placeholder="Mật khẩu từ 6 đến 32 ký tự" className="txt1" />
-                    </Col>
-                    <p className="reminder">quên mật khẩu?Nhấn vào <enable className="enable">đây</enable></p>
-                </Form.Group>
-                    <Button variant="warning" className="btnSignin">Đăng nhập</Button>
-           </Form>
-        </div>
-      );
+                    <div className="inform">
+                        <Form.Group as={Row} controlId="formPlaintextSĐT">
+                            <Form.Label column sm="2">
+                                <div className="sđt">số điện thoại</div>
+                            </Form.Label>
+                            <Col sm="10">
+                                <Form.Control className="textfield" type="pn" placeholder="Nhập số điện thoại" />
+                            </Col>
+                        </Form.Group>
+                        <Form.Group as={Row} controlId="formPlaintextMK">
+                            <Form.Label column sm="2">
+                                <div className="mk">Mật khẩu</div>
+                            </Form.Label>
+                            <Col sm="10">
+                                <Form.Control className="text" type="mk" placeholder="Nhập mật khẩu" />
+                                <div className="qmk">
+                                    <p className="text1">quên mật khẩu</p>
+                                </div>
+                                <div className="button-SignIn">
+                                    <button className="đn">Đăng nhập</button>
+                                </div>
+                            </Col>
+                        </Form.Group>
+                    </div>
+                </Form>
+            </div>
+        );
     }
-  }
-  
-  export default SignIn1;
+}
+
+export default FormSignInComponent;

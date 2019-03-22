@@ -1,46 +1,75 @@
 .SignIn--Nailer
 {
-    margin:7px;
-}
-
-.SignIn--Nailer--form{
-    min-width: 20rem;
-    max-width:40rem;
-    min-height:20.5rem;
+    right: 0;
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 40px;
+    right: 40px;
+}
+.SignIn--Nailer--form{
+    width:550px;
+    height:320px;
+    border:1px solid lightgray;
     background:white;
     margin:auto;
     margin-top:2px;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 2rem;
 }
-
 .SignIn--Title{
     text-align:center;
-    color:blue;
+    color:black;
+    font-size:18px;
+    font-family:Open Sans;
+    font-weight:bold;
 }
 .SignIn--Title::first-letter{
     text-transform: capitalize;
 }
 .SignIn--Label{
-    display: inline;
-}
-
-.SignIn--Nailer--Dist{
+    display:inline;
     margin-left:-50px;
 }
-
 .SignIn--btn{
-    height: 2rem;
-    border: 0px;
-    width: 8rem;
+    /* width:720px; */
     color:orange;
     background:green;
-    border-radius: 0.2rem;
 }
-
-.SignIn--btn:hover {
-    background-color: #006400;
+.SignIn--Nailer .btn1{
+    color:white;
+    background:green;
+    margin:5px;
+}
+.SignIn--Nailer .btn:hover{
+     color:white;
+}
+.SignIn--Nailer .name::first-letter{
+    text-transform: capitalize;
+    margin-left:3px;
+}
+.SignIn--Nailer .inputfield{
+     display: inline;
+}
+.SignIn--Nailer .information::first-letter{
+    text-transform: capitalize;
+}
+.SignIn--Nailer .information{
+   font-size:18px;
+   font-family:Open-Sans;
+   margin-left:5px;
+}
+.SignIn--Nailer .name{
+     font-size:15px;
+     font-family:Open-Sans;
+     margin-left:20px;
+     padding:10px;
+     font-weight:600;
+     color:black;
+}
+.SignIn--Nailer .lblfirstname{
+    margin-left:20px;
+    font-family:Open Sans;
+    font-weight:600;
+    font-size:15px;
+    color:black;
+    padding:10px;
 }
