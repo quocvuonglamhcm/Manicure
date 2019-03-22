@@ -3,7 +3,7 @@ import { Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 
-import Login from './login'
+import Login from './SignUp'
 import Validation from './validation'
 import InputPassword from './inputPassword'
 

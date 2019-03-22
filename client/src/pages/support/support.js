@@ -1,30 +1,17 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import './support.css';
-class SupportPage extends Component {
-	constructor(props){
-		super(props);
-		this.state = {
-			 nameService: [
-        {
-          name: "đặt lịch",
-          image: ""
-        },
-        {
-          name: "kỹ thuật",
-          image: ""
-        },
-        {
-          name: "tài khoản",
-          image: ""
-        },
-        {
-          name: "từ người thợ",
-          image: ""
-        }
-      ]
-		}
-	}
+import InputGroup from 'react-bootstrap/InputGroup'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 
+// import ic_search_bar from '../../assets/images/ic_global_search_defaul.svg'
+import datlich from '../../assets/images/ic_datlich.svg';
+import kythuat from '../../assets/images/ic_.svg';
+import taikhoan from '../../assets/images/ic_taikhoan.svg';
+import tho from '../../assets/images/ic_tho.svg';
+class SupportPage extends Component {
 	// state = {
 	// 	nameService:[
 	// 		{
@@ -44,7 +31,6 @@ class SupportPage extends Component {
 	// 			image:''
 	// 		},
 	// 	],
-
 	// 	question:[
 	// 		'Tại sao tôi chỉ có 30 phút để đặt mua vé ?',
 	// 		'Tôi có được đặt lịch với nhiều thợ trong cùng một đơn giao dịch không ?',
@@ -52,28 +38,28 @@ class SupportPage extends Component {
 	// 	]
 	// }
 
-  render() {
-  	var element = this.state.nameService.map((item ) => {
-  		return <h1 key ={item+Math.random()}>{ item.name }</h1>
-  	})
-
-    return (
-			<div id="sp_main">
-				<div className="search-bar">
+	render() {
+		let ic_search = <FontAwesomeIcon className="ic-search " icon={faSearch} />
+		return (
+			<div id="sp-main">
+				<div className="sp-search-bar">
 					<div className="par">
 						Xin chào, Nail Partner có thể giúp gì cho bạn?
-							</div>
-					<div className="container">
-						<span className="icon"><i className="fa fa-search"></i></span>
-						<input className="input" type="search" placeholder="Bạn thắc mắc gì về Nail Partner ?"></input>
+					</div>
+
+					<div className="sp-input-form">
+						<input type="search" className="input-text" placeholder="Bạn có thắc mắc gì về Nail Partner" />
+						<button type="button" className="sp-button-search ic_search">
+							{ic_search}
+						</button>
 					</div>
 				</div>
 
-				<div className="menu" >
-					<ul className="menu_ul">
+				<div className="sp-menu" >
+					<ul className="sp-menu_ul">
 						<li>
 							<div className="images">
-								<img src="ic_datlich.svg" />
+								<img src={datlich} />
 							</div>
 							<div className="mn_text">
 								Đặt lịch
@@ -82,7 +68,7 @@ class SupportPage extends Component {
 
 						<li>
 							<div className="images">
-								<img src="ic_.svg" />
+								<img src={kythuat} />
 							</div>
 							<div className="mn_text">
 								Kỹ thuật
@@ -91,7 +77,7 @@ class SupportPage extends Component {
 
 						<li>
 							<div className="images">
-								<img src="ic_taikhoan.svg" />
+								<img src={taikhoan} />
 							</div>
 							<div className="mn_text">
 								Tài khoản
@@ -100,7 +86,7 @@ class SupportPage extends Component {
 
 						<li>
 							<div className="images">
-								<img src="ic_tho.svg" />
+								<img src={tho} />
 							</div>
 							<div className="mn_text">
 								Từ người thợ
@@ -108,7 +94,13 @@ class SupportPage extends Component {
 						</li>
 
 					</ul>
-			</div>
+				</div>
+
+
+				<div className="sp-chatbox sp-contact">
+					<div className="sp-contact-slo">Liên hệ với chúng tôi!</div>
+					<button type="button" className="sp-contact-button">Trò chuyện ngay</button>
+				</div>
 			</div>
 		);
 	}

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './banner.css'
 import { Row } from 'react-bootstrap';
 
-import LoginContainer from '../login/loginContainer';
+import SignUpContainer from '../login/SignUpContainer';
 import SigninForm from '../Form/form'
 import '../Form/form.css';
 class Background extends Component {
@@ -34,7 +34,7 @@ class Background extends Component {
                     </div>
                     <SigninForm />
                 </Row>
-                {this.state.isDisplayLogin ? <LoginContainer displayLogin={this.displayLogin} /> : null}
+                {this.state.isDisplayLogin ? <SignUpContainer displayLogin={this.displayLogin} /> : null}
             </React.Fragment>
         );
     }

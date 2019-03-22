@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+.contact {
+    font-size: 100%;
+}
+
+.contact .text1 {
+    font-size: 1rem;
+}
+
+.contact .text2 {
+    font-size: 1.3rem;
+}
+
+.contact .map {
+    background-color: #D17CFA;
+    width: 100%;
+    min-height: 50%;
+    border-radius: 0.3rem;
+}
+
+.contact .submitButton {
+    width: 30%;
+    background-color: #8001FF;
+}
+
+.contact .submitButton:hover {
+    background-color: #5b00b7;
+}

@@ -113,7 +113,7 @@
 			position: relative;
 			width: 100%;
 			background-repeat: no-repeat;
-			height: 200px;
+			height: 210px;
 		}
 		.AnhChamSoc {
 			background-image: url('../../assets/images/ChamSoc.svg');
@@ -121,7 +121,7 @@
 			position: relative;
 			width: 100%;
 			background-repeat: no-repeat;
-			height: 200px;
+			height: 210px;
 		}
 		.AnhDapBot {
 			background-image: url('../../assets/images/DapBot.svg');
@@ -129,7 +129,7 @@
 			position: relative;
 			width: 100%;
 			background-repeat: no-repeat;
-			height: 200px;
+			height: 210px;
 		}
 		.AnhDapGel {
 			background-image: url('../../assets/images/DapGel.svg');
@@ -137,7 +137,7 @@
 			position: relative;
 			width: 100%;
 			background-repeat: no-repeat;
-			height: 200px;
+			height: 210px;
 		}
 		.AnhVeTrangTri {
 			background-image: url('../../assets/images/VeTrangTri.svg');
@@ -145,7 +145,7 @@
 			position: relative;
 			width: 100%;
 			background-repeat: no-repeat;
-			height: 200px;
+			height: 210px;
 		}
 		.AnhDinhDa {
 			background-image: url('../../assets/images/DinhDa.svg');
@@ -153,7 +153,7 @@
 			position: relative;
 			width: 100%;
 			background-repeat: no-repeat;
-			height: 200px;
+			height: 210px;
 		}
 		.IconCheck{
 			font-family: Open Sans;

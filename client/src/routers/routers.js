@@ -8,7 +8,9 @@ import ServicePage from '../pages/service/service';
 import ProductPage from '../pages/product/product';
 import NailerPage from '../pages/nailer/nailer';
 import SupportPage from '../pages/support/support';
-import ModalDialog from '../components/modal/modal';
+import NailerPageNew from '../pages/nailer/nailer-new';
+import NailerPageSocial from '../pages/nailer/nailer-social.js';
+//import ModalDialog from '../components/modal/modal';
 
 const MainRoute = () => (
  <main>
@@ -19,9 +21,11 @@ const MainRoute = () => (
      <Route path='/service' component={ServicePage}/>
      <Route path='/product/:id' component={ProductPage}/>
      <Route path='/nailer' component={NailerPage}/>
-     {/* <Route path='/support' component={SupportPage}/> */}
-     <Route path='/contact1' component={ContactPage}/>
-     <Route path='/contact' component={ModalDialog}/>
+     <Route path='/support' component={SupportPage}/> 
+     <Route path='/contact' component={ContactPage}/>
+     {/* <Route path='/contact' component={ModalDialog}/>  */}
+     <Route path='/nailer-new' component={NailerPageNew}/>
+     <Route path='/nailer-social' component={NailerPageSocial}/>
    </Switch>
  </main>
 )
