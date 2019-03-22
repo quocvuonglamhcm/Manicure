@@ -99,7 +99,7 @@ class SupportPage extends Component {
 
 				<div className="sp-chatbox sp-contact">
 					<div className="sp-contact-slo">Liên hệ với chúng tôi!</div>
-					<button type="button" className="sp-contact-button">Trò chuyện ngay</button>
+					<Button className="sp-contact-Button">Trò chuyện ngay</Button>
 				</div>
 			</div>
 		);
