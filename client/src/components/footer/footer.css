@@ -58,3 +58,12 @@ img {
 .footer textarea {
     min-height: 5rem;
 }
+
+.footer .sendButton {
+    border: 0px !important;
+    background-color: #5b00b7;
+}
+
+.footer .sendButton:hover {
+    background-color: #5101A2;
+}

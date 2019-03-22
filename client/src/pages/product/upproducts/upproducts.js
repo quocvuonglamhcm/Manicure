@@ -34,12 +34,12 @@ class upProductsPage extends Component {
                             </select>
                         </div>
                         <div className="form-group">
-                            <textarea className="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Nội dung tin nhăn"></textarea>
+                            <textarea className="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Mô tả tác phẩm"></textarea>
                         </div>
                     </form>                    
                 </div>
                 <div className="col-md-6">
-                    <div className="pictureView"></div>
+                    <div className="pictureView">Picture Review</div>
                 </div>
             </div>
             <div className='row'>
