@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
-class RightContent extends Component {
+class Content extends Component {
     constructor(props) {
         super(props)
         this.state = {}
@@ -43,4 +43,4 @@ const TronGoi = () => {
     );
 }
 
-export default RightContent;
+export default Content;

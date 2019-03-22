@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 
 import './service.css'
 
-import LeftContent from '../../components/ServiceDetail/leftContent/leftContent';
-import RightContent from '../../components/ServiceDetail/rightContent/rightContent'
+import Menu from './menu';
+import Content from './content'
 
 
 class ServicePage extends Component {
@@ -23,8 +23,8 @@ class ServicePage extends Component {
 		let {ListService} = this.state;
 		return (
 			<div id="main-service">
-				<LeftContent data = {ListService}/>
-				<RightContent />
+				<Menu data = {ListService}/>
+				<Content />
 			</div>
 		);
 	}
