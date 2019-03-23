@@ -35,7 +35,7 @@ export default function FooterComponent() {
                                 <label htmlFor="exampleInputEmail1">Gửi Email phản hồi</label>
                                 <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="mail@example.com" />
                             </div>
-                            <div className="form-group font-weight-bold">
+                            <div className="form-group font-weight-bold mt-1">
                                 <label htmlFor="exampleFormControlTextarea1">Nội dung</label>
                                 <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Nhập nội dung cần tư vấn" rows="4"></textarea>
                             </div>
