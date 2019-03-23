@@ -20,7 +20,7 @@ export default function FooterComponent() {
         <div className="footer">
             <Container>
                 <Row>
-                    <Col sm={3} md={3} sx={3}>
+                    <Col md={3}>
                         <div className="aboutUsTitle font-weight-bold pb-2">
                             Về chúng tôi
                         </div>
@@ -29,7 +29,7 @@ export default function FooterComponent() {
                             </div>
                         <div className="font-weight-bold pt-2">Điều khoản và điều lệ</div>
                     </Col>
-                    <Col sm={3} md={3} sx={3}>
+                    <Col md={3}>
                         <form>
                             <div className="font-weight-bold">
                                 <label htmlFor="exampleInputEmail1">Gửi Email phản hồi</label>
@@ -42,7 +42,7 @@ export default function FooterComponent() {
                             <button type="submit" className="btn btn-primary sendButton">GỬI</button>
                         </form>
                     </Col>
-                    <Col sm={3} md={3} sx={3}>
+                    <Col md={3}>
                         <div className="download font-weight-bold pb-2">Tải App</div>
                         <div className="chPlay pb-1">
                             <img src={img2} alt="ChPlay" />
@@ -51,7 +51,7 @@ export default function FooterComponent() {
                             <img src={img1} alt="Appstore" />
                         </div>
                     </Col>
-                    <Col sm={3} md={3} sx={3}>
+                    <Col md={3}>
                         <div className="contactTitle font-weight-bold pb-2">Thông tin liên hệ</div>
                         <div className="address pb-1">
                             <a href='https://www.google.com/maps' rel="noopener noreferrer" target="_blank">
@@ -69,22 +69,22 @@ export default function FooterComponent() {
                             </a>
                         </div>
                         <Row className="footSocial">
-                            <Col sm={3} md={3} sx={3}>
+                            <Col sm={3}>
                                 <a href="https://www.twitter.com" rel="noopener noreferrer">
                                     {ic_facebook}
                                 </a>
                             </Col>
-                            <Col sm={3} md={3} sx={3}>
+                            <Col sm={3}>
                                 <a href="https://www.linkedin.com" rel="noopener noreferrer">
                                     {ic_instagram}
                                 </a>
                             </Col>
-                            <Col sm={3} md={3} sx={3}>
+                            <Col sm={3}>
                                 <a href="https://www.facebook.com" rel="noopener noreferrer">
                                     {ic_youtube}
                                 </a>
                             </Col>
-                            <Col sm={3} md={3} sx={3}>
+                            <Col sm={3}>
                                 <a href="https://www.skype.com" rel="noopener noreferrer">
                                     {ic_twitter}
                                 </a>
