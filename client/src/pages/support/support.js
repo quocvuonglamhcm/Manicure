@@ -10,19 +10,27 @@ import taikhoan from '../../assets/images/ic_taikhoan.svg';
 import tho from '../../assets/images/ic_tho.svg';
 
 class SupportPage extends Component {
+	state = {
+		name: [
+			'đặt lịch',
+			'kỹ thuật',
+			'tài khoản',
+			'từ người thợ'
+		]
+	}
 	render() {
 		let ic_search = <FontAwesomeIcon className="ic-search " icon={faSearch} />
 		return (
-			<Container className='text-center mt-4'>
+			<Container className='text-center mt-4' id="support">
 				<Row >
 					<Col>
-						<h2>Xin chào, Nail Partner có thể giúp gì cho bạn?</h2>
+						<div className='slo'>Xin chào, Nail Partner có thể giúp gì cho bạn?</div>
 					</Col>
 				</Row>
 				<Row className="justify-content-center m-3">
 					<Col sm={6}>
 						<InputGroup className="mb-3" size='sm'>
-							<FormControl
+							<FormControl className='form-input'
 								placeholder="Bạn có thắc mắc gì về Nail Partner"
 							/>
 							<InputGroup.Append>
@@ -32,10 +40,8 @@ class SupportPage extends Component {
 					</Col>
 				</Row>
 				<Row>
-					<Item />
-					<Item />
-					<Item />
-					<Item />
+					<Item data={this.state.name} />
+				
 				</Row>
 				<Row className="m-4">
 					<Col>
@@ -49,16 +55,25 @@ class SupportPage extends Component {
 }
 
 
-const Item = () => {
-	return (
-		<Col >
-			<div className='box-image'>
-				<div className="image">
-					<img src={datlich} />
-				<div className="mn_text">Đặt lịch</div>
+const Item = (props) => {
+	let data = props.data;
+	let element = data.map((item, index) => {
+		return (
+			<Col key={index}>
+				<div className='box-image'>
+					<div className="image">
+						<img src={datlich} />
+						<div className="mn_text">{item}</div>
+					</div>
 				</div>
-			</div>
-		</Col>
+			</Col>
+		)
+	})
+	console.log(element)
+	return (
+		element
+
 	)
+	
 }
 export default SupportPage;
