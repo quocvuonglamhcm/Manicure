@@ -10,6 +10,7 @@ import NailerPage from '../pages/nailer/nailer';
 import SupportPage from '../pages/support/support';
 import NailerPageNew from '../pages/nailer/nailer-new';
 import NailerPageSocial from '../pages/nailer/nailer-social.js';
+import FormSignInComponent from '../components/SignIn/SignIn';
 //import ModalDialog from '../components/modal/modal';
 
 const MainRoute = () => (
@@ -26,6 +27,7 @@ const MainRoute = () => (
      {/* <Route path='/contact' component={ModalDialog}/>  */}
      <Route path='/nailer-new' component={NailerPageNew}/>
      <Route path='/nailer-social' component={NailerPageSocial}/>
+     <Route path='/SignIn' component={FormSignInComponent}/>
    </Switch>
  </main>
 )

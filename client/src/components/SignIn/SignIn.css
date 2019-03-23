@@ -1,94 +1,12 @@
 .SignInComponent--Nailer{
-    width:895px;
-    height:450px;
-    border:1px solid lightgray;
+    width:540px;
+    height:300px;
     margin:auto;
-    background:dodgerblue;
+    background:#BD34FE;;
     border-radius:5px;
+    padding: 30px 95px;
+    color: #FFF;
 }
-.SignInComponent--Nailer .title{
-     margin-left:350px;
-}
-.SignInComponent--Nailer .title::first-letter{
+.SignInComponent--Nailer ::first-letter{
     text-transform: capitalize;
-}
-.SignInComponent--Nailer .title{
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    color: #000000;
-}
-.SignInComponent--Nailer .sđt::first-letter{
-    text-transform: capitalize;
-}
-.SignInComponent--Nailer .sđt{
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight:600;
-    color:black;
-    font-size: 12px;
-    margin-left:25px;
-}
-.SignInComponent--Nailer .textfield{
-    width:350px;
-    height:30px;
-    margin-left:-20px;
-    
-}
-.SignInComponent--Nailer .inform{
-    margin-left:150px;
-}
-.SignInComponent--Nailer .group{
-    margin-left:30px;
-}
-.SignInComponent--Nailer .mk{
-    margin-left:24px;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight:600;
-    color:black;
-    font-size: 12px;
-}
-.SignInComponent--Nailer .textfield1{
-    width:150px;
-    margin-left:-19px;
-}
-.SignInComponent--Nailer .text{
-    width:200px;
-    margin-left:-18px;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight:600;
-    color:black;
-    font-size: 12px;
-}
-.SignInComponent--Nailer .qmk{
-     margin-left:200px;
-     margin-top:-30px;
-     font-family: Open Sans;
-     font-style: normal;
-     font-weight:600;
-     color:black;
-     font-size: 12px;
-     border:1px solid black; 
-     width:127px;
-     height:30px;
-     border-radius:5px;
-}
-.SignInComponent--Nailer .text1{
-    margin-left:25px;
-    margin-top:5px;
-}
-.SignInComponent--Nailer .button-SignIn{
-    margin:5px;
-    margin-left:-17px;
-    width:220px;
-    background:orangered;
-}
-.SignInComponent--Nailer .đn{
-     margin-left:70px;
-     background:orangered;
-     border:1px solid orangered;
-     color:white;
 }

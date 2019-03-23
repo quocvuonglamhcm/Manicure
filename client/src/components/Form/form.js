@@ -17,7 +17,7 @@ class Form1 extends Component {
                                     <Form.Control type="firstname" placeholder="Tên" />
                                 </Form.Group>
                             </Col>
-                            <Col sm='6'>
+                            <Col sm={6} md={6} sx={6}>
                                 <Form.Group controlId="exampleForm.ControlInput1">
                                     <Form.Control type="middlename" placeholder="Họ và tên đệm" />
                                 </Form.Group>

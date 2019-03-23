@@ -60,13 +60,13 @@
 .SignIn--Nailer .name{
      font-size:15px;
      font-family:Open-Sans;
-     margin-left:20px;
+     margin-left:5%;
      padding:10px;
      font-weight:600;
      color:black;
 }
 .SignIn--Nailer .lblfirstname{
-    margin-left:20px;
+    margin-left: 5%;
     font-family:Open Sans;
     font-weight:600;
     font-size:15px;
