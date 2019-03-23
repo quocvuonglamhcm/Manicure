@@ -21,6 +21,8 @@ export default function bodyloiichComponent() {
                     {ic_check}
                     <div className='ContentLoiIch'>Thuận tiện trao đổi với mọi người về những tác phẩm đẹp</div></Row>
             </div>
+
+            <div class='line'></div>
             <div id='card-2'>
                 <div className='text-tieu-de '>Thợ Nails </div>
                 <Row>{ic_check}

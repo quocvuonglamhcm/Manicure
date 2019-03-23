@@ -6,7 +6,8 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import Form from 'react-bootstrap/Form';
-import Oneclick from '../../todos/Oneclick';
+import  './banggiadichvu.css';
+// import Oneclick from '../../Oneclick/oneclick/';
 
 class BangGiaDichVu extends Component {
   render() {
@@ -54,7 +55,7 @@ class BangGiaDichVu extends Component {
               </div>
             </Col>
             <Col><h4>VND</h4></Col>
-            <Col><button oneclick = {Oneclick} >+</button></Col>
+            {/* <Col><button oneclick = {Oneclick} >+</button></Col> */}
             <Col><button oneclick>-</button></Col>
           </Row>
           <Row>
