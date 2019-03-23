@@ -13,7 +13,7 @@ class ContactPage extends Component {
                         </Col>
                     </Row>
                     <Row className = 'mb-4'>
-                        <Col sm={6}>
+                        <Col sm={6} md={6} sx={6}>
                             {/* <form>
                                 <div className="text1">Hoặc để lại tin nhắn, chúng tôi sẽ liên lạc với bạn trong thời gian sớm nhất.</div>
                                 <div className="form-group">
