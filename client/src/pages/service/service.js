@@ -1,19 +1,14 @@
 import React, { Component } from 'react';
-
-
+import { Row, Col, Container } from 'react-bootstrap';
 import './service.css'
-
 import LeftContent from '../../components/ServiceDetail/leftContent/leftContent';
 import RightContent from '../../components/ServiceDetail/rightContent/rightContent'
-
-// import ChamSocPopUp from '../../components/ServiceDetail/ChamSocPopUp';
-// import DapBotPopUp from '../../components/ServiceDetail/DapBotPopUp';
-// import DapGelPopUp from '../../components/ServiceDetail/DapGelPopUp';
-// import DinhDaPopUp from '../../components/ServiceDetail/DinhDaPopUp';
-// import TronGoiPopUp from '../../components/ServiceDetail/TronGoiPopUp';
-// import VePopUp from '../../components/ServiceDetail/VePopUp';
-
-
+import ChamSocPopUp from '../../components/ServiceDetail/ChamSocPopUp';
+import DapBotPopUp from '../../components/ServiceDetail/DapBotPopUp';
+import DapGelPopUp from '../../components/ServiceDetail/DapGelPopUp';
+import DinhDaPopUp from '../../components/ServiceDetail/DinhDaPopUp';
+import TronGoiPopUp from '../../components/ServiceDetail/TronGoiPopUp';
+import VePopUp from '../../components/ServiceDetail/VePopUp';
 
 class ServicePage extends Component {
 	state = {
@@ -53,7 +48,7 @@ class ServicePage extends Component {
 						<Col sm={4} md={4} sx={4}>
 							
 							<Col sm={12} md={12} sx={12}>
-              {this.state.status ? <TronGoiPopUp /> : null}
+             				{this.state.status ? <TronGoiPopUp /> : null}
 								<img width="100%" height="200px" src="https://muachungcdn.com/thumb_w/960,99/product/thumbnail/2017/06/26/0.734900001498475106.jpg" />
 								<div className="text2">Trọn gói cho tay hoặc chân</div>
 								<Row>
@@ -67,7 +62,7 @@ class ServicePage extends Component {
 							</Col>
 						</Col>
 						<Col sm={4} md={4} sx={4}>
-						{this.state.status ? <ChamSocPopUp /> : null}
+							{this.state.status ? <ChamSocPopUp /> : null}
 							<Col sm={12} md={12} sx={12}>
 								<img width="100%" height="200px" src="https://s1.bloganchoi.com/wp-content/uploads/2016/08/anh-tieu-bieu-1.jpg" />
 								<div className="text2">Chăm sóc móng tay hoặc chân</div>
@@ -82,7 +77,7 @@ class ServicePage extends Component {
 							</Col>
 						</Col>
 						<Col sm={4} md={4} sx={4}>
-						{this.state.status ? <DapBotPopUp /> : null}
+							{this.state.status ? <DapBotPopUp /> : null}
 							<Col sm={12} md={12} sx={12}>
 								<img width="100%" height="200px" src="http://dephiendai.vn/hinhanh/cac-mau-nail-tong-hong-dep-5952090c10294.jpeg" />
 								<div className="text2">Đắp bột</div>
@@ -99,7 +94,7 @@ class ServicePage extends Component {
 					</Row>
 					<Row>
 						<Col sm={4} md={4} sx={4}>
-						{this.state.status ? <DapGelPopUp /> : null}
+							{this.state.status ? <DapGelPopUp /> : null}
 							<Col sm={12} md={12} sx={12}>
 								<img width="100%" height="200px" src="http://newschoolsaigon.com/publicimages/photos/images/cac-mau-nail-dap-gel-1.jpg" />
 								<div className="text2">Đắp móng gel</div>
@@ -114,7 +109,7 @@ class ServicePage extends Component {
 							</Col>
 						</Col>
 						<Col sm={4} md={4} sx={4}>
-						{this.state.status ? <VePopUp /> : null}
+							{this.state.status ? <VePopUp /> : null}
 							<Col sm={12} md={12} sx={12}>
 								<img width="100%" height="200px" src="https://znews-photo.zadn.vn/w660/Uploaded/cqxrcajwp/2015_06_09/1.jpg" />
 								<div className="text2">Vẽ trang trí</div>
@@ -129,7 +124,7 @@ class ServicePage extends Component {
 							</Col>
 						</Col>
 						<Col sm={4} md={4} sx={4}>
-						{this.state.status ? <DinhDaPopUp /> : null}
+							{this.state.status ? <DinhDaPopUp /> : null}
 							<Col sm={12} md={12} sx={12}>
 								<img width="100%" height="200px" src="http://www.xaluan.com/images/news/Image/2018/04/19/75ad7f3ea971c0.img.jpg" />
 								<div className="text2">Đính đá</div>
@@ -144,6 +139,7 @@ class ServicePage extends Component {
 							</Col>
 						</Col>
 					</Row>
+				</div>
 			</div>
 		);
 	}
