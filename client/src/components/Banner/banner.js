@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import './banner.css'
 import { Row } from 'react-bootstrap';
-
 import SignUpContainer from '../login/SignUpContainer';
-import SigninForm from '../Form/form'
-import '../Form/form.css';
 class Background extends Component {
     constructor(props) {
         super(props)
@@ -12,7 +9,6 @@ class Background extends Component {
             isDisplayLogin: false
         }
     }
-
 
     displayLogin = () => {
         this.setState({
@@ -27,12 +23,13 @@ class Background extends Component {
                 <Row className="banner">
                     <div className='banner__content'>
                         <p>Tham gia ngay</p>
-                        <button className="btn btn-signup"onClick={this.displayLogin}>Đăng ký</button>
+                        <button className="btn btn-signup" onClick={this.displayLogin}>
+                            Đăng ký
+                        </button>
                         <button className="btn btn-login">
                             Đăng nhập
-                    </button>
+                        </button>
                     </div>
-                    <SigninForm />
                 </Row>
                 {this.state.isDisplayLogin ? <SignUpContainer displayLogin={this.displayLogin} /> : null}
             </React.Fragment>

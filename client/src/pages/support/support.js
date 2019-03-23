@@ -10,6 +10,7 @@ import kythuat from '../../assets/images/ic_.svg';
 import taikhoan from '../../assets/images/ic_taikhoan.svg';
 import tho from '../../assets/images/ic_tho.svg';
 
+
 class SupportPage extends Component {
 	// state = {
 	// 	name: [

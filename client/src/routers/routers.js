@@ -10,11 +10,9 @@ import NailerPage from '../pages/nailer/nailer';
 import SupportPage from '../pages/support/support';
 import NailerPageNew from '../pages/nailer/nailer-new';
 import NailerPageSocial from '../pages/nailer/nailer-social.js';
-import FormSignInComponent from '../components/SignIn/SignIn';
-import Bangiadichvu from '../pages/banggiadichsvu/banggiadichvu';
-import upProductsPage from '../pages/upproducts/upproducts';
-//import ModalDialog from '../components/modal/modal';
-
+import SignIn from '../pages/signin/signin';
+import SignUp from '../pages/signup/signup';
+import Form123 from '../pages/FormComponent/FormComponent';
 const MainRoute = () => (
  <main>
    <Switch>
@@ -29,9 +27,9 @@ const MainRoute = () => (
      {/* <Route path='/contact' component={ModalDialog}/>  */}
      <Route path='/nailer-new' component={NailerPageNew}/>
      <Route path='/nailer-social' component={NailerPageSocial}/>
-     <Route path='/SignIn' component={FormSignInComponent}/>
-     <Route path='/Banggiadichvu' component={Bangiadichvu}/>
-     <Route path='/upproducts' component={upProductsPage}/>
+     <Route path='/signin' component={SignIn}/>
+     <Route path='/signup' component={SignUp}/>
+     <Route path='/Form123' component ={Form123}/>
    </Switch>
  </main>
 )
