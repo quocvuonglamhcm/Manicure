@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Form from 'react-bootstrap/Form';
 import { Row, Col } from 'react-bootstrap';
-import './SignIn.css'
-class FormSignInComponent extends Component {
+import './signin.css'
+
+class SignIn extends Component {
     render() {
         return (
             <div className="SignInComponent--Nailer">
@@ -40,4 +41,4 @@ class FormSignInComponent extends Component {
     }
 }
 
-export default FormSignInComponent;
+export default SignIn;

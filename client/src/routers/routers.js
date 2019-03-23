@@ -10,7 +10,8 @@ import NailerPage from '../pages/nailer/nailer';
 import SupportPage from '../pages/support/support';
 import NailerPageNew from '../pages/nailer/nailer-new';
 import NailerPageSocial from '../pages/nailer/nailer-social.js';
-//import ModalDialog from '../components/modal/modal';
+import SignIn from '../pages/signin/signin';
+import SignUp from '../pages/signup/signup';
 
 const MainRoute = () => (
  <main>
@@ -26,6 +27,8 @@ const MainRoute = () => (
      {/* <Route path='/contact' component={ModalDialog}/>  */}
      <Route path='/nailer-new' component={NailerPageNew}/>
      <Route path='/nailer-social' component={NailerPageSocial}/>
+     <Route path='/signin' component={SignIn}/>
+     <Route path='/signup' component={SignUp}/>
    </Switch>
  </main>
 )
