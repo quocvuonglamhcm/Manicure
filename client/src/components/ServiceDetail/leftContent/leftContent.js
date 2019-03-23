@@ -9,19 +9,19 @@ class LeftContent extends Component {
         let data  = this.props.data;
         console.log(data)
         let ele = data.map((item, index) => {
-            return (<li key={index}>
-                <a> {item}</a>
-            </li>
+            return (<div key={index}>
+                 {item}
+            </div>
             )
         })
         return (
             <div id='left-service'>
-                <h2 className='title'>Danh sách dịch vụ</h2>
-                <ul>
+                <div className='title'>Danh sách dịch vụ</div>
+                <div className="text1">
                     {
                         ele
                     }
-                </ul>
+                </div>
             </div>
         );
     }
