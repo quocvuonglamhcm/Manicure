@@ -47,7 +47,7 @@
             height: 200px;
         } */
         #profile-user-detail .avt-profie-user-detail{
-            background-image: ('https://image.flaticon.com/icons/svg/149/149070.svg');
+            background-image: ('../../.avt-profie-user-detail');
             margin: auto;
             width: 200px;
             height: 200px;
