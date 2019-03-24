@@ -12,7 +12,7 @@ class Form1 extends Component {
                              <Form.Label>Họ và tên</Form.Label>
                         </Form.Row>
                         <Form.Row>
-                            <Col sm='6'>
+                            <Col sm={6} md={6} sx={6}>
                                 <Form.Group controlId="exampleForm.ControlInput1">
                                     <Form.Control type="firstname" placeholder="Tên" />
                                 </Form.Group>

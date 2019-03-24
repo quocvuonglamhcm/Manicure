@@ -12,7 +12,7 @@ class ServicePage extends Component {
 		ListService : [
 			'Trọn gói cho tay và chân',
 			'Chăm sóc móng tay hoặc chân',
-			'Đắp mặt',
+			'Đắp bột',
 			'Đắp móng gel',
 			'Vẽ trang trí',
 			'Đính đá'

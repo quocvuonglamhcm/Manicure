@@ -6,7 +6,7 @@ export default function Ve() {
         <Col sm={4} md={4} sx= {4} >
             <Col sm={12} md={12} sx={12} className='box-service'>
             <div className="AnhVeTrangTri"></div>
-                <div className="text2">Trọn gói cho tay hoặc chân</div>
+                <div className="text2">Vẽ trang trí</div>
                 <Row >
                     <Col sm={7} md={7} sx={7} >
                         <div id='square2'>Thông tin thêm</div>

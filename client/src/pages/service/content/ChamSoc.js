@@ -6,7 +6,7 @@ export default function ChamSoc() {
         <Col sm={4} md={4} sx= {4} >
             <Col sm={12} md={12} sx={12} className='box-service'>
             <div className="AnhChamSoc"></div>
-                <div className="text2">Trọn gói cho tay hoặc chân</div>
+                <div className="text2">Chăm sóc móng tay hoặc chân</div>
                 <Row >
                     <Col sm={7} md={7} sx={7} >
                         <div id='square2'>Thông tin thêm</div>

@@ -38,23 +38,23 @@ class BangGiaDichVu extends Component {
             <Col>
               <div>
                 <InputGroup size="sm">
-                <Form>
-                <Form.Group size="sm" type="text" placeholder="Small text" controlId="exampleForm.ControlSelect1">
-                  <Form.Control size="sm" type="text" placeholder="Small text" as="select">
-                    <option>5000</option>
-                    <option>6000</option>
-                    <option>7000</option>
-                    <option>8000</option>
-                    <option>9000</option>
-                    <option>10000</option>
-                  </Form.Control>
-                </Form.Group>
-              </Form>                 
+                  <Form>
+                    <Form.Group size="sm" type="text" placeholder="Small text" controlId="exampleForm.ControlSelect1">
+                      <Form.Control size="sm" type="text" placeholder="Small text" as="select">
+                        <option>5000</option>
+                        <option>6000</option>
+                        <option>7000</option>
+                        <option>8000</option>
+                        <option>9000</option>
+                        <option>10000</option>
+                      </Form.Control>
+                    </Form.Group>
+                  </Form>
                 </InputGroup>
               </div>
             </Col>
             <Col><h4>VND</h4></Col>
-            <Col><button oneclick = {Oneclick} >+</button></Col>
+            <Col><button oneclick={Oneclick} >+</button></Col>
             <Col><button oneclick>-</button></Col>
           </Row>
           <Row>
@@ -66,7 +66,7 @@ class BangGiaDichVu extends Component {
                   </InputGroup.Prepend>
                   Toi dong y voi cac dieu khoan hoat dong va chinh sach bao mat cua nail bartner
                 </InputGroup>
-               
+
               </div>
             </Col>
           </Row>
