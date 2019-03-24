@@ -12,6 +12,7 @@ import NailerPageNew from '../pages/nailer/nailer-new';
 import NailerPageSocial from '../pages/nailer/nailer-social.js';
 import FormSignInComponent from '../components/SignIn/SignIn';
 import Bangiadichvu from '../pages/banggiadichsvu/banggiadichvu';
+import upProductsPage from '../pages/upproducts/upproducts';
 //import ModalDialog from '../components/modal/modal';
 
 const MainRoute = () => (
@@ -30,6 +31,7 @@ const MainRoute = () => (
      <Route path='/nailer-social' component={NailerPageSocial}/>
      <Route path='/SignIn' component={FormSignInComponent}/>
      <Route path='/Banggiadichvu' component={Bangiadichvu}/>
+     <Route path='/upproducts' component={upProductsPage}/>
    </Switch>
  </main>
 )

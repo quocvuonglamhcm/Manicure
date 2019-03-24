@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col, Container, Form, Button } from 'react-bootstrap';
-import './contact.css'
+import './contact.css';
+import Map from './map.svg';
 
 class ContactPage extends Component {
   render() {
@@ -39,7 +40,7 @@ class ContactPage extends Component {
           <Row>
             <Col>
               <div className="map mb-5 mt-4">
-
+                <img src={Map} alt='Dia chi lien lac' />
               </div>
             </Col>
           </Row>
