@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col, Form } from 'react-bootstrap';
+import "./profileuserdetail.css";
 
 
 class ProfileUserdetail extends Component {
@@ -9,9 +10,9 @@ class ProfileUserdetail extends Component {
                   <div id='profile-user-detail'>
                         <Row> <div className='mt-1 pu-title'>Cập nhật thông tin tài khoản </div></Row>
 
-                        <Row> <div className='mt-1' id='line'></div></Row>
+                        <Row className='mt-1' id='line'></Row>
 
-                        <Row className='body-avt'> <div className='avt-profie-user-detail'> </div> </Row>
+                        <Row className='body-avt' className='avt-profie-user-detail'>  </Row>
 
                         <Row > <button className="button mt-1 button-avt button3">Cập nhật ảnh</button></Row>
                         {/* card hovaten */}
