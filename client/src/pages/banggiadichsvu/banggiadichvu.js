@@ -7,18 +7,18 @@ import Button from 'react-bootstrap/Button';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import Form from 'react-bootstrap/Form';
 import './banggiadichvu.css';
-import datlich from '../../assets/images/plus-circle-solid.svg';
-import datlich1 from '../../assets/images/minus-circle-solid.svg';
-//import { FontAwesomeIcon } from '@fontawesome/react-fontawesome';
-//import { plus-circle } from '@fontawesome/free-solid-svg-icons';
-//import { minus-circle } from '@fontawesome/free-solid-svg-icons';
+//import datlich from '../../assets/images/plus-circle-solid.svg';
+//import datlich1 from '../../assets/images/minus-circle-solid.svg';
+import { FontAwesomeIcon } from '@fontawesome/react-fontawesome';
+import { faPlusCircle } from '@fontawesome/free-solid-svg-icons';
+import { faminuscircle } from '@fontawesome/free-solid-svg-icons';
 
 
 class BangGiaDichVu extends Component {
 
   render() {
-    //let ic_plus = <FontAwesomeIcon className="ic_plus " icon={plus-circle} />
-    //let ic_minus = <FontAwesomeIcon className="ic_minus " icon={minus-circle} />
+    let ic_plus = <FontAwesomeIcon className="ic_plus " icon={faPlusCircle} />
+    let ic_minus = <FontAwesomeIcon className="ic_minus " icon={faminuscircle} />
     return (
       <div className="BangGiaDichVu">
         <div>
@@ -26,9 +26,9 @@ class BangGiaDichVu extends Component {
             <div><h1 className="text-title">Bang Gia Dich Vu</h1></div>
             <div><h1 className="button-title"><Button variant="suscess" className="button1">
               <div className="datlich-image">
-                <div className="i-image">
-                  <img src={datlich} />
-                </div>
+                {/* <div className="i-image">
+                  {ic_plus} 
+                </div> */}
               </div>
             </Button></h1></div>
           </div>
@@ -66,9 +66,10 @@ class BangGiaDichVu extends Component {
               <Col><h4 className="gia">VND</h4></Col>
               <Col><Button variant="suscess" className="button1">
                 <div className="datlich-image">
-                  <div className="i-image">
+                  {ic_plus}
+                  {/* <div className="i-image">
                     <img src={datlich1} />
-                  </div>
+                  </div> */}
                 </div>
               </Button> </Col>
             </Row>
@@ -99,7 +100,10 @@ class BangGiaDichVu extends Component {
               <Col><Button variant="suscess" className="button1">
                 <div className="datlich-image">
                   <div className="i-image">
-                    <img src={datlich1} />
+                    {ic_plus}
+                  </div>
+                  <div className="i-image">
+                    {ic_minus}
                   </div>
                 </div>
               </Button> </Col>
@@ -130,30 +134,36 @@ class BangGiaDichVu extends Component {
               <Col><h4 className="gia">VND</h4></Col>
               <Col><Button variant="suscess" className="button1">
                 <div className="datlich-image">
-                  <div className="i-image">
-                    <img src={datlich1} />
+                <div className="i-image">
+                    {ic_plus}
                   </div>
+                  <div className="i-image">
+                    {ic_minus}
+                  </div>
+                  {/* <div className="i-image">
+                    <img src={datlich1} />
+                  </div> */}
                 </div>
               </Button> </Col>
             </Row>
             <Row>
 
-              <div>
+              {/* <div>
                 <InputGroup className="mb-3">
                   <Form.Check aria-label="option 2" />
                   Toi dong y voi cac dieu khoan hoat dong va chinh sach bao mat cua nail bartner
                 </InputGroup>
-              </div>
+              </div> */}
 
             </Row>
             <Row>
-              
-                <div className= "button-dang-ky">
-                  <ButtonToolbar className="button-dang-ky">
-                    <Button variant size="lg" className="button-dang-ky">Hoan Thanh</Button>
-                  </ButtonToolbar>
-                </div>
-              
+
+              <div className="button-dang-ky">
+                <ButtonToolbar className="button-dang-ky">
+                  <Button variant size="lg" className="button-dang-ky">Hoan Thanh</Button>
+                </ButtonToolbar>
+              </div>
+
 
             </Row>
           </Container>;
