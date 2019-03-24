@@ -17,15 +17,29 @@
 .contact .map {
     background-color: #D17CFA;
     width: 100%;
-    min-height: 50%;
+    min-height: 20rem;
     border-radius: 0.3rem;
 }
 
+@media only screen and (max-width: 800px) {
+    .contact .map {
+        background-color: #D17CFA;
+        width: 100%;
+        min-height: 16rem;
+        border-radius: 0.3rem;
+    }
+}
+
+.contact Form {
+    margin-top: 1rem;
+}
+
 .contact .submitButton {
-    width: 30%;
-    background-color: #8001FF;
+    width: 30% !important;
+    background-color: #8001FF !important;
+    border: 0px !important;
 }
 
 .contact .submitButton:hover {
-    background-color: #5b00b7;
+    background-color: #5b00b7 !important;
 }

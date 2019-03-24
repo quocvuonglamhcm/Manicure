@@ -1,13 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
-
-const Item = () => {
+export default function DapGel() {
     return (
         <Col sm={4} md={4} sx= {4} >
             <Col sm={12} md={12} sx={12} className='box-service'>
-            <div className="AnhTronGoi"></div>
-                <div className="text2">Trọn gói cho tay hoặc chân</div>
+            <div className="AnhDapGel"></div>
+                <div className="text2">Đắp móng Gel</div>
                 <Row >
                     <Col sm={7} md={7} sx={7} >
                         <div id='square2'>Thông tin thêm</div>
@@ -20,6 +19,3 @@ const Item = () => {
         </Col>
     );
 }
-
-
-export default Item;

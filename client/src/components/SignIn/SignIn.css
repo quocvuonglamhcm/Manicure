@@ -1,46 +1,12 @@
-.Login{
-    width:80%;
-    height:450px;
-    border:1px solid white;
-    border-radius:10px;
-    background:lightgray;
-    margin-left:10%;
-    margin-right:10%;
-}
-.Login h1{
-   font-size:18px;
-   font-family: Roboto;
-   text-align:center;   
-}
-.Login h1::first-letter{
-    text-transform:capitalize;
-}
-.Login .textfield{
-    width:300px;
-    margin-left:100px;
-}
-.Login .txt1{
-    width:300px;
-    margin-left:100px;
-}
-.Login .reminder::first-letter{
-     text-transform:capitalize;
-}
-.Login .reminder{
-    font-size:18px;
-    font-family:Roboto;
-    margin-left:250px;
-}
-.Login .enable{
-    color:black;
-    opacity:0.2;
-}
-.Login .btnSignin{
-    width:350px;
-    margin-left:140px;
-    color:white;
+.SignInComponent--Nailer{
+    width:540px;
+    height:300px;
+    margin:auto;
+    background:#BD34FE;;
     border-radius:5px;
+    padding: 30px 95px;
+    color: #FFF;
 }
-.Login .btnSignin:hover{
-    color:white;
+.SignInComponent--Nailer ::first-letter{
+    text-transform: capitalize;
 }

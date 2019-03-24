@@ -1,37 +1,50 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import Form from 'react-bootstrap/Form';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Button from 'react-bootstrap/Button';
-class SignIn1 extends Component {
+import { Row, Col, Container, Button } from 'react-bootstrap';
+import './SignIn.css'
+class FormSignInComponent extends Component {
     render() {
-      return (
-        <div className="Login">
-            <h1>đăng nhập bằng</h1>
-           <Form>
-                <Form.Group as={Row} controlId="formHorizontalPhone">
-                    <Form.Label column sm={2}>
-                            Số điện thoại
-                    </Form.Label>
-                    <Col sm={10}>
-                        <Form.Control type="phone" placeholder="Nhập số điện thoại" className="textfield" />
+        return (
+            <div className="SignInComponent--Nailer">
+                <Row>
+                    <Col>
+                        <div className="text-center">đăng nhập bằng</div>
                     </Col>
-                </Form.Group>
+                </Row>
+                <Row className='justify-content-center'>
+                    <Col >
+                        <Form>
+                            <Form.Group as={Row} controlId="formPlaintextEmail">
+                                <Form.Label column sm="4">
+                                    số điện thoại
+                                </Form.Label>
+                                <Col sm="8">
+                                    <Form.Control type="text" placeholder="nhap sdt" />
+                                </Col>
+                            </Form.Group>
 
-                <Form.Group as={Row} controlId="formHorizontalPassword">
-                    <Form.Label column sm={2}>
-                        Mật khẩu
-                    </Form.Label>
-                    <Col sm={10}>
-                        <Form.Control type="password" placeholder="Mật khẩu từ 6 đến 32 ký tự" className="txt1" />
+                            <Form.Group as={Row} controlId="formPlaintextPassword" >
+                                <Form.Label column sm="4" >
+                                    Mat khau
+                                </Form.Label>
+                                <Col sm="4">
+                                    <Form.Control type="password" placeholder="Password" />
+                                </Col>
+                                <Col sm='4'>
+                                    <Button >Quen mat khau</Button>
+                                </Col>
+                            </Form.Group>
+                            <Row>
+                                <Col>
+                                    <Button>dang</Button>
+                                </Col>
+                            </Row>
+                        </Form>
                     </Col>
-                    <p className="reminder">quên mật khẩu?Nhấn vào <enable className="enable">đây</enable></p>
-                </Form.Group>
-                    <Button variant="warning" className="btnSignin">Đăng nhập</Button>
-           </Form>
-        </div>
-      );
+                </Row>
+            </div>
+        );
     }
-  }
-  
-  export default SignIn1;
+}
+
+export default FormSignInComponent;

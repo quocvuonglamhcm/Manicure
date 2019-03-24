@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
-import { Row, Col} from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import '../../pages/service/service.css';
 
 export default function TronGoi() {
@@ -40,14 +40,16 @@ export default function TronGoi() {
                 <Col sm={11} md={11} sx={11}>
                     <div className="text1">Tẩy tế bào chết</div>
                 </Col>
-            </Row> <Row>
+            </Row>
+            <Row>
                 <Col sm={1} md={1} sx={1}>
                     {ic_check}
                 </Col>
                 <Col sm={11} md={11} sx={11}>
                     <div className="text1">Dưỡng ẩm da tay</div>
                 </Col>
-            </Row> <Row>
+            </Row>
+            <Row>
                 <Col sm={1} md={1} sx={1}>
                     {ic_check}
                 </Col>
