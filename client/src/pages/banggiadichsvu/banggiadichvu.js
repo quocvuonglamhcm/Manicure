@@ -6,83 +6,74 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import Form from 'react-bootstrap/Form';
-import Oneclick from '../../todos/Oneclick';
+import './banggiadichvu.css';
+import FormControl from 'react-bootstrap/Form';
 
 class BangGiaDichVu extends Component {
   render() {
     return (
       <div className="BangGiaDichVu">
-        <h1>Bang Gia Dich Vu</h1>
-
-
-        <Container>
-          <Row>
-            <Col>Loai Hinh</Col>
-            <Col>Gia Tham Khao</Col>
-          </Row>
-          <Row>
-            <Col>
-              <Form>
-                <Form.Group size="sm" type="text" placeholder="Small text" controlId="exampleForm.ControlSelect1">
-                  <Form.Control size="sm" type="text" placeholder="Small text" as="select">
-                    <option>Tron goi tay hoac chan</option>
-                    <option>Cham soc mong tay hoac mong chan</option>
-                    <option>Dap bot</option>
-                    <option>Dap mong gel</option>
-                    <option>Ve trang tri</option>
-                    <option>Dinh da</option>
-                  </Form.Control>
-                </Form.Group>
-              </Form>
-            </Col>
-            <Col>
-              <div>
-                <InputGroup size="sm">
-                  <Form>
-                    <Form.Group size="sm" type="text" placeholder="Small text" controlId="exampleForm.ControlSelect1">
-                      <Form.Control size="sm" type="text" placeholder="Small text" as="select">
-                        <option>5000</option>
-                        <option>6000</option>
-                        <option>7000</option>
-                        <option>8000</option>
-                        <option>9000</option>
-                        <option>10000</option>
-                      </Form.Control>
-                    </Form.Group>
-                  </Form>
+        <div>
+          <div className="canh-giua">
+            <div><h1 className="text-title">Bang Gia Dich Vu</h1></div>
+            <div><h1 className="button-title"><Button variant="suscess">+</Button></h1></div>
+          </div>           
+          
+          <Container className="container">
+           
+              <div className="text-title1">Loai Hinh</div>
+              <div className="text-title2">Gia Tham Khao</div>
+           
+            <Row>
+              <Col sm={5}>
+                <Form>
+                  <Form.Group size="sm" type="text" placeholder="Small text" controlId="exampleForm.ControlSelect1">
+                    <Form.Control size="sm" type="text" placeholder="Small text" as="select">
+                      <option>Tron goi tay hoac chan</option>
+                      <option>Cham soc mong tay hoac mong chan</option>
+                      <option>Dap bot</option>
+                      <option>Dap mong gel</option>
+                      <option>Ve trang tri</option>
+                      <option>Dinh da</option>
+                    </Form.Control>
+                  </Form.Group>
+                </Form>
+              </Col>
+              <Col sm={2}><h4 className="gia">Tu</h4></Col>
+              <Col className="col-nhap-gia" sm={2}>
+                <Form.Control className ="from-nhap-gia" size="sm={2}" type="text" placeholder="Nhap vao gia" />
+              </Col>
+              <Col sm={2}><h4 className="gia">Den</h4></Col>
+              <Col className="col-nhap-gia" sm={2}>
+                <Form.Control className ="from-nhap-gia" size="sm={2}" type="text" placeholder="Nhap vao gia" />
+              </Col>
+              <Col><h4 className="gia">VND</h4></Col>
+              <Col><Button variant="suscess" className="button1">-</Button> </Col>
+            </Row>
+            <Row>
+              <Col>
+                <div>
+                  <InputGroup className="mb-3">
+                    <InputGroup.Prepend>
+                      <InputGroup.Checkbox aria-label="Checkbox for following text input" />
+                    </InputGroup.Prepend>
+                    Toi dong y voi cac dieu khoan hoat dong va chinh sach bao mat cua nail bartner
                 </InputGroup>
-              </div>
-            </Col>
-            <Col><h4>VND</h4></Col>
-            <Col><button oneclick={Oneclick} >+</button></Col>
-            <Col><button oneclick>-</button></Col>
-          </Row>
-          <Row>
-            <Col>
-              <div>
-                <InputGroup className="mb-3">
-                  <InputGroup.Prepend>
-                    <InputGroup.Checkbox aria-label="Checkbox for following text input" />
-                  </InputGroup.Prepend>
-                  Toi dong y voi cac dieu khoan hoat dong va chinh sach bao mat cua nail bartner
-                </InputGroup>
+                </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <div>
+                  <ButtonToolbar>
+                    <Button variant="primary" size="lg" className="button-dang-ky">Dang ky</Button>
+                  </ButtonToolbar>
+                </div>
+              </Col>
 
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <div>
-                <ButtonToolbar>
-                  <Button variant="primary" size="lg">
-                    Dang ky
-                </Button>
-                </ButtonToolbar>
-              </div>
-            </Col>
-
-          </Row>
-        </Container>;
+            </Row>
+          </Container>;
+        </div>
       </div>
     );
   }
