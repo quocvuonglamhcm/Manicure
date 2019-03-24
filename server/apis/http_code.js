@@ -30,7 +30,7 @@ var httpCode = {
         
         return {
             statusCode: 200,
-            message: ''
+            message: 'success'
         }
     
     }

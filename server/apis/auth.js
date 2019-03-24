@@ -3,12 +3,12 @@ const FireBase = require('./firebase');
 const httpCode = require('./http_code')
 
 var Auth = {
-  login: function(phone, password) {
+  login: function (phone, password) {
     return FireBase.login(phone, password);
   }
 }
 
-const router  = express.Router()
+const router = express.Router()
 
 /**
  * Auth login to system
