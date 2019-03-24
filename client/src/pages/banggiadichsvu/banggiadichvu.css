@@ -7,7 +7,8 @@
  padding: 2rem;
 }
 .BangGiaDichVu .canh-giua {
-   margin-left: 40%;
+   margin:auto;
+   width:29%;
    
 }
 .BangGiaDichVu .text-title {
@@ -29,7 +30,7 @@
     margin-right: 10px;
 }
 .BangGiaDichVu .text-title2{
-
+    margin-left: 290px;
 }
 .BangGiaDichVu .exampleForm.ControlSelect1{
     font-size: 100px;

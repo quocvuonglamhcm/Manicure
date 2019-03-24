@@ -51,6 +51,58 @@ class BangGiaDichVu extends Component {
               <Col><Button variant="suscess" className="button1">-</Button> </Col>
             </Row>
             <Row>
+              <Col sm={5}>
+                <Form>
+                  <Form.Group size="sm" type="text" placeholder="Small text" controlId="exampleForm.ControlSelect1">
+                    <Form.Control size="sm" type="text" placeholder="Small text" as="select">
+                      <option>Tron goi tay hoac chan</option>
+                      <option>Cham soc mong tay hoac mong chan</option>
+                      <option>Dap bot</option>
+                      <option>Dap mong gel</option>
+                      <option>Ve trang tri</option>
+                      <option>Dinh da</option>
+                    </Form.Control>
+                  </Form.Group>
+                </Form>
+              </Col>
+              <Col sm={2}><h4 className="gia">Tu</h4></Col>
+              <Col className="col-nhap-gia" sm={2}>
+                <Form.Control className ="from-nhap-gia" size="sm={2}" type="text" placeholder="Nhap vao gia" />
+              </Col>
+              <Col sm={2}><h4 className="gia">Den</h4></Col>
+              <Col className="col-nhap-gia" sm={2}>
+                <Form.Control className ="from-nhap-gia" size="sm={2}" type="text" placeholder="Nhap vao gia" />
+              </Col>
+              <Col><h4 className="gia">VND</h4></Col>
+              <Col><Button variant="suscess" className="button1">-</Button> </Col>
+            </Row>
+            <Row>
+              <Col sm={5}>
+                <Form>
+                  <Form.Group size="sm" type="text" placeholder="Small text" controlId="exampleForm.ControlSelect1">
+                    <Form.Control size="sm" type="text" placeholder="Small text" as="select">
+                      <option>Tron goi tay hoac chan</option>
+                      <option>Cham soc mong tay hoac mong chan</option>
+                      <option>Dap bot</option>
+                      <option>Dap mong gel</option>
+                      <option>Ve trang tri</option>
+                      <option>Dinh da</option>
+                    </Form.Control>
+                  </Form.Group>
+                </Form>
+              </Col>
+              <Col sm={2}><h4 className="gia">Tu</h4></Col>
+              <Col className="col-nhap-gia" sm={2}>
+                <Form.Control className ="from-nhap-gia" size="sm={2}" type="text" placeholder="Nhap vao gia" />
+              </Col>
+              <Col sm={2}><h4 className="gia">Den</h4></Col>
+              <Col className="col-nhap-gia" sm={2}>
+                <Form.Control className ="from-nhap-gia" size="sm={2}" type="text" placeholder="Nhap vao gia" />
+              </Col>
+              <Col><h4 className="gia">VND</h4></Col>
+              <Col><Button variant="suscess" className="button1">-</Button> </Col>
+            </Row>
+            <Row>
               <Col>
                 <div>
                   <InputGroup className="mb-3">
