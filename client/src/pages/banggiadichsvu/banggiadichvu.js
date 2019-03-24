@@ -9,16 +9,15 @@ import Form from 'react-bootstrap/Form';
 import './banggiadichvu.css';
 //import datlich from '../../assets/images/plus-circle-solid.svg';
 //import datlich1 from '../../assets/images/minus-circle-solid.svg';
-import { FontAwesomeIcon } from '@fontawesome/react-fontawesome';
-import { faPlusCircle } from '@fontawesome/free-solid-svg-icons';
-import { faminuscircle } from '@fontawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlusCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons';
 
 
 class BangGiaDichVu extends Component {
 
   render() {
     let ic_plus = <FontAwesomeIcon className="ic_plus " icon={faPlusCircle} />
-    let ic_minus = <FontAwesomeIcon className="ic_minus " icon={faminuscircle} />
+    let ic_minus = <FontAwesomeIcon className="ic_minus" icon={faMinusCircle} />
     return (
       <div className="BangGiaDichVu">
         <div>
