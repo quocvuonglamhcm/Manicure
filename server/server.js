@@ -8,15 +8,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const apiWelcome = require('./apis/welcome');
 const apiSms = require('./apis/sms');
-const loginRoute = require('./apis/routes/login.route')
-const signupRoute = require('./apis/routes/signup.route')
+const accountRoute = require('./apis/routes/account.route')
+
 // app.use(
 //   require('./apis/sms'),
 //   require('./apis/sms'),
 //   require('./apis/auth')
 // );
 
-app.use('/api/login',loginRoute);
-app.use('/api/signup',signupRoute)
+app.use('/api/account',accountRoute);
 
 app.listen(port, () => console.log(`Listening on port ${port}!`));

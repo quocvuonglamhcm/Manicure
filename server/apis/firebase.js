@@ -22,10 +22,10 @@ var FireBase = {
     return fireBaseClient.auth().signInWithEmailAndPassword(email, password)
   },
   logout: function() {
-
+    return fireBaseClient.auth().signOut();
   },
   logged: function() {
-
+    
   }
 }
 module.exports = FireBase;
