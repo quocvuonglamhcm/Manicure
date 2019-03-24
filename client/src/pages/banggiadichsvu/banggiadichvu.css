@@ -1,55 +1,100 @@
 .BangGiaDichVu {
- width: 60%;
- background:white;
- margin:auto;
- margin-top:2px;
- border-radius: 5px;
- padding: 2rem;
+    position: relative;
+    width: 540px;
+    height: 350px;
+    background:white;
+    margin: auto;
+
 }
 .BangGiaDichVu .canh-giua {
-   margin:auto;
-   width:29%;
-   
+    position: relative;
+    width: 200px;
+    margin: auto;  
 }
 .BangGiaDichVu .text-title {
-    font-size:18px;
-    font-family:Open Sans;
+    position: relative;
+    width: 122px;
+    height: 21px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
     float: left;
-    margin-right: 10px;
-    font-weight:bold;
-    padding-top: 10px
+    padding-top: 15px;
 }
 .BangGiaDichVu .button-title {
-    font-size:18px;
-    font-family:Open Sans;
-    font-weight:bold;
-    margin-top: -10px;
+    position: relative;
+    fontmily: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    
 }
+.BangGiaDichVu .col-canh {
+   
+    }
 .BangGiaDichVu .text-title1 {
     float: left;
-    margin-right: 10px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: normal;
+    margin-right: 150px;
+    margin-left: 60px;
 }
 .BangGiaDichVu .text-title2{
-    margin-left: 290px;
+    margin-left: 60px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: normal;
+    margin-bottom: 10px;
 }
 .BangGiaDichVu .exampleForm.ControlSelect1{
-    font-size: 100px;
-    font-family:Open Sans;
+    
+    
 }
 .BangGiaDichVu .col-nhap-gia{
-    margin-left: -90px;
+    margin-left: -30px;
+     
+}
+.BangGiaDichVu .col-nhap-gia1{
+    margin-left: -80px;
+     
 }
 .BangGiaDichVu .gia {
-    margin-left: -20px;
+   margin-left: -11px;
 }
+.BangGiaDichVu .gia1 {
+    margin-left: -25px;
+ }
 .BangGiaDichVu .button{
     
 }
 .BangGiaDichVu .button1{
-    margin-left: -10px;
+    margin-left: -11px;
     
 }
 .BangGiaDichVu .button-dang-ky {
-    margin-left: 45%;
+   color:white;
+   background-color: #119B7A;
+   width: 200px;
+   margin: auto;
 
+}
+.BangGiaDichVu .mb-3 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+}
+.BangGiaDichVu .Checkbox {
+   
+}
+.BangGiaDichVu .i-image{
+    width: 20px;
+    height: 20px;
+ 
 }

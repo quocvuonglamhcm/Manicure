@@ -4,7 +4,6 @@ import './footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faMapMarkerAlt, faMobileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-
 import img1 from '../../assets/images/appstore.svg';
 import img2 from '../../assets/images/chplay.svg';
 
