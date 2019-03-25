@@ -2,13 +2,23 @@ import React, { Component } from 'react';
 import Form from 'react-bootstrap/Form';
 import { Row, Col, Button } from 'react-bootstrap';
 import './signin.css';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons/faFacebook';
+
 class SignIn extends Component  {
     render() {
+        let ic_facebook = <FontAwesomeIcon className="ic_facebook" icon={faFacebook} />
         return (
             <div className="SignInComponent--Nailer">
                 <Row>
                     <Col>
                         <div className="text-center">đăng nhập bằng</div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <div className="sign-in-method">{ic_facebook}</div>
                     </Col>
                 </Row>
                 <Row className='justify-content-center'>

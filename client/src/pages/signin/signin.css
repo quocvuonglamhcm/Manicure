@@ -29,3 +29,7 @@
 .SignInComponent--Nailer .qmk:hover{
     border:1px solid black;
 }
+.sign-in-method{
+    width: 100px;
+    height: 100px;
+}
