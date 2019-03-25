@@ -25,7 +25,17 @@ var FireBase = {
     return fireBaseClient.auth().signOut();
   },
   logged: function() {
-    
+
+  },
+  createNewUser : (phone_number, password) => {
+    const email = `${phone_number}${extensionEmail}`
+    return fireBaseClient.auth().createUserWithEmailAndPassword(email, password)
+  },
+  getOneAccount: (phone_number) => {
+    return  fireBaseClient.database().ref('nails/users').once('value');
+  },
+  connectFirebaseDatabase: () => {
+    return fireBaseClient.database().ref('nails/users');
   }
 }
 module.exports = FireBase;

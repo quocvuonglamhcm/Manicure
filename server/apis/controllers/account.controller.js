@@ -8,15 +8,23 @@ var Auth = {
     login: function (phone, password) {
         return FireBase.login(phone, password);
     },
-    signOut: function(){
+    signOut: function () {
         return FireBase.logout();
+    },
+    getOneUser: function (phone) {
+        return FireBase.getOneAccount(phone)
+    },
+    connectDatabase: function () {
+        return FireBase.connectFirebaseDatabase();
     }
 }
 
 module.exports.authLogin = function (req, res) {
     const phone = req.body.phone;
     const pass = req.body.password;
+
     res.header('Content-Type', 'application/json');
+
     Auth.login(phone, pass)
         .then(() => {
             res.send(JSON.stringify(httpCode.authStatus()))
@@ -29,22 +37,22 @@ module.exports.authLogin = function (req, res) {
 }
 
 
-module.exports.sms =(req, res) => {
+module.exports.sms = (req, res) => {
     const TWILIO = {
         accountSID: 'ACa10351c021a6c4b50692d401da28f324',
         phone_number: '+15127725694',
         authToken: '216900306ffdf929645ee36c93d4fcf0'
-      }
-    
-      const twilioClient = require('twilio')(
+    }
+
+    const twilioClient = require('twilio')(
         TWILIO.accountSID,
         TWILIO.authToken
-      );
+    );
     const number = randomstring.generate({
         length: 4,
         charset: 'numeric'
-      });
-    console.log(number)
+    });
+    // console.log(number)
     res.header('Content-Type', 'appication/json');
 
     twilioClient.messages.create({
@@ -52,19 +60,44 @@ module.exports.sms =(req, res) => {
         to: req.body.to,
         body: number
     })
-    .then(() => {
-      res.send(JSON.stringify({ success: true }) );
-    })
-    .catch(err => {
-      res.send(JSON.stringify({ success: false }) );
+        .then(() => {
+            res.send(JSON.stringify({ success: true }));
+        })
+        .catch(err => {
+            console.log(err)
+            res.send(JSON.stringify({ success: false }));
 
+        })
+
+    Auth.connectDatabase().push({
+        smsCode: number,
+        phone: req.body.to
     })
 }
 
-module.exports.signOut = (req, res)=> {
-    Auth.signOut().then(() =>{
-        res.send(JSON.stringify({success: true}))
-    }).catch(err =>{
-        res.send(JSON.stringify({success:true}))
+module.exports.verifySmsCode = (req, res) => {
+    let smsCode = req.body.smsCode;
+    let phone_number = req.body.phone_number;
+
+    res.header('Content-Type', 'application/json');
+
+    Auth.getOneUser(phone_number)
+        .then((data) => {
+            let value = data.hasChild(smsCode); // true
+            console.log(value)
+            res.send({ success: true })
+        })
+        .catch(err => {
+            res.send({ success: false })
+        })
+
+}
+
+
+module.exports.signOut = (req, res) => {
+    Auth.signOut().then(() => {
+        res.send(JSON.stringify({ success: true }))
+    }).catch(err => {
+        res.send(JSON.stringify({ success: false }))
     })
 }
