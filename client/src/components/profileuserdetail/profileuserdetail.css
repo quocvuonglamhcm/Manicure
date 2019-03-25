@@ -47,7 +47,7 @@
             height: 200px;
         } */
         #profile-user-detail .avt-profie-user-detail{
-            background-image: ('../../.avt-profie-user-detail');
+            background-image: ('../../assets/images/avtuser.png');
             margin: auto;
             width: 200px;
             height: 200px;
