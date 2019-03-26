@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/*import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Modal from 'react-modal';
 import { Redirect } from 'react-router-dom'
@@ -62,3 +62,4 @@ class ModalDialog extends Component {
 
 
 export default ModalDialog;
+*/

@@ -24,7 +24,7 @@ const MainRoute = () => (
      <Route path='/nailer' component={NailerPage}/>
      <Route path='/support' component={SupportPage}/> 
      <Route path='/contact' component={ContactPage}/>
-     {/* <Route path='/contact' component={ModalDialog}/>  */}
+     {/*<Route path='/contact' component={ModalDialog}/>*/}
      <Route path='/nailer-new' component={NailerPageNew}/>
      <Route path='/nailer-social' component={NailerPageSocial}/>
      <Route path='/signin' component={SignIn}/>
