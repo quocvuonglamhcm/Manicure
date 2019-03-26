@@ -1,0 +1,133 @@
+#main-loi-ich{
+    width: 70%;
+    height: 500px;
+    /* border:1px solid #c4c4c4; */
+    margin:auto;
+            }
+            
+            #main-loi-ich .pu-litle{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: normal;
+                color: #000000;
+                text-align: center !important;
+                margin: auto;
+            }
+
+            #main-loi-ich .card-left .text-card-left{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: normal;
+                color: #000000;
+                text-align: right;
+                /* position: relative; */
+            }
+
+            /* .text-card-left ::after{
+                content: ' ';
+                position: absolute;
+                width: 20px;
+                height: 200px;
+                background-color: #6645C5;
+
+            } */
+
+            #main-loi-ich .card-right{
+                width: 5px;
+                height: 150px;
+                background-color:rgba(102, 69, 197, 0.5);
+                margin-right: 0px !important;
+                margin-left: 0px !important;
+                /* border: 1px solid #664566; */
+                position: relative;
+            }
+
+            #main-loi-ich .card-right .hinh-tron1{
+                /* content: ' '; */
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #6645c5;
+                margin-left: -7px;
+                margin-top: 20px;
+            }
+
+            #main-loi-ich .card-right .hinh-tron2{
+                /* content: ' '; */
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #6645c5;
+                margin-left: -7px;
+                margin-top: 61px;
+            }
+
+            #main-loi-ich .card-right .hinh-tron3{
+                /* content: ' '; */
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #6645c5;
+                margin-left: -7px;
+                margin-top: 107px;
+            }
+            
+            .float-right{
+                float: right;
+            }
+            #main-loi-ich .card-left-1{
+                width: 5px;
+                height: 150px;
+                background-color:rgba(102, 69, 197, 0.5);
+                margin-right: 0px !important;
+                position: relative;
+                margin-left: 30px;
+
+            }
+
+            #main-loi-ich .card-left-1 .hinh-tron4{
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #6645c5;
+                margin-left: -7px;
+                margin-top: 19px;
+            }
+
+            #main-loi-ich .card-left-1 .hinh-tron5{
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #6645c5;
+                margin-left: -7px;
+                margin-top: 68px;
+            }
+
+            #main-loi-ich .card-left-1 .hinh-tron6{
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #6645c5;
+                margin-left: -7px;
+                margin-top: 117px;
+            }
+            
+            #main-loi-ich .card-right-1 .text-card-right-1{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: normal;
+                color: #000000;
+                text-align: left;
+            }
