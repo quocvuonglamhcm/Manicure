@@ -35,10 +35,10 @@ var FireBase = {
     return  fireBaseClient.database().ref('nails/users').once('value');
   },
   connectFirebaseDatabaseRegister: (phone_number) => {
-    // console.log(phone_number)
+    console.log(phone_number)
     let phone = phone_number.replace(/^\+/, '');
     // console.log(fireBaseClient.database().ref(`nails/register/${phone}}`))
-    return fireBaseClient.database().ref(`nails/register/${phone}}`);
+    return fireBaseClient.database().ref(`nails/register/${phone}`);
   }
 }
 module.exports = FireBase;

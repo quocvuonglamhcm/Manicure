@@ -53,15 +53,8 @@ module.exports.sms = (req, res) => {
         length: 4,
         charset: 'numeric'
     });
-    res.header('Content-Type', 'appication/json');
-// -------------------------------------------------------
-    Auth.connectDatabaseRegister(phone_number).once('value')
-    .then((data) => {
-        console.log(data.val())
-        console.log(data.val().smsCode)
- 
-    }).catch(e => console.log(e))
-// ----------------------------------------------
+    res.header('Content-Type', 'application/json');
+
     // Send sms code
     twilioClient.messages.create({
         from: TWILIO.phone_number,
@@ -88,26 +81,20 @@ module.exports.sms = (req, res) => {
 module.exports.verifySmsCode = (req, res) => {
     var Code = req.body.smsCode;
     var phone_number = req.body.to;
-    // console.log(req.body)
 
     res.header('Content-Type', 'application/json');
 
+
     Auth.connectDatabaseRegister(phone_number).once('value')
     .then((data) => {
-        // let smsCodeOnDatabase = data.val().smsCode;
-        console.log(data.key)
-        console.log(data.val())
-        // console.log('2'+smsCodeOnDatabase)
-        // if(smsCodeOnDatabase === Code){
-        //     console.log('true');
-        //     res.send({success: true})
-        // }else {
-        //     console.log('faulse')
-        //     res.send({success: false})
-        // }
+        let smsCodeOnDatabase = data.val().smsCode;
+        if(smsCodeOnDatabase === Code){
+            res.send({success: true})
+        }else {
+            res.send({success: false})
+        }
  
     }).catch(e => console.log(e))
-
 }
 
 
