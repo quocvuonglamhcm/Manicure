@@ -1,6 +1,8 @@
 import React from 'react'
 import './home.css';
 import Banner from '../../components/Banner/banner';
+import LoiIch from '../../components/loiich/loiich';
+import DownloadApp from '../../components/download/download'
 
 const HomePage = () => (
 	<div>
@@ -9,7 +11,8 @@ const HomePage = () => (
 			<div className='register-title'>
 			</div>
 		</div>
-		
+		<LoiIch/>
+		<DownloadApp/>
 	</div>
 )
 
