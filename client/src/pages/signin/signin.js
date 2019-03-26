@@ -17,23 +17,27 @@ class SignIn extends Component {
                     </Col>
                 </Row>
                 <Row className="icon">
-                    <Col sm={4}>
+                    <Col sm={4} md={4} sx={4}>
                     <div className="box-Google">
-                            <Col sm={1}>{ic_google}</Col>
-                        </div>
-                        
+                        <Col sm={1}>{ic_google}</Col>
+                        <div className="text1">Google</div>
+                    </div>
                     </Col>
                     <Col sm={4}>
                         <div className="box-Facebook">
                             <Col sm={1}>{ic_facebook}</Col>
-                            
+                            <div className="text2">Facebook</div>
                         </div>
                     </Col>
                     <Col sm={4}>
-                    <div className="box-Zalo">
-                            <img src={Zalo}/>
-                            <Col sm={1}><div className="icZalo"></div></Col>
-                    </div>
+                            <div className="box-Zalo">
+                                <div className="icZalo">
+                                    <Col sm={1}>
+                                        <img src={Zalo}/>
+                                        <div className="text3">Zalo</div>
+                                    </Col>  
+                                </div>
+                            </div>
                     </Col>
                 </Row>
                 <Row className='justify-content-center'>

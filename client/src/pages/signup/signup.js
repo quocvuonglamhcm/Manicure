@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Form from 'react-bootstrap/Form';
-import { Row, Col, Button } from 'react-bootstrap';
+// import Form from 'react-bootstrap/Form';
+// import { Row, Col, Button } from 'react-bootstrap';
 import './signup.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'

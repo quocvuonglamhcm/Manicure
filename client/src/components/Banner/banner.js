@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './banner.css'
 import { Row } from 'react-bootstrap';
 import SignUpContainer from '../login/SignUpContainer';
-
-import '../Form/form.css';
 class Background extends Component {
     constructor(props) {
         super(props)

@@ -12,7 +12,7 @@ import NailerPageNew from '../pages/nailer/nailer-new';
 import NailerPageSocial from '../pages/nailer/nailer-social.js';
 import SignIn from '../pages/signin/signin';
 import SignUp from '../pages/signup/signup';
-
+import Form123 from '../pages/FormComponent/FormComponent';
 const MainRoute = () => (
  <main>
    <Switch>
@@ -29,6 +29,7 @@ const MainRoute = () => (
      <Route path='/nailer-social' component={NailerPageSocial}/>
      <Route path='/signin' component={SignIn}/>
      <Route path='/signup' component={SignUp}/>
+     <Route path='/Form123' component ={Form123}/>
    </Switch>
  </main>
 )

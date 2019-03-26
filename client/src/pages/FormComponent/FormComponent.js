@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Col, Form, Button } from 'react-bootstrap';
-// import { Row } from 'react-bootstrap/Form';
-class Form1 extends Component {
+import './FormComponent.css';
+class Form123 extends Component {
     render() {
         return (
             <div className="SignIn--Nailer">
@@ -51,4 +51,4 @@ class Form1 extends Component {
     }
 }
 
-export default Form1;
+export default Form123;

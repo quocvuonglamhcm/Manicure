@@ -5,9 +5,7 @@ import { Button, Row, Col, Container, InputGroup, FormControl } from 'react-boot
 import './support.css';
 
 import datlich from '../../assets/images/ic_datlich.svg';
-import kythuat from '../../assets/images/ic_.svg';
-import taikhoan from '../../assets/images/ic_taikhoan.svg';
-import tho from '../../assets/images/ic_tho.svg';
+
 
 class SupportPage extends Component {
 	render() {
