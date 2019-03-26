@@ -9,6 +9,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const apiWelcome = require('./apis/welcome');
 const apiSms = require('./apis/sms');
 
-app.use(apiWelcome, apiSms);
+app.use(
+  require('./apis/sms'),
+  require('./apis/sms'),
+  require('./apis/auth')
+);
 
 app.listen(port, () => console.log(`Listening on port ${port}!`));

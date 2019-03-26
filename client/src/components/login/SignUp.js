@@ -90,7 +90,7 @@ export default class Login extends Component {
 
     render() {
         return (
-            <Col sm={12}>
+            <Col sm={12} md={12} sx={12}>
                 <b style={{ userSelect: 'none' }}>SĐT</b>
                 <input type='text' readOnly value='Viet Nam (+84)' className='mavung' />
                 <input
