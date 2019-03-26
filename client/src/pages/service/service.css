@@ -1,10 +1,8 @@
 #main-service{
 			display: flex;
-			margin-left: 5%;
-    		margin-right: 5%;
     		margin-top: 18px;
     		margin-bottom: 18px;
-    		width: 90%;
+    		width: 100%;
     	}
     	#square2{
 			font-family: Open Sans;
@@ -115,7 +113,7 @@
 			position: relative;
 			width: 100%;
 			background-repeat: no-repeat;
-			height: 210px;
+			height: 180px;
 		}
 		.AnhChamSoc {
 			background-image: url('../../assets/images/ChamSoc.svg');
@@ -123,7 +121,7 @@
 			position: relative;
 			width: 100%;
 			background-repeat: no-repeat;
-			height: 210px;
+			height: 180px;
 		}
 		.AnhDapBot {
 			background-image: url('../../assets/images/DapBot.svg');
@@ -131,7 +129,7 @@
 			position: relative;
 			width: 100%;
 			background-repeat: no-repeat;
-			height: 210px;
+			height: 180px;
 		}
 		.AnhDapGel {
 			background-image: url('../../assets/images/DapGel.svg');
@@ -139,7 +137,7 @@
 			position: relative;
 			width: 100%;
 			background-repeat: no-repeat;
-			height: 210px;
+			height: 180px;
 		}
 		.AnhVeTrangTri {
 			background-image: url('../../assets/images/VeTrangTri.svg');
@@ -147,7 +145,7 @@
 			position: relative;
 			width: 100%;
 			background-repeat: no-repeat;
-			height: 210px;
+			height: 180px;
 		}
 		.AnhDinhDa {
 			background-image: url('../../assets/images/DinhDa.svg');
@@ -155,7 +153,7 @@
 			position: relative;
 			width: 100%;
 			background-repeat: no-repeat;
-			height: 210px;
+			height: 180px;
 		}
 		.IconCheck{
 			font-family: Open Sans;
