@@ -24,6 +24,7 @@
 			height: fit-content;
 			padding-left: 5px;
 			padding-right: 5px;
+			width: fit-content;
 		}
 		#square2:hover {
 			background-color: #6b00b6;
@@ -40,10 +41,10 @@
   			padding-bottom: 21px;
   			border-top: 2px solid #666;
   			border-left: 2px solid #666;
-			  float: left;
-			  height: fit-content;
+			float: left;
+			height: fit-content;
 		}
-		#left-service .text1 {
+		#left-service .MenuService {
 			font-family: Open Sans;
 			font-style: normal;
 			font-weight: normal;
@@ -91,7 +92,7 @@
 			margin-bottom: 30px;
 			border-radius: 5px;
 		}
-		#right-service .text2{
+		#main-service #right-service .TitleService{
 			font-family: Open Sans;
 			font-style: normal;
 			font-weight: bold;
@@ -104,8 +105,7 @@
 		}
 		#right-service .row {
 			margin-top: 18x;
-			width: 100%;
-			
+			width: 100%;			
 		}
 		.AnhTronGoi {
 			background-image: url('../../assets/images/TronGoi.svg');

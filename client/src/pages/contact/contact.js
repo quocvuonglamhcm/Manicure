@@ -9,7 +9,7 @@ class ContactPage extends Component {
       <div className="contact">
         <Container>
           <Row className='mb-4'>
-            <Col md={6} sm={5} sx={6}>
+            <Col md={6} sm={6} sx={6}>
               <div className="text1 mt-5">Để lại tin nhắn, chúng tôi sẽ liên lạc với bạn trong thời gian sớm nhất.</div>
               <Form>
                 <Form.Group controlId="name">

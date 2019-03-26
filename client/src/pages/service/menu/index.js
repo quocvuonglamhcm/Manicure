@@ -17,7 +17,7 @@ class Menu extends Component {
         return (
             <div id='left-service'>
                 <div className='title'>Danh sách dịch vụ</div>
-                <div className="text1">
+                <div className="MenuService">
                     {
                         ele
                     }
