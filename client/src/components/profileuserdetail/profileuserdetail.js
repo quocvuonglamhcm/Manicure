@@ -43,9 +43,9 @@ class ProfileUserdetail extends Component {
 
         {/* card ngày sinh */}
         <Row className='mt-3 card-profile'>
-          <div className='col-sm-4 text-card'> Ngày sinh  </div>
+          <div className='col-sm-4 text-card mr-0 ml-0'> Ngày sinh  </div>
 
-          <div class="col-sm-8 input-group date">
+          <div class="col-sm-8 mr-0 ml-0 input-group date">
             <input type="text" class="form-control border-card" value="12-02-2012" />
             <div class="input-group-addon">
               <span class="glyphicon glyphicon-th"></span>
