@@ -19,7 +19,7 @@ export default function DownloadApp() {
 
                     </Col>
                     <Col sm={3} md={3} sx={3}>
-                        <div className='download download-mobile'></div>
+                        <div className='download-mobile'></div>
                     </Col>
                     <Col sm={3} md={3} sx={3}>
                         <Row><div className='download-chplay'></div></Row>

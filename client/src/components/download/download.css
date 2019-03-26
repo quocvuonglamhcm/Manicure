@@ -5,14 +5,11 @@
     padding: 30px;
 }
 
-.download {
-    height: 465px;
-}
-
 .download-mobile {
     background-image: url('../../assets/images/app.png');
     background-repeat: no-repeat;
     border-right: 3px #fff solid;
+    height: 465px;
 }
 
 .download-chplay {
