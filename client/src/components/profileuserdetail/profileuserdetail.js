@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Form } from 'react-bootstrap';
+import { Row, Form } from 'react-bootstrap';
 import "./profileuserdetail.css";
 
 
@@ -12,7 +12,7 @@ class ProfileUserdetail extends Component {
 
                         <Row className='mt-1' id='line'></Row>
 
-                        <Row className='body-avt' className='avt-profie-user-detail'>  </Row>
+                        <Row className='body-avt avt-profie-user-detail'>  </Row>
 
                         <Row > <button className="button mt-1 button-avt button3">Cập nhật ảnh</button></Row>
                         {/* card hovaten */}

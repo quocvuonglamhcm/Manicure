@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Row, Form, Button } from 'react-bootstrap'
+import { Form,  } from 'react-bootstrap'
 
 class NailerFilterLocation extends Component {
   render() {

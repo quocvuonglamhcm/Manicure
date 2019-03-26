@@ -25,7 +25,7 @@ class App extends Component {
      }
 
   componentDidMount() {
-    const self = this;
+    // const self = this;
     fireBase.auth().signOut();
     fireBase.auth().onAuthStateChanged((user) =>{
       if (user) {
