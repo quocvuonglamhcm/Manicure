@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"node ./server/server.js\" \"cd client && npm start\"",
     "update-libs": "concurrently \"cd server && npm install\" \"cd client && npm install\"",
-    "start-server": "node ./server/server.js",
+    "start-server": "cd server && npm start",
     "start-client": "cd client && npm start"
   },
   "author": "",
