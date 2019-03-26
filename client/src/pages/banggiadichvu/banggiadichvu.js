@@ -48,7 +48,6 @@ class BangGiaDichVu extends Component {
                 <Col className="col-nhap-gia1" sm={2}>
                   <Form.Control size="sm" type="text" placeholder="nhap gia" />
                 </Col>
-                <Col><h4 className="gia">VND</h4></Col>
                 <Col><Button size="sm" variant="suscess" className="button1">{ic_plus}</Button> </Col>
                </Row>
                <Row>
@@ -73,8 +72,7 @@ class BangGiaDichVu extends Component {
                 <Col className="col-nhap-gia1" sm={2}>
                   <Form.Control size="sm" type="text" placeholder="nhap gia" />
                 </Col>
-                <Col><h4 className="gia">VND</h4></Col>
-                
+                               
                 <Col><Button size="sm" variant="suscess" className="button1">{ic_plus}</Button>
                 <Button size ="sm" variant="suscess" className="button2">{ic_minus}</Button>
                 </Col>                
@@ -101,8 +99,7 @@ class BangGiaDichVu extends Component {
                 <Col className="col-nhap-gia1" sm={2}>
                   <Form.Control size="sm" type="text" placeholder="nhap gia" />
                 </Col>
-                <Col><h4 className="gia">VND</h4></Col>
-                
+                               
                 <Col><Button size="sm" variant="suscess" className="button1">{ic_plus}</Button>
                 <Button size ="sm" variant="suscess" className="button2">{ic_minus}</Button>
                 </Col>                
