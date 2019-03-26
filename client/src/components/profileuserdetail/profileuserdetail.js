@@ -8,15 +8,15 @@ class ProfileUserdetail extends Component {
   render() {
     return (
       <div id='profile-user-detail'>
-        <Row> <div className='mt-1 pu-title'>Cập nhật thông tin tài khoản </div></Row>
+        <Row className='mr-0 ml-0'> <div className='mt-1 pu-title'>Cập nhật thông tin tài khoản </div></Row>
 
-        <Row className='mt-1' id='line'></Row>
+        <Row className='mt-1 mr-0 ml-0' id='line'></Row>
 
-        <Row className='body-avt' className='avt-profie-user-detail'>  </Row>
+        <Row className='body-avt mr-0 ml-0' className='avt-profie-user-detail'>  </Row>
 
-        <Row > <button className="button mt-1 button-avt button3">Cập nhật ảnh</button></Row>
+        <Row className='mr-0 ml-0'> <button className="button mt-1 button-avt button3">Cập nhật ảnh</button></Row>
         {/* card hovaten */}
-        <Row className='mt-3 card-profile'>
+        <Row className='mt-3 mr-0 ml-0 card-profile'>
           <div className='col-sm-4 text-card'> Họ và tên  </div>
 
           <input className='col-sm-8 height-50 border-card' placeholder='Vui lòng điền thông tin đầy đủ' />
@@ -24,7 +24,7 @@ class ProfileUserdetail extends Component {
         </Row>
 
         {/* Card so dien thoai */}
-        <Row className='mt-3 card-profile'>
+        <Row className='mt-3 card-profile mr-0 ml-0'>
           <div className='col-sm-4 text-card'> Số điện thoại  </div>
 
           <input className='col-sm-8 height-50 border-card' placeholder='039 **** ****' />
@@ -32,7 +32,7 @@ class ProfileUserdetail extends Component {
         </Row>
 
         {/* card mật khẩu */}
-        <Row className='mt-3 card-profile'>
+        <Row className='mt-3 card-profile mr-0 ml-0'>
           <div className='col-sm-4 text-card'> Mật khẩu  </div>
 
           <input className='col-sm-4 height-50 border-card' placeholder='*********' />
@@ -42,7 +42,7 @@ class ProfileUserdetail extends Component {
         </Row>
 
         {/* card ngày sinh */}
-        <Row className='mt-3 card-profile'>
+        <Row className='mt-3 card-profile mr-0 ml-0'>
           <div className='col-sm-4 text-card mr-0 ml-0'> Ngày sinh  </div>
 
           <div class="col-sm-8 mr-0 ml-0 input-group date">
@@ -54,7 +54,7 @@ class ProfileUserdetail extends Component {
         </Row>
 
         {/* card giới tính*/}
-        <Row className='mt-3 card-profile'>
+        <Row className='mt-3 card-profile mr-0 ml-0'>
           <div className='col-sm-4 text-card'> Giới tính  </div>
 
           <div class='col-sm-3'>
@@ -68,21 +68,21 @@ class ProfileUserdetail extends Component {
         </Row>
 
         {/* card Địa chỉ */}
-        <Row className='mt-3 card-profile'>
+        <Row className='mt-3 card-profile mr-0 ml-0'>
           <div className='col-sm-4 text-card'> Địa chỉ  </div>
 
           <input className='col-sm-8 height-50 border-card' placeholder='Số nhà, đường, phường, quận, thành phố' />
         </Row>
 
         {/* card Email */}
-        <Row className='mt-3 card-profile'>
+        <Row className='mt-3 card-profile mr-0 ml-0'>
           <div className='col-sm-4 text-card'> Email  </div>
 
           <input className='col-sm-8 height-50 border-card' placeholder='abc@gmail.com' />
         </Row>
 
         {/* card cap nhat */}
-        <Row className='mt-4 '>
+        <Row className='mt-4 mr-0 ml-0 '>
           <button class="button col-sm-4 button-cap-nhat">Cập nhật</button>
 
         </Row>
