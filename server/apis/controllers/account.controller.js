@@ -11,11 +11,14 @@ var Auth = {
     signOut: function () {
         return FireBase.logout();
     },
-    getOneUser: function (phone) {
-        return FireBase.getOneAccount(phone)
-    },
     connectDatabaseRegister: function (phone) {
         return FireBase.connectFirebaseDatabaseRegister(phone);
+    },
+    connectDatabaseCreateUser: () => {
+        return FireBase.connectDatabaseCreateUser();
+    },
+    createNewUser: (phone, password) => {
+        return FireBase.createNewUser(phone, password);
     }
 }
 
@@ -86,15 +89,34 @@ module.exports.verifySmsCode = (req, res) => {
 
 
     Auth.connectDatabaseRegister(phone_number).once('value')
-    .then((data) => {
-        let smsCodeOnDatabase = data.val().smsCode;
-        if(smsCodeOnDatabase === Code){
-            res.send({success: true})
-        }else {
-            res.send({success: false})
-        }
- 
-    }).catch(e => console.log(e))
+        .then((data) => {
+            let smsCodeOnDatabase = data.val().smsCode;
+            if (smsCodeOnDatabase === Code) {
+                res.send({ success: true })
+            } else {
+                res.send({ success: false })
+            }
+
+        }).catch(e => console.log(e))
+}
+
+module.exports.createNewUser = (req, res) => {
+    var password = req.body.password;
+    var phone_number = req.body.to;
+    
+    Auth.createNewUser(phone_number, password)
+        .then((data) => {
+            Auth.connectDatabaseCreateUser().push({
+                phone : phone_number,
+                password  
+            }).then(()=> {res.send({success:true})}).catch(e => {res.send({e:emessages, success:false})})
+
+            res.send({ success: true })
+        })
+        .catch(e => {
+            res.send({ success: false ,e})
+        })
+
 }
 
 
@@ -102,6 +124,6 @@ module.exports.signOut = (req, res) => {
     Auth.signOut().then(() => {
         res.send(JSON.stringify({ success: true }))
     }).catch(err => {
-        res.send(JSON.stringify({ success: false }))
+        res.send(JSON.stringify({ success: false, err }))
     })
 }
