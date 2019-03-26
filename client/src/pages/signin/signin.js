@@ -4,7 +4,7 @@ import { Row, Col, Button } from 'react-bootstrap';
 import './signin.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faGoogle } from '@fortawesome/free-brands-svg-icons'
-
+import Zalo from '../../assets/images/Logo_Zalo.svg'
 class SignIn extends Component {
     render() {
         let ic_facebook = <FontAwesomeIcon className="icFacebook " icon={faFacebookF} />
@@ -20,7 +20,6 @@ class SignIn extends Component {
                     <Col sm={4}>
                     <div className="box-Google">
                             <Col sm={1}>{ic_google}</Col>
-                            
                         </div>
                         
                     </Col>
@@ -32,9 +31,9 @@ class SignIn extends Component {
                     </Col>
                     <Col sm={4}>
                     <div className="box-Zalo">
+                            <img src={Zalo}/>
                             <Col sm={1}><div className="icZalo"></div></Col>
-                            
-                        </div>
+                    </div>
                     </Col>
                 </Row>
                 <Row className='justify-content-center'>

@@ -43,7 +43,7 @@
 }
 .icZalo{
     background-image: url('../../assets/images/Logo_Zalo.svg');
-    height: 30px;
+    height: 25px;
 }
 .box-Facebook{
     height: 30px;    
@@ -56,14 +56,18 @@
     border-radius: 5px;
 }
 .box-Zalo{
-    height: 30px;
+    width:30px;
+    height:30px;
     background: #018FE5;
     border-radius: 5px;
+}
+.box-Zalo img{
+    margin-left:-10px;
 }
 .icon{
     margin-bottom: 30px;
 }
-.TenIcon{
+/*.TenIcon{
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -71,3 +75,4 @@
     line-height: normal;
     color: #000000;
 }
+*/
