@@ -11,7 +11,7 @@ import img2 from '../../assets/images/chplay.svg';
 export default function DownloadApp() {
 
     return (
-        <div className="background-main">
+        <div className="background-main mb-5">
             <Container>
                 <Row><div className='download-title'>Tải ứng dụng tại đây</div></Row>
                 <Row>

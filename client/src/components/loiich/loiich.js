@@ -7,7 +7,7 @@ class LoiIch extends Component {
 
       render() {
             return (
-                  <div id='main-loi-ich' className='mt-3'>
+                  <div id='main-loi-ich' className=''>
                         <Row className='mr-0 ml-0'><div className='pu-litle mt-4'> Nail Partner mang lại</div></Row>
 
                         <Row className='mr-0 ml-0'>
