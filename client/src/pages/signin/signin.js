@@ -5,10 +5,10 @@ import './signin.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faGoogle } from '@fortawesome/free-brands-svg-icons'
 import Zalo from '../../assets/images/Logo_Zalo.svg'
+import Google from '../../assets/images/image8-2.svg'
 class SignIn extends Component {
     render() {
         let ic_facebook = <FontAwesomeIcon className="icFacebook " icon={faFacebookF} />
-        let ic_google = <FontAwesomeIcon className="icGoogle " icon={faGoogle} />
         return (
             <div className="SignInComponent--Nailer">
                 <Row>
@@ -18,19 +18,20 @@ class SignIn extends Component {
                 </Row>
                 <Row className="icon">
                     <Col sm={4}>
-                    <div className="box-Google">
-                            <Col sm={1}>{ic_google}</Col>
-                        </div>
-                        
+                    <div className="box-login">
+                            <Col sm={1}>
+                                <img className="ic_google" src={Google}></img>
+                            </Col>
+                    </div>    
                     </Col>
                     <Col sm={4}>
-                        <div className="box-Facebook">
+                        <div className="box-login">
                             <Col sm={1}>{ic_facebook}</Col>
                             
                         </div>
                     </Col>
                     <Col sm={4}>
-                    <div className="box-Zalo">
+                    <div className="box-login">
                             <img src={Zalo}/>
                             <Col sm={1}><div className="icZalo"></div></Col>
                     </div>

@@ -2,11 +2,18 @@
     width:540px;
     height:400px;
     margin:auto;
-    background:#BD34FE;
+    background:#2995CC;
     border-radius:5px;
-    font-size:15px;
-    font-family:Open Sans;
-    color:white;
+    padding: 30px;
+    padding-left: 95px;
+    padding-right: 95px;
+}
+.text-center{
+    font-size: 15px;
+    font-family: 'Open Sans',sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
 .SignInComponent--Nailer .text-center::first-letter{
     text-transform:capitalize;
@@ -45,7 +52,7 @@
     background-image: url('../../assets/images/Logo_Zalo.svg');
     height: 25px;
 }
-.box-Facebook{
+/* .box-Facebook{
     height: 30px;    
     border-radius: 5px;
     background-color: #3B579D;
@@ -60,7 +67,7 @@
     height:30px;
     background: #018FE5;
     border-radius: 5px;
-}
+} */
 .box-Zalo img{
     margin-left:-10px;
 }
@@ -76,3 +83,11 @@
     color: #000000;
 }
 */
+.ic_google{
+    width: 40px;
+    height: 30px;
+}
+.box-login{
+    width: 110px;
+    height: 30px;
+}
