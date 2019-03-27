@@ -3,6 +3,7 @@ import './home.css';
 import Banner from '../../components/Banner/banner';
 import LoiIch from '../../components/loiich/loiich';
 import DownloadApp from '../../components/download/download'
+import UseApp from '../../components/useapp/useapp'
 
 const HomePage = () => (
 	<div>
@@ -13,6 +14,7 @@ const HomePage = () => (
 		</div>
 		<LoiIch/>
 		<DownloadApp/>
+		<UseApp/>
 	</div>
 )
 
