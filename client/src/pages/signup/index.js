@@ -4,8 +4,9 @@ import Step1 from './steps/step1';
 import Step2 from './steps/step2';
 import Step3 from './steps/step3';
 
+import './signup.css'
 
-export default class Body extends Component {
+export default class SignUp extends Component {
     constructor(props){
         super(props);
         this.state = {

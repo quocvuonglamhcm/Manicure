@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Form from 'react-bootstrap/Form';
 import { Row, Col, Button } from 'react-bootstrap';
 import './SignIn.css'
-class FormSignInComponent extends Component {
+class Login extends Component {
     render() {
         return (
             <div className="SignInComponent--Nailer">
@@ -36,7 +36,7 @@ class FormSignInComponent extends Component {
                             </Form.Group>
                             <Row>
                                 <Col>
-                                    <Button>dang</Button>
+                                    <Button>dang Nhap</Button>
                                 </Col>
                             </Row>
                         </Form>
@@ -47,4 +47,4 @@ class FormSignInComponent extends Component {
     }
 }
 
-export default FormSignInComponent;
+export default Login;
