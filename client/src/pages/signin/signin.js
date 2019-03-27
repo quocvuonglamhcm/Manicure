@@ -45,7 +45,7 @@ class SignIn extends Component {
                         <Form>
                             <Form.Group as={Row} controlId="formPlaintextEmail">
                                 <Form.Label column sm="4">
-                                    Số điện thoại
+                                    <div className="sđt">Số điện thoại</div>
                                 </Form.Label>
                                 <Col sm={8}>
                                     <Form.Control type="text" placeholder="Nhập số điện thoại" />
@@ -54,7 +54,7 @@ class SignIn extends Component {
 
                             <Form.Group as={Row} controlId="formPlaintextPassword" >
                                 <Form.Label column sm="4" >
-                                    Mật khẩu
+                                    <div className="mk">Mật khẩu</div>
                                 </Form.Label>
                                 <Col sm="4">
                                     <Form.Control type="password" placeholder="Nhập mật khẩu" />

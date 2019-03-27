@@ -14,6 +14,7 @@
 .SignInComponent--Nailer .btnLogin{
     margin-left:188px; 
     background: #FF773C;
+    margin-top:5px;
 }
 .SignInComponent--Nailer .btnLogin:hover{
     background: #FF773C;
@@ -49,19 +50,24 @@
     width:30px;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top:-5px;
+    margin-left:-7px;
 }
 .box-Facebook{
     width:150px;
-    height: 30px;    
+    height:30px;    
     border-radius: 5px;
     background-color: #3B579D;
     margin-left:25px;
+    padding:5px;
 }
 .box-Google{
     width:160px;
     height:30px;
     background: #F4F4F4;
     border-radius: 5px;
+    padding:5px;
+    margin-left:10px;
 }
 .box-Zalo{
     width:120px;
@@ -69,6 +75,7 @@
     background:#018FE5;
     border-radius: 5px;
     margin-left:39px;
+    padding:5px;
 }
 .icon{
     margin-bottom:30px;
@@ -89,17 +96,14 @@
 }
 .text3{
     margin-left:55px;
-    margin-top:-18px;
+    margin-top:-15px;
     font-family: Open Sans;
     font-size:12px;
     color:#000000;
 }
-/*.TenIcon{
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: normal;
-    color: #000000;
+.SignInComponent--Nailer .sđt{
+    margin-left:12px;
 }
-*/
+.SignInComponent--Nailer .mk{
+    margin-left:12px;
+}
