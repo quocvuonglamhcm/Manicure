@@ -137,7 +137,7 @@ module.exports.getInfoUser = (req, res) => {
     }else{
         console.log('no sign in')
     }
-    // res.send({data})
+    // res.send({data}) 
 }
 
 

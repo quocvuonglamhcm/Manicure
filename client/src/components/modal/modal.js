@@ -1,64 +1,29 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import Modal from 'react-modal';
-import { Redirect } from 'react-router-dom'
-const JSX_MODAL = (
-  <div className="modal fade" role="dialog">
-    <div className="ui standard modal visible active">
-      THIS IS SOME TEXT IN THE MODAL // add some UI features here
-    </div>
-  </div>
-);
+import React, { Component } from 'react';
+// import Form from 'react-bootstrap/Form';
+import { Modal} from 'react-bootstrap';
+// import './signup.css'
+// import Body from './modalBody'
 
-Modal.setAppElement('#modal')
-
-class ModalDialog extends Component {
-  constructor () {
-    super();
-    this.state = {
-      showModal: true,
-      goHome: false
-    };
-
-    this.handleOpenModal = this.handleOpenModal.bind(this);
-    this.handleCloseModal = this.handleCloseModal.bind(this);
-  }
-
-  handleOpenModal () {
-    this.setState({
-      showModal: true,
-      goHome: false
-     });
-  }
-
-  handleCloseModal () {
-    this.setState({
-      showModal: false,
-      goHome: true
-     });
-  }
-
-  goHome = () => {
-     if (this.state.goHome) {
-       return <Redirect to='/' />
-     }
-   }
-
+class ModalComponent extends Component {
   render() {
     return (
-      <React.Fragment>
-        {this.goHome()}
-        <Modal
-        isOpen={true}
-        contentLabel="onRequestClose Example"
-        onRequestClose={this.handleCloseModal}
-          >
-          <h1>Demo</h1>
-        </Modal>
-      </React.Fragment>
-    )
+      <Modal
+        {...this.props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton className='justify-content-center'>
+          <Modal.Title id="contained-modal-title-vcenter">
+              Đăng ký
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {/* <Body /> */}
+        </Modal.Body>
+      </Modal>
+    );
   }
 }
 
-
-export default ModalDialog;
+  export default ModalComponent

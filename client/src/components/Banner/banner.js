@@ -1,23 +1,22 @@
 import React, { Component } from 'react';
 import './banner.css'
 import { Row } from 'react-bootstrap';
-import SignUpContainer from '../login/SignUpContainer';
+import SignUp from '../../pages/signup/signup';
 class Background extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            isDisplayLogin: false
-        }
+        this.state = { modalShow: false };
     }
 
     displayLogin = () => {
         this.setState({
-            isDisplayLogin: !this.state.isDisplayLogin
+            modalShow : true
         })
         console.log(this.state)
     }
 
     render() {
+        let modalClose = () => this.setState({ modalShow: false });
         return (
             <React.Fragment>
                 <Row className="banner">
@@ -31,7 +30,7 @@ class Background extends Component {
                         </button>
                     </div>
                 </Row>
-                {this.state.isDisplayLogin ? <SignUpContainer displayLogin={this.displayLogin} /> : null}
+                <SignUp show={this.state.modalShow} onHide={modalClose}/>
             </React.Fragment>
         );
     }
