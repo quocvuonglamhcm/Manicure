@@ -39,6 +39,10 @@ var FireBase = {
   },
   connectDatabaseCreateUser : () => {
     return fireBaseClient.database().ref('nails/users')
+  },
+
+  getInfoUser: () => {
+    return fireBaseClient.auth().currentUser
   }
 }
 module.exports = FireBase;

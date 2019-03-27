@@ -19,6 +19,9 @@ var Auth = {
     },
     createNewUser: (phone, password) => {
         return FireBase.createNewUser(phone, password);
+    },
+    getInfoUser: () => {
+        return FireBase.getInfoUser();
     }
 }
 
@@ -103,13 +106,22 @@ module.exports.verifySmsCode = (req, res) => {
 module.exports.createNewUser = (req, res) => {
     var password = req.body.password;
     var phone_number = req.body.to;
+    let phone = phone_number.replace(/^\+/, '');
     
-    Auth.createNewUser(phone_number, password)
+    res.header('Content-Type', 'application/json');
+
+    
+    Auth.createNewUser(phone, password)
         .then((data) => {
+            console.log(data)
             Auth.connectDatabaseCreateUser().push({
-                phone : phone_number,
+                phone,
                 password  
-            }).then(()=> {res.send({success:true})}).catch(e => {res.send({e:emessages, success:false})})
+            })
+                .then(()=> {
+                    res.send({success:true})})
+                .catch(e => {
+                    res.send({e, success:false})})
 
             res.send({ success: true })
         })
@@ -117,6 +129,15 @@ module.exports.createNewUser = (req, res) => {
             res.send({ success: false ,e})
         })
 
+}
+module.exports.getInfoUser = (req, res) => {
+    let data = Auth.getInfoUser();
+    if(data){
+        console.log('singin')
+    }else{
+        console.log('no sign in')
+    }
+    // res.send({data})
 }
 
 
