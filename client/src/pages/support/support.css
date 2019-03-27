@@ -38,7 +38,7 @@
     font-weight: bold;
     font-family: 'Open Sans',sans-serif;
 }
-.contact-btn:active
+.contact-btn
 {
     background-color: #ff773c;
 }

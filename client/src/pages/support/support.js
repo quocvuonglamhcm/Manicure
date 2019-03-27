@@ -95,7 +95,7 @@ class SupportPage extends Component {
 				<Row className="m-4">
 					<Col>
 						<div className="mb-2 btn-slo">Liên hệ với chúng tôi!</div>
-						<Button variant="danger" className='p-3 contact-btn'>Trò chuyện ngay</Button>
+						<Button variant="primary" className='p-3 contact-btn'>Trò chuyện ngay</Button>
 					</Col>
 				</Row>
 			</Container >
