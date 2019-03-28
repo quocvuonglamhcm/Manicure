@@ -48,7 +48,7 @@ class SignIn extends Component {
                                     <div className="sđt">Số điện thoại</div>
                                 </Form.Label>
                                 <Col sm={8}>
-                                    <Form.Control type="text" placeholder="Nhập số điện thoại" />
+                                    <Form.Control type="text" className = "input" placeholder="Nhập số điện thoại" />
                                 </Col>
                             </Form.Group>
 
