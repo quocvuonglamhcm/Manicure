@@ -42,8 +42,10 @@ class Form123 extends Component {
                                 </Form.Group>
                             </Col>
                         </Form.Row>
+                        <div className="ButtonParent">
                             <Button variant="success" className="btn">Quay lại</Button>
                             <Button variant="success" className="btn1">Tiếp tục</Button>
+                        </div>
                     </Form>
                 </div>
             </div>
