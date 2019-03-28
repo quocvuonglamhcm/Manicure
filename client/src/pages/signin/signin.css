@@ -1,5 +1,5 @@
 .SignInComponent--Nailer{
-    width: 100%;
+    width:540px;
     margin:auto;
     background:#BD34FE;
     border-radius:5px;
@@ -11,7 +11,7 @@
     text-transform:capitalize;
 }
 .SignInComponent--Nailer .btnLogin{
-    margin-left:262px; 
+    margin-left:190px; 
     background: #FF773C;
     margin-top:5px;
 }
@@ -107,5 +107,5 @@
     margin-left:12px;
 }
 .SignInComponent--Nailer .input{
-    width:425px;
+    margin-left:1px;
 }
