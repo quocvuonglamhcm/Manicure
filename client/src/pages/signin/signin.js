@@ -13,31 +13,32 @@ class SignIn extends Component {
             <div className="SignInComponent--Nailer">
                 <Row>
                     <Col>
-                        <div className="text-center">đăng nhập bằng</div>
+                        <h4 className="text-center m-0">đăng nhập bằng</h4>
                     </Col>
                 </Row>
-                <Row className="icon">
-                    <Col sm={4} md={4} sx={4}>
-                    <div className="box-Google">
-                        <Col sm={1}>{ic_google}</Col>
-                        <div className="text1">Google</div>
-                    </div>
-                    </Col>
-                    <Col sm={4}>
-                        <div className="box-Facebook">
-                            <Col sm={1}>{ic_facebook}</Col>
-                            <div className="text2">Facebook</div>
+                <Row className="my-4">
+                    <Col >
+                        <div className="box-icon google">
+                            <button className="p-0 btn">
+                                {ic_google}<span>Google</span>
+                            </button>
                         </div>
                     </Col>
-                    <Col sm={4}>
-                            <div className="box-Zalo">
-                                <div className="icZalo">
-                                    <Col sm={1}>
-                                        <img src={Zalo}/>
-                                        <div className="text3">Zalo</div>
-                                    </Col>  
-                                </div>
+                    <Col >
+                        <div className="box-icon facebook">
+                            <button className="p-0 btn">
+                                {ic_facebook}<span>Facebook</span>
+                            </button>
+                        </div>
+                    </Col>
+                    <Col >
+                        <div className="box-icon zalo">
+                            <div className="icZalo">
+                                <button className="p-0 btn">
+                                    {/* <img src={Zalo} /><span>Zalo</span> */}
+                                </button>
                             </div>
+                        </div>
                     </Col>
                 </Row>
                 <Row className='justify-content-center'>
@@ -48,7 +49,7 @@ class SignIn extends Component {
                                     <div className="sđt">Số điện thoại</div>
                                 </Form.Label>
                                 <Col sm={8}>
-                                    <Form.Control type="text" className = "input" placeholder="Nhập số điện thoại" />
+                                    <Form.Control type="text" className="input" placeholder="Nhập số điện thoại" />
                                 </Col>
                             </Form.Group>
 
