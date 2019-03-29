@@ -28,7 +28,7 @@ export default class Step1 extends Component {
       <Container className='box-content'>
         <Row >
           <Col sm={12} md={12} sx={12}>
-            <b style={{ userSelect: 'none' }}>SĐT</b>
+            <b style={{ userSelect: 'none' }}>Số điện thoại</b>
             <input type='text' readOnly value='Viet Nam (+84)' className='mavung' />
             <input
               type='text' placeholder='Nhập số điện thoại'
