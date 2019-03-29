@@ -1,91 +1,38 @@
 .SignInComponent--Nailer{
     width:540px;
-    background:#BD34FE;
+    background:#2995cc;
     border-radius:3px;
     font-family:Open Sans;
     color:white;
     padding: 1.5rem 3rem;
 }
-.SignInComponent--Nailer .text-center::first-letter{
-    text-transform:capitalize;
-}
+
 .SignInComponent--Nailer .btnLogin{
-    margin-left:190px; 
     background: #FF773C;
-    margin-top:5px;
-}
-.SignInComponent--Nailer .btnLogin:hover{
-    background: #FF773C;
+    width: 100%;
 }
 .SignInComponent--Nailer .qmk{
     border:1px solid black; 
-    font-size:12px;
     font-weight:600;
     font-family: Open Sans;
-    padding-bottom: 9px;
-    padding-top: 9px;
-    padding-left: 14px;
-    padding-right: 15px;
-    margin-left:42px;
     width:-100px;
 }
-.SignInComponent--Nailer .qmk:hover{
-    border:1px solid black;
-}
-/* .icFacebook{
-    color:white;  
-    height: fit-content 70px;
-    width: fit-content 100%;
-}
-.icGoogle{
-    color:#1E9600;  
-    height: fit-content 70px;
-    width: fit-content 100%;
-}
-.icZalo{
-    background-image: url('../../assets/images/Logo_Zalo.svg');
-    height:30px;
-    width:30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top:-5px;
-    margin-left:-7px;
-}
-.box-Facebook{
-    width:150px;
-    height:30px;    
-    border-radius: 5px;
-    background-color: #3B579D;
-    margin-left:25px;
-    padding:5px;
-}
-.box-Google{
-    width:160px;
-    height:30px;
-    background: #F4F4F4;
-    border-radius: 5px;
-    padding:5px;
-    margin-left:10px;
-}
-.box-Zalo{
-    width:120px;
-    height:30px;
-    
-    border-radius: 5px;
-    margin-left:39px;
-} */
+
 .box-icon  {
     border-radius: 5px;
-    padding:5px;
+    padding:5px 10px;
     text-align: center;
 }
 .box-icon .btn {
-    color: #fff;    
+    color: #000;
+    font-size: 20px;    
+    display: flex;
+    width: 100%;
 }
 .box-icon .btn svg {
     font-size: 20px;
     color: #fff;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .facebook {
     background-color: #3B579D;
@@ -99,39 +46,18 @@
     color: #fff;
 
 }
-
-
-
-.icon{
-    margin-bottom:30px;
+.box-icon.facebook .icFacebook {
+    width: 22px;
+    height: 25px;
 }
-.text1{
-    margin-left:55px;
-    margin-top:-19px;
-    font-family: Open Sans;
-    font-size: 12px;
-    color:#000000;
+.icZalo{
+    width: 35px;
+    height: 30px;
+    background: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
 }
-.text2{
-   margin-left:55px;
-   margin-top:-19px;
-   font-family: Open Sans;
-   font-size:12px;
-   color:#000000;
-}
-.text3{
-    margin-left:55px;
-    margin-top:-15px;
-    font-family: Open Sans;
-    font-size:12px;
-    color:#000000;
-}
-.SignInComponent--Nailer .sđt{
-    margin-left:12px;
-}
-.SignInComponent--Nailer .mk{
-    margin-left:12px;
-}
-.SignInComponent--Nailer .input{
-    margin-left:1px;
+#signin-password{
+    margin-right: 5px;
+    width: 48%;
 }

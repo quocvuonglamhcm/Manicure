@@ -3,12 +3,12 @@ import Form from 'react-bootstrap/Form';
 import { Row, Col, Button } from 'react-bootstrap';
 import './signin.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookF, faGoogle } from '@fortawesome/free-brands-svg-icons'
-import Zalo from '../../assets/images/Logo_Zalo.svg'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+import icZalo from '../../assets/images/Logo_Zalo.svg'
+import icGoogle from '../../assets/images/google.svg'
 class SignIn extends Component {
     render() {
-        let ic_facebook = <FontAwesomeIcon className="icFacebook " icon={faFacebookF} />
-        let ic_google = <FontAwesomeIcon className="icGoogle " icon={faGoogle} />
+        let ic_facebook = <FontAwesomeIcon className="icFacebook " icon={faFacebook} />
         return (
             <div className="SignInComponent--Nailer">
                 <Row>
@@ -20,7 +20,10 @@ class SignIn extends Component {
                     <Col >
                         <div className="box-icon google">
                             <button className="p-0 btn">
-                                {ic_google}<span>Google</span>
+                            <div className="icZalo">
+                                    <img src= {icGoogle} />
+                                </div>
+                               <span>Google</span>
                             </button>
                         </div>
                     </Col>
@@ -33,46 +36,44 @@ class SignIn extends Component {
                     </Col>
                     <Col >
                         <div className="box-icon zalo">
-                            <div className="icZalo">
-                                <button className="p-0 btn">
-                                    {/* <img src={Zalo} /><span>Zalo</span> */}
-                                </button>
-                            </div>
+                            <button className="p-0 btn">
+                                <div className="icZalo">
+                                    <img src={icZalo} />
+                                </div><span>Zalo</span>
+                            </button>
                         </div>
                     </Col>
-                </Row>
+                </Row >
                 <Row className='justify-content-center'>
                     <Col >
                         <Form>
                             <Form.Group as={Row} controlId="formPlaintextEmail">
                                 <Form.Label column sm="4">
-                                    <div className="sđt">Số điện thoại</div>
+                                    <b>Số điện thoại</b>
                                 </Form.Label>
                                 <Col sm={8}>
                                     <Form.Control type="text" className="input" placeholder="Nhập số điện thoại" />
                                 </Col>
                             </Form.Group>
 
-                            <Form.Group as={Row} controlId="formPlaintextPassword" >
+                            <Form.Group as={Row} controlId="signin-password" >
                                 <Form.Label column sm="4" >
-                                    <div className="mk">Mật khẩu</div>
+                                    <b>Mật khẩu</b>
                                 </Form.Label>
-                                <Col sm="4">
+                                <Col sm="8" className="d-flex">
                                     <Form.Control type="password" placeholder="Nhập mật khẩu" />
-                                </Col>
-                                <Col sm={4}>
-                                    <Button className="qmk">Quên mật khẩu</Button>
+                                    <Button variant="outline-dark">Quên mật khẩu</Button>
                                 </Col>
                             </Form.Group>
-                            <Row>
-                                <Col>
+                            <Row className="justify-content-center">
+                                <Col sm="5">
                                     <Button className="btnLogin">Đăng nhập</Button>
                                 </Col>
                             </Row>
                         </Form>
                     </Col>
                 </Row>
-            </div>
+            </div >
         );
     }
 }
