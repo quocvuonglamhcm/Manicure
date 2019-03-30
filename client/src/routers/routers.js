@@ -11,12 +11,12 @@ import SupportPage from '../pages/support/support';
 import NailerPageNew from '../pages/nailer/nailer-new';
 import NailerPageSocial from '../pages/nailer/nailer-social.js';
 import SignIn from '../pages/signin/signin';
-import Form123 from '../pages/FormComponent/FormComponent';
+import SignUpNailer from '../pages/SignUpNailer/SignUpNailer';
 import Upproducts from '../pages/upproducts/upproducts';
 import TronGoiPopUp from '../pages/service/ServicePopUp/TronGoiPopUp';
-import BangGiaDichVu from '../pages/banggiadichsvu/banggiadichvu';
+import BangGiaDichVu from '../pages/banggiadichvu/banggiadichvu';
 import securityPage from '../pages/security/security';
-
+import ProfileClient from '../pages/profileuser/profileuser'
 const MainRoute = () => (
  <main>
    <Switch>
@@ -31,11 +31,12 @@ const MainRoute = () => (
      <Route path='/nailer-new' component={NailerPageNew}/>
      <Route path='/nailer-social' component={NailerPageSocial}/>
      <Route path='/signin' component={SignIn}/>
-     <Route path='/Form123' component ={Form123}/>
+     <Route path='/SignUpNailer' component ={SignUpNailer}/>
      <Route path='/upproducts' component ={Upproducts}/>
      <Route path='/TronGoiPopUp' component ={TronGoiPopUp}/>
      <Route path='/BangGiaDichVu' component ={BangGiaDichVu}/>
      <Route path='/security' component={securityPage}/>
+     <Route path='/ProfileClient' component={ProfileClient}/>
    </Switch>
  </main>
 )
