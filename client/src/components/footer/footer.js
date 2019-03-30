@@ -44,7 +44,7 @@ export default function FooterComponent() {
               </div>
               <div className="form-group font-weight-bold mt-1">
                 <label htmlFor="exampleFormControlTextarea1">Nội dung</label>
-                <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Nhập nội dung cần tư vấn" rows="4"></textarea>
+                <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Nhập nội dung cần tư vấn" rows="1.5"></textarea>
               </div>
               <button type="submit" className="btn btn-primary sendButton">GỬI</button>
             </form>

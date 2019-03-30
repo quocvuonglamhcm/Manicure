@@ -3,20 +3,20 @@ import './header.css';
 import { Link } from 'react-router-dom';
 
 class HeaderComponent extends Component {
-	render() {
-		return (
-			<div className="App-header">
-				<div className="header">
-					<div className="navbar2">
-						<ul>
-							<li>
-								<a href='tel:084391239123'>
-									&#9990; +84 39123 9123
+  render() {
+    return (
+      <div className="App-header">
+        <div className="header">
+          <div className="navbar2">
+            <ul>
+              <li>
+                <a href='tel:084391239123'>
+                  &#9990; +84 39123 9123
                 </a>
-							</li>
-							<li>
-								<a href='mailto: nail.system.2019@gmail.com'>
-									&#9993; nail.system.2019@gmail.com
+              </li>
+              <li>
+                <a href='mailto: nail.system.2019@gmail.com'>
+                  &#9993; nail.system.2019@gmail.com
                 </a>
 							</li>
 							<li>Đăng ký/Đăng nhập</li>
