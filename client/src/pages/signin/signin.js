@@ -20,10 +20,10 @@ class SignIn extends Component {
                     <Col >
                         <div className="box-icon google">
                             <button className="p-0 btn">
-                            <div className="icZalo">
-                                    <img src= {icGoogle} />
+                                <div className="icZalo">
+                                    <img src={icGoogle} />
                                 </div>
-                               <span>Google</span>
+                                <span>Google</span>
                             </button>
                         </div>
                     </Col>
