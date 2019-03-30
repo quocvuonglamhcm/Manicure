@@ -34,7 +34,7 @@ export default class Step1 extends Component {
               type='text' placeholder='Nhập số điện thoại'
               name='phone' onChange={this.handleOnChange}
               className='mavung mr-3' autoFocus />
-            <Button variant="warning" onClick={this.Continue}>Gửi mã xác nhận</Button>
+            <Button variant="warning" onClick={this.Continue} className="btnĐK">Gửi mã xác nhận</Button>
           </Col>
         </Row>
       </Container>

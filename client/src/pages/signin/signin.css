@@ -10,6 +10,9 @@
 .SignInComponent--Nailer .btnLogin{
     background: #FF773C;
     width: 100%;
+    margin-left:18px;
+    font-family: Open Sans;
+    font-size:18px;
 }
 .SignInComponent--Nailer .qmk{
     border:1px solid black; 
@@ -60,4 +63,7 @@
 #signin-password{
     margin-right: 5px;
     width: 48%;
+}
+.SignInComponent--Nailer .text-center.m-0::first-letter{
+    text-transform: capitalize;
 }

@@ -19,7 +19,7 @@ class HeaderComponent extends Component {
 									&#9993; nail.system.2019@gmail.com
                 </a>
 							</li>
-							<li> Đăng ký/Đăng nhập </li>
+							<li><a href="/SignUpNailer">Đăng ký/<a href="/SignIn">Đăng nhập</a></a></li>
 							<li> VI | EN</li>
 							<li> <input type='text' className='search' /></li>
 
@@ -34,6 +34,8 @@ class HeaderComponent extends Component {
 							<li> <Link to='/product/123' className="whiteColor">TÁC PHẨM</Link></li>
 							<li> <Link to='/support' className="whiteColor">TRỢ GIÚP</Link></li>
 							<li> <Link to='/contact' className="whiteColor"> LIÊN HỆ </Link> </li>
+							<li> <Link to='/SignUpNailer'>Đăng ký</Link></li>
+							<li><Link to='/SignIn'>Đăng nhập</Link></li>
 						</ul>
 					</div>
 				</div>

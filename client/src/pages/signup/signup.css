@@ -35,3 +35,7 @@ input.password{
 .button-success {
     justify-content: flex-end;
 }
+.box-content .btnĐK{
+    margin-left:-22px;
+    margin-top:5px;
+}
