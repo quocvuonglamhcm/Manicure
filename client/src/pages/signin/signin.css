@@ -1,5 +1,4 @@
 .SignInComponent--Nailer{
-    width:540px;
     background:#2995cc;
     border-radius:3px;
     font-family:Open Sans;
@@ -10,13 +9,10 @@
 .SignInComponent--Nailer .btnLogin{
     background: #FF773C;
     width: 100%;
-}
-.SignInComponent--Nailer .qmk{
-    border:1px solid black; 
-    font-weight:600;
     font-family: Open Sans;
-    width:-100px;
+    font-size:18px;
 }
+
 
 .box-icon  {
     border-radius: 5px;
@@ -60,4 +56,7 @@
 #signin-password{
     margin-right: 5px;
     width: 48%;
+}
+.SignInComponent--Nailer .text-center.m-0{
+    text-transform: capitalize;
 }

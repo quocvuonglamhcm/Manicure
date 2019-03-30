@@ -7,11 +7,19 @@ import Step3 from './steps/step3';
 import './signup.css'
 
 export default class SignUp extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-            step: 1
+            step: 1,
+            phone:''
         }
+    }
+    //nhận 1 props là phone number từ step 1 lưu vào state sau đó truyền cái state này cho step 2
+    OnRecivePhoneNumber =(param)=> {
+        this.setState({
+            phone: param
+        })
+
     }
     nextStep = () => {
         this.setState({
@@ -25,15 +33,20 @@ export default class SignUp extends Component {
         })
     }
     render() {
-        const { step } = this.state
+        const { step, phone } = this.state
         switch (step) {
             case 1:
                 return (
-                    <Step1 nextStep={this.nextStep} />
+                    <Step1 nextStep={this.nextStep} 
+                        OnRecivePhone ={this.OnRecivePhoneNumber}
+                    />
                 )
             case 2:
                 return (
-                    <Step2 nextStep={this.nextStep} prevStep={this.prevStep} />
+                    <Step2 nextStep={this.nextStep} 
+                        prevStep={this.prevStep}
+                        phoneNumber ={phone} 
+                    />
                 )
             case 3:
                 return (

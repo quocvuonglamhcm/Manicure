@@ -1,10 +1,10 @@
 #main-profile-user{
-    margin-left: 30%;
-    margin-right: 30%;
+    /* margin-left: 30%;
+    margin-right: 30%; */
     margin-top: 18px;
     margin-bottom: 18px;
-    width: 40%;
-    position: relative;
+    width: 100%;
+    /* position: relative; */
         }
 
         #main-profile-user .row{
@@ -12,11 +12,21 @@
             margin-right: 0px;
         }
 
+        .avt{
+            height: 200px;
+            width: 200px;
+            background-image: url(../../assets/images/girl.svg);
+            border-radius: 50%;
+            margin: auto;
+        }
+        .margin--15{
+            margin-left: -15px;
+        }
         #profile-user-detail{
-            width: fit-content 100% !important;
+            width:  100% !important;
             height: 900px;
             width: 50%;
-            margin: auto;
+            /* margin: auto; */
 
             border: 1px solid #c4c4c4;
         }
@@ -30,7 +40,7 @@
             border-radius: 5px;
             text-align: center !important;
             color: #000000;
-            margin: auto;
+            width: 100%;
         }
 
         #profile-user-detail #line{

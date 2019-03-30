@@ -1,4 +1,4 @@
 .fade.modal.show .modal-dialog {
     padding: 0;
-    max-width: 540px;
+    min-width: 580px;
 }

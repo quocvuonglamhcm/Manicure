@@ -23,22 +23,16 @@
 .SignIn--Title::first-letter{
     text-transform: capitalize;
 }
-.SignIn--Label{
-    display:inline;
-    margin-left:-50px;
-}
 .SignIn--btn{
     /* width:720px; */
     color:orange;
     background:green;
 }
-.SignIn--Nailer .btn1{
-    color:white;
-    background:green;
-    margin:5px;
+.SignIn--Nailer .btnDangky{
+    margin-left: -10px;
 }
-.SignIn--Nailer .btn:hover{
-     color:white;
+.SignIn--Nailer .btnBack{
+    margin-left:140px;
 }
 .SignIn--Nailer .name::first-letter{
     text-transform: capitalize;
@@ -70,7 +64,4 @@
     font-size:15px;
     color:black;
     padding:10px;
-}
-.SignIn--Nailer .ButtonParent{
-    margin-left:150px;
 }

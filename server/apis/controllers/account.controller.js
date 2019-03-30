@@ -100,7 +100,7 @@ module.exports.verifySmsCode = (req, res) => {
                 res.send({ success: false })
             }
 
-        }).catch(e => console.log(e))
+        }).catch(e => res.send({err: e}))
 }
 
 module.exports.createNewUser = (req, res) => {

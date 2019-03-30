@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Container, Form } from 'react-bootstrap';
+import { Row, Col, Container, Form, Button } from 'react-bootstrap';
 import './contact.css';
 import Map from './map.svg';
 
@@ -9,7 +9,7 @@ class ContactPage extends Component {
       <div className="contact">
         <Container>
           <Row className='mb-4'>
-            <Col md={6} sm={6} sx={6}>
+            <Col md={6} sm={5} sx={6}>
               <div className="text1 mt-5">Để lại tin nhắn, chúng tôi sẽ liên lạc với bạn trong thời gian sớm nhất.</div>
               <Form>
                 <Form.Group controlId="name">
@@ -30,7 +30,7 @@ class ContactPage extends Component {
               </Form>
             </Col>
             <Col md={6} sm={6} sx={6}>
-              <div className="text1 mt-5">Liên lạc trực tiếp với chúng tôi tại:</div>
+              <div className="text1 mt-5">Hoặc liên lạc trực tiếp với chúng tôi tại:</div>
               <div className="text2 mt-1">Công ty TNHH Thương mại Dịch vụ Nail Partner</div>
               <div className="text1 mt-1">Địa chỉ: 38 Nail Street, New York, USA</div>
               <div className="text1 mt-1">Tel: +84 3123 9123</div>
