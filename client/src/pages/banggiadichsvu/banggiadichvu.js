@@ -78,41 +78,6 @@ class BangGiaDichVu extends Component {
                       <option>Dinh da</option>
                     </Form.Control>
                   </Form.Group>
-<<<<<<< HEAD
-                </Form>
-              </Col>
-              <Col sm={2}><h4 className="gia">Tu</h4></Col>
-              <Col className="col-nhap-gia" sm={2}>
-                <Form.Control className ="from-nhap-gia" size="sm={2}" type="text" placeholder="Nhap vao gia" />
-              </Col>
-              <Col sm={2}><h4 className="gia">Den</h4></Col>
-              <Col className="col-nhap-gia" sm={2}>
-                <Form.Control className ="from-nhap-gia" size="sm={2}" type="text" placeholder="Nhap vao gia" />
-              </Col>
-              <Col><h4 className="gia">VND</h4></Col>
-              <Col><Button variant="suscess" className="button1">-</Button> </Col>
-            </Row>
-            <Row>
-              <Col>
-                <div>
-                  <InputGroup className="mb-3">
-                    <InputGroup.Prepend>
-                      <InputGroup.Checkbox aria-label="Checkbox for following text input" />
-                    </InputGroup.Prepend>
-                    Tôi đồng ý với các điều khoản hoạt động và chính sách bảo mật của nail Partner
-                </InputGroup>
-                </div>
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <div>
-                  <ButtonToolbar>
-                    <Button variant="primary" size="lg" className="button-dang-ky">Dang ky</Button>
-                  </ButtonToolbar>
-                </div>
-              </Col>
-=======
                 </Col>
                 <Col ><h4 className="gia">Tu</h4></Col>
                 <Col className="col-nhap-gia" sm={2}>
@@ -133,7 +98,6 @@ class BangGiaDichVu extends Component {
                   <Button variant size="lg" className="button-dang-ky">Hoan Thanh</Button>
                 </ButtonToolbar>
               </div>
->>>>>>> 038a3d66213864106091d6b3efb162dd7bc5eb84
             </Row>
           </Container>
       </div >
