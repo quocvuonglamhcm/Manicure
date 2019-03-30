@@ -4,7 +4,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { Row, Col } from 'react-bootstrap';
 import '../../pages/service/service.css';
 
-export default function TronGoi() {
+export default function DapBotPopUp() {
     const ic_check = <FontAwesomeIcon className="fontSize25 white " icon={faCheck} />
     return (
         <div>
