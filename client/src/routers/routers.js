@@ -15,6 +15,7 @@ import Form123 from '../pages/FormComponent/FormComponent';
 import Upproducts from '../pages/upproducts/upproducts';
 import TronGoiPopUp from '../pages/service/ServicePopUp/TronGoiPopUp';
 import BangGiaDichVu from '../pages/banggiadichsvu/banggiadichvu';
+import Security from '../pages/security/security';
 
 const MainRoute = () => (
  <main>
@@ -34,6 +35,7 @@ const MainRoute = () => (
      <Route path='/upproducts' component ={Upproducts}/>
      <Route path='/TronGoiPopUp' component ={TronGoiPopUp}/>
      <Route path='/BangGiaDichVu' component ={BangGiaDichVu}/>
+     <Route path='/Security' component ={Security}/>
    </Switch>
  </main>
 )
