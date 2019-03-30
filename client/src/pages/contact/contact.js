@@ -30,7 +30,7 @@ class ContactPage extends Component {
               </Form>
             </Col>
             <Col md={6} sm={6} sx={6}>
-              <div className="text1 mt-5">Liên lạc trực tiếp với chúng tôi tại:</div>
+              <div className="text1 mt-5">Hoặc liên lạc trực tiếp với chúng tôi tại:</div>
               <div className="text2 mt-1">Công ty TNHH Thương mại Dịch vụ Nail Partner</div>
               <div className="text1 mt-1">Địa chỉ: 38 Nail Street, New York, USA</div>
               <div className="text1 mt-1">Tel: +84 3123 9123</div>
