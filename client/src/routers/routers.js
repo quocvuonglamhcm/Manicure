@@ -15,7 +15,6 @@ import Form123 from '../pages/FormComponent/FormComponent';
 import Upproducts from '../pages/upproducts/upproducts';
 import TronGoiPopUp from '../pages/service/ServicePopUp/TronGoiPopUp';
 import BangGiaDichVu from '../pages/banggiadichsvu/banggiadichvu';
-
 const MainRoute = () => (
  <main>
    <Switch>
