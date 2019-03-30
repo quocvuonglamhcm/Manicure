@@ -5,7 +5,6 @@ import './service.css'
 
 import Menu from './menu';
 import Content from './content'
-import { Container } from 'react-bootstrap';
 
 
 class ServicePage extends Component {
@@ -23,12 +22,10 @@ class ServicePage extends Component {
 	render() {
 		let {ListService} = this.state;
 		return (
-			<Container>
 			<div id="main-service">
 				<Menu data = {ListService}/>
 				<Content />
 			</div>
-			</Container>
 		);
 	}
 }

@@ -14,6 +14,7 @@ import FormSignInComponent from '../components/SignIn/SignIn';
 import Bangiadichvu from '../pages/banggiadichsvu/banggiadichvu';
 import upProductsPage from '../pages/upproducts/upproducts';
 //import ModalDialog from '../components/modal/modal';
+import securityPage from '../pages/security/security';
 
 const MainRoute = () => (
  <main>
@@ -32,6 +33,7 @@ const MainRoute = () => (
      <Route path='/SignIn' component={FormSignInComponent}/>
      <Route path='/Banggiadichvu' component={Bangiadichvu}/>
      <Route path='/upproducts' component={upProductsPage}/>
+     <Route path='/security' component={securityPage}/>
    </Switch>
  </main>
 )

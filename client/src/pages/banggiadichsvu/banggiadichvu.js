@@ -17,13 +17,10 @@ class BangGiaDichVu extends Component {
           <div className="canh-giua">
             <div><h1 className="text-title">Bang Gia Dich Vu</h1></div>
             <div><h1 className="button-title"><Button variant="suscess">+</Button></h1></div>
-          </div>           
-          
+          </div>
           <Container className="container">
-           
               <div className="text-title1">Loai Hinh</div>
               <div className="text-title2">Gia Tham Khao</div>
-           
             <Row>
               <Col sm={5}>
                 <Form>
@@ -109,7 +106,7 @@ class BangGiaDichVu extends Component {
                     <InputGroup.Prepend>
                       <InputGroup.Checkbox aria-label="Checkbox for following text input" />
                     </InputGroup.Prepend>
-                    Toi dong y voi cac dieu khoan hoat dong va chinh sach bao mat cua nail bartner
+                    Tôi đồng ý với các điều khoản hoạt động và chính sách bảo mật của nail Partner
                 </InputGroup>
                 </div>
               </Col>
@@ -122,7 +119,6 @@ class BangGiaDichVu extends Component {
                   </ButtonToolbar>
                 </div>
               </Col>
-
             </Row>
           </Container>;
         </div>
