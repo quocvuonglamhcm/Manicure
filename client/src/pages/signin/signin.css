@@ -1,5 +1,4 @@
 .SignInComponent--Nailer{
-    width:540px;
     background:#2995cc;
     border-radius:3px;
     font-family:Open Sans;
@@ -10,16 +9,10 @@
 .SignInComponent--Nailer .btnLogin{
     background: #FF773C;
     width: 100%;
-    margin-left:18px;
     font-family: Open Sans;
     font-size:18px;
 }
-.SignInComponent--Nailer .qmk{
-    border:1px solid black; 
-    font-weight:600;
-    font-family: Open Sans;
-    width:-100px;
-}
+
 
 .box-icon  {
     border-radius: 5px;
@@ -64,6 +57,6 @@
     margin-right: 5px;
     width: 48%;
 }
-.SignInComponent--Nailer .text-center.m-0::first-letter{
+.SignInComponent--Nailer .text-center.m-0{
     text-transform: capitalize;
 }

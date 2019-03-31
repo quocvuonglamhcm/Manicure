@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"node ./server/server.js\" \"cd client && npm start\"",
+    "start": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
     "update-libs": "concurrently \"cd server && npm install\" \"cd client && npm install\"",
     "start-server": "cd server && npm start",
     "start-client": "cd client && npm start"

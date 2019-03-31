@@ -8,15 +8,19 @@ class ModalComponent extends Component {
         {...this.props}
         aria-labelledby="contained-modal-title-vcenter"
         centered
+      // {...this.props.status ? "" :  "size='lg'"}
       >
-        
-        {/* <Modal.Header closeButton >
-          <Modal.Title id="contained-modal-title-vcenter" >
-            Modal heading
-          </Modal.Title>
-        </Modal.Header> */}
+        {!this.props.status
+          ? <Modal.Header closeButton >
+              <Modal.Title id="contained-modal-title-vcenter" >
+                {this.props.title}
+              </Modal.Title>
+            </Modal.Header>
+          : null}
         <Modal.Body className="p-0">
-          {this.props.body()}
+          <div>
+            {this.props.body()}
+          </div>
         </Modal.Body>
       </Modal>
     );

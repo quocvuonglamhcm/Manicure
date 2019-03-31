@@ -1,7 +1,12 @@
 const express = require('express')
 const router  = express.Router()
+var cors = require('cors');
 
 let controller = require('../controllers/account.controller')
+
+router.get('/getTest',cors(), (req, res) => {
+    res.json({succes: true})
+})
 
 router.post('/login', controller.authLogin ); /* /api/account/login */
 

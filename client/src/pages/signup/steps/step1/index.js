@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Col, Button, Container } from 'react-bootstrap';
 
 import { Row } from 'react-bootstrap/';
-
+import axios from "axios";
 export default class Step1 extends Component {
   constructor(props) {
     super(props);
@@ -11,23 +11,41 @@ export default class Step1 extends Component {
     }
   }
 
+  verify() {
+    fetch('/api/account/sms', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        to: this.state.phone
+      })
+    })
+      .then((data) => {
+        console.log(data);
+      })
+  }
+
   handleOnChange = (e) => {
-    // console.log(e.target.name, e.target.value);
     this.setState({
       [e.target.name]: e.target.value
     })
   }
-
-  Continue = () => {
-    console.log('continue')
+  onRecicePhone(phone) {
+    this.props.OnRecivePhone(phone)
+  }
+  Continue = (phone) => {
+    this.verify()
+    this.onRecicePhone(phone)
     this.props.nextStep();
   }
 
   render() {
+    let { phone } = this.state;
     return (
       <Container className='box-content'>
         <Row >
-          <Col sm={12} md={12} sx={12}>
+          <Col className='d-flex'>
             <b style={{ userSelect: 'none' }}>Số điện thoại</b>
             <input type='text' readOnly value='Viet Nam (+84)' className='mavung' />
             <input

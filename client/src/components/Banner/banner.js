@@ -20,7 +20,7 @@ class Background extends Component {
     displayLogin = () => {
         this.setState({
             modalShow: true,
-            login: !this.state.login
+            login: true
         })
     }
     returnBodySignUp = () => {
@@ -52,12 +52,14 @@ class Background extends Component {
                         title="Đăng ký"
                         show={this.state.modalShow}
                         onHide={modalClose}
+                        status = {this.state.login}
                     />
                     : <ModalContainer
                         body={this.returnBodyLogin}
                         title ="Đăng nhập"
                         show={this.state.modalShow}
                         onHide={modalClose}
+                        status = {this.state.login}
                     />
                 }
             </React.Fragment>
