@@ -19,7 +19,7 @@ class HeaderComponent extends Component {
                   &#9993; nail.system.2019@gmail.com
                 </a>
 							</li>
-							<li>Đăng ký/Đăng nhập</li>
+							<li><Link to='/SignUp'>Đăng ký</Link>/<Link to='/signin'>Đăng nhập</Link></li>
 							<li> VI | EN</li>
 							<li> <input type='text' className='search' /></li>
 

@@ -11,6 +11,7 @@ import SupportPage from '../pages/support/support';
 import NailerPageNew from '../pages/nailer/nailer-new';
 import NailerPageSocial from '../pages/nailer/nailer-social.js';
 import SignIn from '../pages/signin/signin';
+import SignUp from '../pages/signup/index'
 import SignUpNailer from '../pages/SignUpNailer/SignUpNailer';
 import Upproducts from '../pages/upproducts/upproducts';
 import TronGoiPopUp from '../pages/service/ServicePopUp/TronGoiPopUp';
@@ -30,6 +31,7 @@ const MainRoute = () => (
      <Route path='/contact' component={ContactPage}/>
      <Route path='/nailer-new' component={NailerPageNew}/>
      <Route path='/nailer-social' component={NailerPageSocial}/>
+     <Route path='/SignUp' component={SignUp}/>
      <Route path='/signin' component={SignIn}/>
      <Route path='/SignUpNailer' component ={SignUpNailer}/>
      <Route path='/upproducts' component ={Upproducts}/>
