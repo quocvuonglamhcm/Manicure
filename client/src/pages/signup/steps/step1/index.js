@@ -28,7 +28,8 @@ export default class Step1 extends Component {
 
   handleOnChange = (e) => {
     this.setState({
-      [e.target.name]: e.target.value
+      // [e.target.name]: e.target.value
+      phone: e.target.value
     })
   }
   onRecicePhone(phone) {
@@ -55,7 +56,7 @@ export default class Step1 extends Component {
           </Col>    
         </Row>
         <Row>      
-            <Button variant="warning" onClick={this.Continue} className="btnĐK">Gửi mã xác nhận</Button>          
+            <Button variant="warning" onClick={() => this.Continue(phone)} className="btnĐK">Gửi mã xác nhận</Button>          
         </Row>
       </Container>
     )
