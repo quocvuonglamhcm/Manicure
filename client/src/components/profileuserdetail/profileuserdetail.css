@@ -12,6 +12,16 @@
             margin-right: 0px;
         }
 
+        .avt{
+            height: 200px;
+            width: 200px;
+            background-image: url(../../assets/images/girl.svg);
+            border-radius: 50%;
+            margin: auto;
+        }
+        .margin--15{
+            margin-left: -15px;
+        }
         #profile-user-detail{
             width: fit-content 100% !important;
             height: 900px;
@@ -30,7 +40,7 @@
             border-radius: 5px;
             text-align: center !important;
             color: #000000;
-            margin: auto;
+            width: 100%;
         }
 
         #profile-user-detail #line{
