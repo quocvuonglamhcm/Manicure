@@ -45,7 +45,7 @@ export default class Step1 extends Component {
     return (
       <Container className='box-content'>
         <Row >
-          <Col className='d-flex'>
+          <Col className='d-flex justify-content-center'>
             <b style={{ userSelect: 'none' }}>Số điện thoại</b>
             <input type='text' readOnly value='Viet Nam (+84)' className='mavung' />
             <input

@@ -20,7 +20,7 @@ export default class Step2 extends React.Component {
             },
             body: JSON.stringify({
                 code: this.state.code,
-                phone: this.state.phone
+                to: this.state.phone
             })
         })
     }
