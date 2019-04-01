@@ -62,7 +62,7 @@ class SignIn extends Component {
                 </Form.Label>
                 <Col sm={8} md={8} sx={8} className="d-flex">
                   <Form.Control type="password" placeholder="Nhập mật khẩu" />
-                  <Button variant="outline-dark">Quên mật khẩu</Button>
+                  <Button variant="outline-dark" >Quên mật khẩu</Button>
                 </Col>
               </Form.Group>
               <Row className="justify-content-center">

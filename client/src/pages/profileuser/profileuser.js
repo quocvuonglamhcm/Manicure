@@ -3,10 +3,10 @@ import ProfileUserdetail from '../../components/profileuserdetail/profileuserdet
 const ProfileUser = () => (
 	<div>
 		<div className='container'>
-			<div className='register-title'>
-			</div>
+			{/* <div className='register-title'>
+			</div> */}
 
-            <div className='main-profile-user'>
+            <div id='main-profile-user'>
 				<ProfileUserdetail />
 			</div>
 		</div>
