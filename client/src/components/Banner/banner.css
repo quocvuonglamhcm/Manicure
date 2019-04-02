@@ -1,4 +1,7 @@
 .banner{
+	position: sticky;
+	top: 200px;
+	z-index: 98;
 	height: 80vh;
 	background-image: url('../../assets/images/bg.png');
 	background-position: center;

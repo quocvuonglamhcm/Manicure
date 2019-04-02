@@ -14,44 +14,24 @@ export default function UseApp() {
     return (
         <Container>
             <Row><div className='useapp-title'>Dễ dàng đặt lịch với Nail Partner</div></Row>
-            <Carousel>
-                <Carousel.Item>
-                    <div className='useapp'>
-                    <div className='useapp-1'></div>
-                    </div>
-                    <Carousel.Caption>
-                        <div className='useapp-title-once'>Bước 1</div>
-                        <div className='useapp-desc'>Chọn dịch vụ</div>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <div className='useapp'>
-                    <div className='useapp-1'></div>
-                    </div>
-                    <Carousel.Caption>
-                        <div className='useapp-title-once'>Bước 2</div>
-                        <div className='useapp-desc'>Chọn vị trí</div>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <div className='useapp'>
-                    <div className='useapp-1'></div>
-                    </div>
-                    <Carousel.Caption>
-                        <div className='useapp-title-once'>Bước 3</div>
-                        <div className='useapp-desc'>Chọn thợ Nail</div>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <div className='useapp'>
-                    <div className='useapp-1'></div>
-                    </div>
-                    <Carousel.Caption>
-                        <div className='useapp-title-once'>Bước 4</div>
-                        <div className='useapp-desc'>Trao đổi giá cả & Hoàn tất</div>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
+            <div className="slider-pro" id="my-slider">
+	<div className="sp-slides">
+		<div className="sp-slide">
+			<img className="sp-image" src="path/to/image1.jpg"/>
+		</div>
+		
+
+		<div className="sp-slide">
+			<p>Lorem ipsum dolor sit amet</p>
+		</div>
+		
+
+		<div className="sp-slide">
+			<h3 className="sp-layer">Lorem ipsum dolor sit amet</h3>
+			<p className="sp-layer">consectetur adipisicing elit</p>
+		</div>
+	</div>
+</div>
         </Container>
     )
 }

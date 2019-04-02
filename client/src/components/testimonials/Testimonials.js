@@ -12,6 +12,7 @@ import Testimonials2 from './Testimonials2'
 export default function Testimonials() {
 
     return (
+        
         <Container>
             <Row><div className='useapp-title'>Nhận xét của mọi người</div></Row>
 
