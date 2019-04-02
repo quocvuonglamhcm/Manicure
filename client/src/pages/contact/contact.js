@@ -20,7 +20,7 @@ class ContactPage extends Component {
                   {/* <Form.Label htmlFor="mail">Email address</Form.Label> */}
                   <Form.Control type="email" placeholder="Địa chỉ email" />
                 </Form.Group>
-                <Form.Group controlId="exampleForm.ControlTextarea1">
+                <Form.Group controlId="content">
                   {/* <Form.Label>Mô tả sản phẩm của bạn</Form.Label> */}
                   <Form.Control as="textarea" rows="5" placeholder="Nhập nội dung của bạn" />
                 </Form.Group>
@@ -33,8 +33,16 @@ class ContactPage extends Component {
               <div className="text1 mt-5">Hoặc liên lạc trực tiếp với chúng tôi tại:</div>
               <div className="text2 mt-1">Công ty TNHH Thương mại Dịch vụ Nail Partner</div>
               <div className="text1 mt-1">Địa chỉ: 38 Nail Street, New York, USA</div>
-              <div className="text1 mt-1">Tel: +84 3123 9123</div>
-              <div className="text1 mt-1">Email: nail.system.2019@gmail.com</div>
+              <div className="text1 mt-1">
+                <a href='tel:+8431239123'>
+                Tel: +84 3123 9123
+                </a>
+              </div>
+              <div className="text1 mt-1">
+                <a href='mailto:nail.system.2019@gmail.com'>
+                Email: nail.system.2019@gmail.com
+                </a>
+                </div>
             </Col>
           </Row>
           <Row>
