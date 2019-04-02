@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import './footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -102,7 +102,7 @@ export default function FooterComponent() {
       </Container>
       <div className="footBar">
         <Container>
-          <div className="copywright">2019 Copyright by Nails Partner Corp</div>
+          <div className="copywright">2019 Copyright © by Nails Partner Corp</div>
         </Container>
       </div>
     </div>
