@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Col, Button, Container } from 'react-bootstrap';
 
 import { Row } from 'react-bootstrap/';
-import axios from "axios";
 export default class Step1 extends Component {
   constructor(props) {
     super(props);

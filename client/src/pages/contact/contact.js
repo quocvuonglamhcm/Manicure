@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Container, Form, Button } from 'react-bootstrap';
+import { Row, Col, Container, Form} from 'react-bootstrap';
 import './contact.css';
 import Map from './map.svg';
 
