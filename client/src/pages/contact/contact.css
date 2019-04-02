@@ -27,3 +27,11 @@
 .contact .submitButton:hover {
     background-color: #5b00b7 !important;
 }
+
+.contact #content {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 181px;
+    max-height: 177px;
+    min-height: 177px;
+}
