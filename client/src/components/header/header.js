@@ -4,90 +4,99 @@ import { Link } from 'react-router-dom';
 import ModalContainer from '../modal/modal'
 import SignUp from '../../pages/signup'
 import Login from '../../pages/signin/signin'
+import { Row } from 'react-bootstrap';
 
 class HeaderComponent extends Component {
 	constructor(props) {
 		super(props)
 
 		this.state = { modalShow: false, login: false };
-}
-displaySignUp = () => {
-	this.setState({
+	}
+	displaySignUp = () => {
+		this.setState({
 			modalShow: true,
 			login: false
-	})
-}
-displayLogin = () => {
-	this.setState({
+		})
+	}
+	displayLogin = () => {
+		this.setState({
 			modalShow: true,
 			login: true
-	})
-}
-returnBodySignUp = () => {
-	return (
+		})
+	}
+	returnBodySignUp = () => {
+		return (
 			<SignUp />
-	)
-}
-returnBodyLogin = () => {
-	return <Login />
-}
-  render() {
+		)
+	}
+	returnBodyLogin = () => {
+		return <Login />
+	}
+	render() {
 		let modalClose = () => this.setState({ modalShow: false });
-    return (
+		return (
 			<React.Fragment>
-      <div className="App-header">
-        <div className="header">
-          <div className="navbar2">
-            <ul>
-              <li>
-                <a href='tel:084391239123'>
-                  &#9990; +84 39123 9123
+				<div className="App-header">
+					<div className="header">
+						<div className="navbar2">
+							<ul>
+								<li>
+									<a href='tel:084391239123'>
+										&#9990; +84 39123 9123
                 </a>
-              </li>
-              <li>
-                <a href='mailto: nail.system.2019@gmail.com'>
-                  &#9993; nail.system.2019@gmail.com
+								</li>
+								<li>
+									<a href='mailto: nail.system.2019@gmail.com'>
+										&#9993; nail.system.2019@gmail.com
                 </a>
-							</li>
-							<li>
-								<div onClick ={this.displaySignUp}>Đăng ký</div>
-							</li>
-							<li> VI | EN</li>
-							<li> <input type='text' className='search' /></li>
+								</li>
+								<li>
+									<Row>
+										<div onClick={this.displaySignUp}>
+											Đăng ký
+									</div>
+										/
+									<div onClick={this.displayLogin}>
+											Đăng nhập
+									</div>
+									</Row>
+								</li>
+								<li> VI | EN</li>
+								<li> <input type='text' className='search' /></li>
 
-						</ul>
-					</div>
-					<div className="navbar justify-content-end">
-						<ul>
-							<li> <Link to='/' className="whiteColor"> TRANG CHỦ </Link> </li>
-							<li> <Link to='/about' className="whiteColor"> GIỚI THIỆU </Link> </li>
-							<li> <Link to='/service' className="whiteColor"> DỊCH VỤ </Link> </li>
-							<li> <Link to='/nailer' className="whiteColor">THỢ NAIL</Link></li>
-							<li> <Link to='/product/123' className="whiteColor">TÁC PHẨM</Link></li>
-							<li> <Link to='/support' className="whiteColor">TRỢ GIÚP</Link></li>
-							<li> <Link to='/contact' className="whiteColor"> LIÊN HỆ </Link> </li>
-							<li> <Link to='/user' className="whiteColor"> USER </Link> </li>
-						</ul>
+							</ul>
+						</div>
+						<div className="navbar justify-content-end">
+							<ul>
+								<li> <Link to='/' className="whiteColor"> TRANG CHỦ </Link> </li>
+								<li> <Link to='/about' className="whiteColor"> GIỚI THIỆU </Link> </li>
+								<li> <Link to='/service' className="whiteColor"> DỊCH VỤ </Link> </li>
+								<li> <Link to='/nailer' className="whiteColor">THỢ NAIL</Link></li>
+								<li> <Link to='/product/123' className="whiteColor">TÁC PHẨM</Link></li>
+								<li> <Link to='/support' className="whiteColor">TRỢ GIÚP</Link></li>
+								<li> <Link to='/contact' className="whiteColor"> LIÊN HỆ </Link> </li>
+								<li> <Link to='/user' className="whiteColor"> USER </Link> </li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-			{!this.state.login
-				? <ModalContainer
+				{!this.state.login
+					? <ModalContainer
 						body={this.returnBodySignUp}
 						title="Đăng ký"
 						show={this.state.modalShow}
 						onHide={modalClose}
-						status = {this.state.login}
-				/>
-				: <ModalContainer
+						status={this.state.login}
+					/>
+					: <ModalContainer
 						body={this.returnBodyLogin}
-						title ="Đăng nhập"
+						title="Đăng nhập"
 						show={this.state.modalShow}
 						onHide={modalClose}
-						status = {this.state.login}
-				/>
-		}
-		</React.Fragment>
+						status={this.state.login}
+					/>
+				}
+			</React.Fragment>
 		);
 	}
 }
