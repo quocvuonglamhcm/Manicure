@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Form, } from 'react-bootstrap';
+import { Row, Col} from 'react-bootstrap';
 import "./loiich.css";
 
 
@@ -28,16 +28,19 @@ class LoiIch extends Component {
           <Row className='col-sm-6'>
 
           </Row>
-          <Row className='card-left-1 mr-0 mt-3'>
-            <div className='hinh-tron4 '> </div>
-            <div className='hinh-tron5'> </div>
-            <div className='hinh-tron6'> </div>
-          </Row>
+
 
           <Row className='card-right-1 col-sm-6 mt-3'>
-            <Col sm={12} md={12} sx={12} className='text-card-right-1 mt-3'>Thể hiện năng lực bản thân</Col>
-            <Col sm={12} md={12} sx={12} className='text-card-right-1 mt-3'>Dễ dàng tiếp cận khách hàng mới</Col>
-            <Col sm={12} md={12} sx={12} className='text-card-right-1 mt-3'>Chia sẻ kinh nghiệm làm đẹp với mọi người</Col>
+            <Row className='card-left-1 mr-0  mt-3'>
+              <div className='hinh-tron4 '> </div>
+              <div className='hinh-tron5'> </div>
+              <div className='hinh-tron6'> </div>
+            </Row>
+            <Row className='col-sm-11'>
+              <Col sm={12} md={12} sx={12} className='text-card-right-1 mt-3'>Thể hiện năng lực bản thân</Col>
+              <Col sm={12} md={12} sx={12} className='text-card-right-1 mt-3'>Dễ dàng tiếp cận khách hàng mới</Col>
+              <Col sm={12} md={12} sx={12} className='text-card-right-1 mt-3'>Chia sẻ kinh nghiệm làm đẹp với mọi người</Col>
+            </Row>
           </Row>
         </Row>
 

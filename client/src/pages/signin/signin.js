@@ -21,7 +21,7 @@ class SignIn extends Component {
             <div className="box-icon google">
               <button className="p-0 btn">
                 <div className="icZalo">
-                  <img src={icGoogle} />
+                  <img src={icGoogle} alt="" />
                 </div>
                 <span>Google</span>
               </button>
@@ -38,7 +38,7 @@ class SignIn extends Component {
             <div className="box-icon zalo">
               <button className="p-0 btn">
                 <div className="icZalo">
-                  <img src={icZalo} />
+                  <img src={icZalo} alt="" />
                 </div><span>Zalo</span>
               </button>
             </div>

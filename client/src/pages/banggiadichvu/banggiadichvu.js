@@ -6,7 +6,7 @@ import './banggiadichvu.css';
 //import datlich1 from '../../assets/images/minus-circle-solid.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons';
-import { Button, Row, Col, Container, InputGroup, FormControl } from 'react-bootstrap/'
+import { Button, Row, Col, Container} from 'react-bootstrap/'
 
 class BangGiaDichVu extends Component {
 

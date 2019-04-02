@@ -60,3 +60,6 @@
 .SignInComponent--Nailer .text-center.m-0{
     text-transform: capitalize;
 }
+img{
+  width:100%;
+}

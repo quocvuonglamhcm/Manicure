@@ -1,11 +1,11 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
-import './testimonials.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { faMapMarkerAlt, faMobileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import img1 from '../../assets/images/appstore.svg';
-import img2 from '../../assets/images/chplay.svg';
+import './testimonials.css';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faInstagram, faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
+// import { faMapMarkerAlt, faMobileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+// import img1 from '../../assets/images/appstore.svg';
+// import img2 from '../../assets/images/chplay.svg';
 import Testimonials1 from './Testimonials1'
 import Testimonials2 from './Testimonials2'
 
