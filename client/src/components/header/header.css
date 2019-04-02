@@ -81,3 +81,6 @@ a:hover {
   color: #29b6f6 !important;
   text-decoration: none !important;
 }
+.App-header div:hover{
+	 color:#007bff;
+}

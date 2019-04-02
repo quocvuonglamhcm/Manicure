@@ -49,7 +49,7 @@ export default class Step1 extends Component {
             <b style={{ userSelect: 'none' }}>Số điện thoại</b>
             <input type='text' readOnly value='Viet Nam (+84)' className='mavung' />
             <input
-              type='text' placeholder='Nhập số điện thoại'
+              type='text' placeholder="Nhập SĐT"
               name='phone' onChange={this.handleOnChange}
               className='mavung mr-3' autoFocus />
           </Col>    
