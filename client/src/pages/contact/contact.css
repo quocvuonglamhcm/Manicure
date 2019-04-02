@@ -35,3 +35,12 @@
     max-height: 177px;
     min-height: 177px;
 }
+
+.contact a {
+    color: #fafafa !important;
+}
+  
+.contact a:hover {
+    color: #29b6f6 !important;
+    text-decoration: none !important;
+}
