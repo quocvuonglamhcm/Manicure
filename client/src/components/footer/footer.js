@@ -32,7 +32,7 @@ export default function FooterComponent() {
               <div className="Slogan">ĐỒNG HÀNH CÙNG VẺ ĐẸP BẠN</div>
             </div>
             <div className="font-weight-bold pt-2">Điều khoản hoạt động</div>
-            <Link to={'/security'}>
+            <Link to={'/policy'}>
               <div className="font-weight-bold pt-2">Chính sách bảo mật</div>
             </Link>
           </Col>

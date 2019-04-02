@@ -15,8 +15,8 @@ import SignUpNailer from '../pages/SignUpNailer/SignUpNailer';
 import Upproducts from '../pages/upproducts/upproducts';
 import TronGoiPopUp from '../pages/service/ServicePopUp/TronGoiPopUp';
 import BangGiaDichVu from '../pages/banggiadichvu/banggiadichvu';
-import securityPage from '../pages/security/security';
-import securityPage1 from '../pages/security/security1';
+import policyPage from '../pages/policy/policy';
+import policy1Page from '../pages/policy/policy1';
 import ProfileClient from '../pages/profileuser/profileuser'
 import ProfileUser from '../pages/profileuser/profileuser';
 const MainRoute = () => (
@@ -37,8 +37,8 @@ const MainRoute = () => (
      <Route path='/upproducts' component ={Upproducts}/>
      <Route path='/TronGoiPopUp' component ={TronGoiPopUp}/>
      <Route path='/BangGiaDichVu' component ={BangGiaDichVu}/>
-     <Route path='/security' component={securityPage}/>
-     <Route path='/security1' component={securityPage1}/>
+     <Route path='/policy' component={policyPage}/>
+     <Route path='/policy1' component={policy1Page}/>
      <Route path='/ProfileClient' component={ProfileClient}/>
      <Route path='/user' component={ProfileUser}/>
    </Switch>
