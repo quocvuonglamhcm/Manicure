@@ -37,12 +37,15 @@ var FireBase = {
     // console.log(fireBaseClient.database().ref(`nails/register/${phone}}`))
     return fireBaseClient.database().ref(`nails/register/${phone}`);
   },
-  connectDatabaseCreateUser : () => {
-    return fireBaseClient.database().ref('nails/users')
+  connectDatabaseCreateUser : (uid) => {
+    return fireBaseClient.database().ref(`nails/users/${uid}`)
   },
 
   getInfoUser: () => {
     return fireBaseClient.auth().currentUser
+  },
+  getDataInfireStore : () => {
+    return fireBaseClient.storage
   }
 }
 module.exports = FireBase;
