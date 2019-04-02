@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import icZalo from '../../assets/images/Logo_Zalo.svg'
 import icGoogle from '../../assets/images/google.svg'
+
+
 class SignIn extends Component {
   render() {
     let ic_facebook = <FontAwesomeIcon className="icFacebook " icon={faFacebook} />

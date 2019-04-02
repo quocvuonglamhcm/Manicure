@@ -1,10 +1,40 @@
 import React, { Component } from 'react';
 import './header.css';
 import { Link } from 'react-router-dom';
+import ModalContainer from '../modal/modal'
+import SignUp from '../../pages/signup'
+import Login from '../../pages/signin/signin'
 
 class HeaderComponent extends Component {
+	constructor(props) {
+		super(props)
+
+		this.state = { modalShow: false, login: false };
+}
+displaySignUp = () => {
+	this.setState({
+			modalShow: true,
+			login: false
+	})
+}
+displayLogin = () => {
+	this.setState({
+			modalShow: true,
+			login: true
+	})
+}
+returnBodySignUp = () => {
+	return (
+			<SignUp />
+	)
+}
+returnBodyLogin = () => {
+	return <Login />
+}
   render() {
+		let modalClose = () => this.setState({ modalShow: false });
     return (
+			<React.Fragment>
       <div className="App-header">
         <div className="header">
           <div className="navbar2">
@@ -19,7 +49,9 @@ class HeaderComponent extends Component {
                   &#9993; nail.system.2019@gmail.com
                 </a>
 							</li>
-							<li><Link to='/SignUp'>Đăng ký</Link>/<Link to='/signin'>Đăng nhập</Link></li>
+							<li>
+								<div onClick ={this.displaySignUp}>Đăng ký</div>
+							</li>
 							<li> VI | EN</li>
 							<li> <input type='text' className='search' /></li>
 
@@ -39,6 +71,23 @@ class HeaderComponent extends Component {
 					</div>
 				</div>
 			</div>
+			{!this.state.login
+				? <ModalContainer
+						body={this.returnBodySignUp}
+						title="Đăng ký"
+						show={this.state.modalShow}
+						onHide={modalClose}
+						status = {this.state.login}
+				/>
+				: <ModalContainer
+						body={this.returnBodyLogin}
+						title ="Đăng nhập"
+						show={this.state.modalShow}
+						onHide={modalClose}
+						status = {this.state.login}
+				/>
+		}
+		</React.Fragment>
 		);
 	}
 }
