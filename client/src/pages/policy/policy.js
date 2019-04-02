@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
-import './security.css';
+import './policy.css';
+import { Link } from 'react-router-dom';
     
-class securityPage extends Component {
+class policyPage extends Component {
     render() {
         return (
             <div className="dataSecurity">
@@ -13,7 +14,7 @@ class securityPage extends Component {
                     </Row>
                     <Row className="mt-4 mb-5">
                         <Col md={4} className="leftContent">
-                            <div className="tag">Thông tin chúng tôi thu thập</div>
+                            <div className="tag"><Link to={'/policy1'}>Thông tin chúng tôi thu thập</Link></div>
                             <div className="tag">Mục đích sử dụng thông tin</div>
                             <div className="tag">Mục đích chia sẻ thông tin</div>
                             <div className="tag">Thông tin chi tiết</div>
@@ -45,4 +46,4 @@ class securityPage extends Component {
     }
 }
 
-export default securityPage;
+export default policyPage;

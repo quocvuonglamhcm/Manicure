@@ -14,8 +14,8 @@ var Auth = {
     connectDatabaseRegister: function (phone) {
         return FireBase.connectFirebaseDatabaseRegister(phone);
     },
-    connectDatabaseCreateUser: () => {
-        return FireBase.connectDatabaseCreateUser();
+    connectDatabaseCreateUser: (uid) => {
+        return FireBase.connectDatabaseCreateUser(uid);
     },
     createNewUser: (phone, password) => {
         return FireBase.createNewUser(phone, password);
@@ -100,41 +100,45 @@ module.exports.verifySmsCode = (req, res) => {
                 res.send({ success: false })
             }
 
-        }).catch(e => res.send({err: e}))
+        }).catch(e => res.send({ err: e }))
 }
 
 module.exports.createNewUser = (req, res) => {
     var password = req.body.password;
     var phone_number = req.body.to;
     let phone = phone_number.replace(/^\+/, '');
-    
+
     res.header('Content-Type', 'application/json');
 
-    
     Auth.createNewUser(phone, password)
         .then((data) => {
-            console.log(data)
-            Auth.connectDatabaseCreateUser().push({
-                phone,
-                password  
+            Auth.connectDatabaseCreateUser(data.user.uid).set({
+                email: data.user.email,
+                phone: phone,
+                password: password
             })
-                .then(()=> {
-                    res.send({success:true})})
-                .catch(e => {
-                    res.send({e, success:false})})
-
-            res.send({ success: true })
+                .then(() => {
+                    Auth.signOut()
+                        .then(() => {
+                            Auth.login(phone, password)
+                                .then(() => {
+                                    res.send({ success: true })
+                                })
+                        })
+                })
         })
+
         .catch(e => {
-            res.send({ success: false ,e})
+            console.log(e)
+            res.send({ success: false, e: e })
         })
 
 }
 module.exports.getInfoUser = (req, res) => {
     let data = Auth.getInfoUser();
-    if(data){
+    if (data) {
         console.log('singin')
-    }else{
+    } else {
         console.log('no sign in')
     }
     // res.send({data}) 
