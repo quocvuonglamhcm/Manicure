@@ -36,7 +36,7 @@ class HeaderComponent extends Component {
   }
   render() {
     let modalClose = () => this.setState({ modalShow: false });
-    let ic_search = <FontAwesomeIcon className="ic-search " icon={faSearch} />
+    let ic_search = <FontAwesomeIcon className="ic_search " icon={faSearch} />
     return (
       <React.Fragment>
         <div className="App-header">

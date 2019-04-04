@@ -18,7 +18,8 @@ import BangGiaDichVu from '../pages/banggiadichvu/banggiadichvu';
 import policyPage from '../pages/policy/policy';
 import policy1Page from '../pages/policy/policy1';
 import ProfileClient from '../pages/profileuser/profileuser'
-import ProfileUser from '../pages/profileuser/profileuser';
+import ChangePassword from '../components/ChangePassword/ChangePassword';
+
 const MainRoute = () => (
  <main>
    <Switch>
@@ -40,7 +41,7 @@ const MainRoute = () => (
      <Route path='/policy' component={policyPage}/>
      <Route path='/policy1' component={policy1Page}/>
      <Route path='/ProfileClient' component={ProfileClient}/>
-     <Route path='/user' component={ProfileUser}/>
+     <Route path='/ChangePassword' component={ChangePassword}/>
    </Switch>
  </main>
 )
