@@ -6,22 +6,22 @@ import TronGoiPopUp from '../ServicePopUp/TronGoiPopUp'
 
 export default class TronGoi extends React.Component {
   constructor(props) {
-		super(props)
+    super(props)
 
-		this.state = { modalShow: false};
-}
+    this.state = { modalShow: false };
+  }
   displaySignUp = () => {
     this.setState({
-        modalShow: true,
+      modalShow: true,
 
     })
   }
   returnBodySignUp = () => {
     return (
-    <TronGoiPopUp/>
+      <TronGoiPopUp />
     )
-}
-  render(){
+  }
+  render() {
     let modalClose = () => this.setState({ modalShow: false });
     return (
       <React.Fragment>
@@ -43,18 +43,18 @@ export default class TronGoi extends React.Component {
         </Col>
         {this.state.modalShow
           ? <ModalContainer
-          body={this.returnBodySignUp}
-          title="aaaaa"
-          show={this.state.modalShow}
-          onHide={modalClose}
-      />
+            body={this.returnBodySignUp}
+            title="Bạn sẽ được tận hưởng"
+            show={this.state.modalShow}
+            onHide={modalClose}
+          />
           : null}
       </React.Fragment>
     )
   }
 
-  }
-  
-// }
+}
+
+
 
 

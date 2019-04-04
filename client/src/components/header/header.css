@@ -73,6 +73,20 @@
 	border-bottom: 1px solid #FFFFFF;
 }
 
+.ic-search{
+	color: #FFF;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #FFFFFF;
+	margin-bottom: -3px;
+	padding-bottom: 4px;
+	height: 16px;
+}
+
+.ic-search:hover{
+	cursor: pointer;
+}
+
 .header a {
     color: #fafafa !important;
 } 
@@ -81,6 +95,7 @@ a:hover {
   color: #29b6f6 !important;
   text-decoration: none !important;
 }
-.App-header div:hover{
-	 color:#007bff;
+.App-header .top:hover{
+	 color:#29b6f6;
+	 cursor: pointer;
 }

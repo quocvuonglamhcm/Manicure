@@ -17,7 +17,7 @@ class ModalComponent extends Component {
               </Modal.Title>
             </Modal.Header>
           : null}
-        <Modal.Body className="p-0">
+        <Modal.Body className="ModalBody">
           <div>
             {this.props.body()}
           </div>

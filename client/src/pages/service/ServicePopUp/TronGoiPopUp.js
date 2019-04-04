@@ -19,7 +19,6 @@ class TronGoiPopUp extends Component {
         <Modal.Header closeButton>
         </Modal.Header>
         <Modal.Body> */}
-          <div className="TitleService">Bạn sẽ được tận hưởng</div>
           <Row>
             <Col sm={1} md={1} sx={1}>
               {ic_check}
