@@ -78,20 +78,35 @@
                 margin-left: -7px;
                 margin-top: 107px;
             }
-            
+            .chu-tho-nail{
+                width: 64px;
+            }
             .float-right{
                 float: right;
             }
             #main-loi-ich .card-left-1{
-                width: 5px;
+                width: 5px !important;
                 height: 150px;
                 background-color:rgba(102, 69, 197, 0.5);
                 margin-right: 0px !important;
-                position: relative;
-                margin-left: 30px;
+                /* margin-left: 100%; */
+                /* margin-left: 30px; */
+                /* margin-left: 100%; */
 
             }
+            .line-loi-ich{
+                width: 5px;
+                height: 150px;
+                background-color: #6645c5;
+                border-radius: 1px;
+                position: relative;
+            }
 
+            .icon-circle{
+                position: absolute;
+                margin-left: -5px;
+                margin-top: 10px;
+            }
             #main-loi-ich .card-left-1 .hinh-tron4{
                 position: absolute;
                 width: 20px;
@@ -109,7 +124,7 @@
                 border-radius: 50%;
                 background-color: #6645c5;
                 margin-left: -7px;
-                margin-top: 68px;
+                margin-top: 62px;
             }
 
             #main-loi-ich .card-left-1 .hinh-tron6{
@@ -119,11 +134,13 @@
                 border-radius: 50%;
                 background-color: #6645c5;
                 margin-left: -7px;
-                margin-top: 117px;
+                margin-top: 106px;
             }
 
             #main-loi-ich .card-right-1{
-                margin-left: 35.5%;
+                /* margin-left: 35.5%; */
+                width: 100%;
+                height: 200px;
             }
             
             #main-loi-ich .card-right-1 .text-card-right-1{
