@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import HeaderComponent from '../components/header/header';
+import HeaderComponentM from '../components/header/header-m';
 import FooterComponent from '../components/footer/footer';
 import MainRoute from '../routers/routers';
 import fireBase from '../js/firebase';
@@ -69,6 +70,7 @@ class App extends Component {
     	<div className="App">
         {this.renderRedirect()}
   			<HeaderComponent/>
+        <HeaderComponentM/>
     		<MainRoute/>
         <FooterComponent/>
     	</div>
