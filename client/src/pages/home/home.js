@@ -4,9 +4,11 @@ import Banner from '../../components/Banner/banner';
 import LoiIch from '../../components/loiich/loiich';
 import DownloadApp from '../../components/download/download'
 import UseApp from '../../components/useapp/useapp'
+import Posts from '../../components/posts/posts'
 import Testimonials from '../../components/testimonials/Testimonials';
+
 const HomePage = () => (
-	<div>
+	<div className=''>
 		<Banner />
 		<div className='container'>
 			<div className='register-title'>
@@ -15,6 +17,7 @@ const HomePage = () => (
 		<LoiIch/>
 		<DownloadApp/>
 		<UseApp/>
+		<Posts/>
 		<Testimonials/>
 	</div>
 )

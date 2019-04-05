@@ -12,7 +12,7 @@ import Testimonials2 from './Testimonials2'
 export default function Testimonials() {
 
     return (
-        <Container>
+        <Container className='mt-5'>
             <Row><div className='useapp-title'>Nhận xét của mọi người</div></Row>
 
             <Row className='testimonial-row mb-5'>
