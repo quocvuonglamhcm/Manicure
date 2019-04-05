@@ -68,7 +68,8 @@ class SignIn extends Component {
                 </Col>
               </Form.Group>
               <Row className="justify-content-center">
-                <Col sm={5} md={5} sx={5}>
+              <Col sm={4} md={4} sx={4}></Col>
+                <Col sm={8} md={8} sx={8}>
                   <Button className="btnLogin">Đăng nhập</Button>
                 </Col>
               </Row>

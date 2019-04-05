@@ -79,7 +79,7 @@ class HeaderComponent extends Component {
                 <li> <Link to='/product/123' className="whiteColor">TÁC PHẨM</Link></li>
                 <li> <Link to='/support' className="whiteColor">TRỢ GIÚP</Link></li>
                 <li> <Link to='/contact' className="whiteColor"> LIÊN HỆ </Link> </li>
-                <li> <Link to='/user' className="whiteColor"> USER </Link> </li>
+                <li> <Link to='/profileclient' className="whiteColor"> USER </Link> </li>
               </ul>
             </div>
           </div>

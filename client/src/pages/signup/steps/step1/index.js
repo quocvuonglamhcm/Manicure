@@ -46,12 +46,12 @@ export default class Step1 extends Component {
       <Container className='box-content'>
         <Row >
           <Col className='d-flex justify-content-center'>
-            <b style={{ userSelect: 'none' }}>Số điện thoại</b>
+            <div className="sdt" style={{ userSelect: 'none' }}>Số điện thoại</div>
             <input type='text' readOnly value='Viet Nam (+84)' className='mavung' />
             <input
-              type='text' placeholder="Nhập SĐT"
+              type='tell' placeholder="Nhập số điện thoại"
               name='phone' onChange={this.handleOnChange}
-              className='mavung mr-3' autoFocus />
+              className='mavung ' autoFocus />
           </Col>    
         </Row>
         <Row>      

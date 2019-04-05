@@ -37,7 +37,7 @@ export default class Step2 extends React.Component {
         return (
             <Container className='box-content'>
                 <Row>
-                    <Col sm={12}>
+                    <Col sm={12} md={12} sx={12} className="center" >
                         <b style={{ userSelect: 'none' }}>MÃ XÁC THỰC</b>
                         <input type='text' placeholder='Nhập mã xác thực' className='mr-3' autoFocus onChange={this.handleOnChange}/>
                         <Button variant="warning" onClick={() => this.Continue(phone)} >Tiếp tục</Button>

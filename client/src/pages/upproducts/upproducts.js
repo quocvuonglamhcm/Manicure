@@ -21,7 +21,7 @@ class upProductsPage extends Component {
                   <input class="form-control" type="text" placeholder="Tên sản phẩm" />
                 </div>
                 <div className="custom-file">
-                  <input type="file" className="custom-file-input" id="customFile" accept="image/*" />
+                  <input type="file" className="custom-file-input" id="customFile" accept="image/*" name="Chọn ảnh" />
                   <label className="custom-file-label" htmlFor="customFile">Tải tác phẩm lên...</label>
                 </div>
                 <div className="form-group mt-3">
