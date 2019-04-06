@@ -17,6 +17,12 @@ import TronGoiPopUp from '../pages/service/ServicePopUp/TronGoiPopUp';
 import BangGiaDichVu from '../pages/banggiadichvu/banggiadichvu';
 import policyPage from '../pages/policy/policy';
 import policy1Page from '../pages/policy/policy1';
+import policy2Page from '../pages/policy/policy2';
+import policy3Page from '../pages/policy/policy3';
+import policy4Page from '../pages/policy/policy4';
+import policy5Page from '../pages/policy/policy5';
+import policy6Page from '../pages/policy/policy6';
+import policy7Page from '../pages/policy/policy7';
 import ProfileClient from '../pages/profileuser/profileuser'
 import ChangePassword from '../components/ChangePassword/ChangePassword';
 /*import CustomToggle from '../components/Dropdown/Dropdown';*/
@@ -40,6 +46,12 @@ const MainRoute = () => (
      <Route path='/BangGiaDichVu' component ={BangGiaDichVu}/>
      <Route path='/policy' component={policyPage}/>
      <Route path='/policy1' component={policy1Page}/>
+     <Route path='/policy2' component={policy2Page}/>
+     <Route path='/policy3' component={policy3Page}/>
+     <Route path='/policy4' component={policy4Page}/>
+     <Route path='/policy5' component={policy5Page}/>
+     <Route path='/policy6' component={policy6Page}/>
+     <Route path='/policy7' component={policy7Page}/>
      <Route path='/ProfileClient' component={ProfileClient}/>
      <Route path='/ChangePassword' component={ChangePassword}/>
      {/*<Route path='/CustomToggle' component={CustomToggle}/>*/}

@@ -25,7 +25,7 @@
 }
 
 .dataSecurity .tag:hover {
-    color: #fff;
+    color: #fff !important;
     font-weight: bold;
     background-color: #9D19FE;
     cursor: pointer;
@@ -42,4 +42,12 @@
 
 .dataSecurity li {
     margin-left: 1rem;
+}
+
+.dataSecurity .tag a {
+    color: #363636;
+}
+
+.dataSecurity .tag a:hover {
+    color: #fff !important;
 }

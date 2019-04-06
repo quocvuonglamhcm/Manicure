@@ -9,18 +9,18 @@ class policyPage extends Component {
             <div className="dataSecurity">
                 <Container>
                     <Row className="mt-5">
-                        <Col md={4}></Col>
-                        <Col md={4} className="title">CHÍNH SÁCH BẢO MẬT</Col>
+                        <Col md={3}></Col>
+                        <Col md={6} className="title">CHÍNH SÁCH BẢO MẬT</Col>
                     </Row>
                     <Row className="mt-4 mb-5">
                         <Col md={4} className="leftContent">
                             <div className="tag"><Link to={'/policy1'}>Thông tin chúng tôi thu thập</Link></div>
-                            <div className="tag">Mục đích sử dụng thông tin</div>
-                            <div className="tag">Mục đích chia sẻ thông tin</div>
-                            <div className="tag">Thông tin chi tiết</div>
-                            <div className="tag">Cộng đồng hỗ trợ</div>
-                            <div className="tag">Những sự lựa chọn của bạn</div>
-                            <div className="tag">Quyền dữ liệu</div>
+                            <div className="tag"><Link to={'/policy2'}>Mục đích sử dụng thông tin</Link></div>
+                            <div className="tag"><Link to={'/policy3'}>Mục đích chia sẻ thông tin</Link></div>
+                            <div className="tag"><Link to={'/policy4'}>Thông tin chi tiết</Link></div>
+                            <div className="tag"><Link to={'/policy5'}>Cộng đồng hỗ trợ</Link></div>
+                            <div className="tag"><Link to={'/policy6'}>Những sự lựa chọn của bạn</Link></div>
+                            <div className="tag"><Link to={'/policy7'}>Quyền dữ liệu</Link></div>
                         </Col>
                         <Col md={8}>
                             <div className="contentBox">
