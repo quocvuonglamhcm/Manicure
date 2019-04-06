@@ -44,10 +44,10 @@
     margin-left: 1rem;
 }
 
-.dataSecurity .tag a {
-    color: #363636;
+.dataSecurity a {
+    color: #363636 !important;
 }
 
-.dataSecurity .tag a:hover {
+.dataSecurity a:hover {
     color: #fff !important;
 }

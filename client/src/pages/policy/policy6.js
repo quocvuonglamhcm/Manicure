@@ -14,13 +14,13 @@ class policy6Page extends Component {
                     </Row>
                     <Row className="mt-4 mb-5">
                         <Col md={4} className="leftContent">
-                            <div className="tag"><Link to={'/policy1'}>Thông tin chúng tôi thu thập</Link></div>
-                            <div className="tag"><Link to={'/policy2'}>Mục đích sử dụng thông tin</Link></div>
-                            <div className="tag"><Link to={'/policy3'}>Mục đích chia sẻ thông tin</Link></div>
-                            <div className="tag"><Link to={'/policy4'}>Thông tin chi tiết</Link></div>
-                            <div className="tag"><Link to={'/policy5'}>Cộng đồng hỗ trợ</Link></div>
-                            <div className="tag"><Link to={'/policy6'}>Những sự lựa chọn của bạn</Link></div>
-                            <div className="tag"><Link to={'/policy7'}>Quyền dữ liệu</Link></div>
+                            <Link to={'/policy1'}><div className="tag">Thông tin chúng tôi thu thập</div></Link>
+                            <Link to={'/policy2'}><div className="tag">Mục đích sử dụng thông tin</div></Link>
+                            <Link to={'/policy3'}><div className="tag">Mục đích chia sẻ thông tin</div></Link>
+                            <Link to={'/policy4'}><div className="tag">Thông tin chi tiết</div></Link>
+                            <Link to={'/policy5'}><div className="tag">Cộng đồng hỗ trợ</div></Link>
+                            <Link to={'/policy6'}><div className="tag">Những sự lựa chọn của bạn</div></Link>
+                            <Link to={'/policy7'}><div className="tag">Quyền dữ liệu</div></Link>
                         </Col>
                         <Col md={8}>
                             <div className="contentBox">
