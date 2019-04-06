@@ -61,7 +61,6 @@ class HeaderComponentM extends Component {
                     </div>
                     <div className='whiteColor Corp'>Nail Partner</div>
         </div>
-            
             </React.Fragment>
         );
     }

@@ -1,84 +1,62 @@
-import React from 'react';
-import FormControl from'react-bootstrap/Form';
-import Dropdown from 'react-bootstrap/Dropdown';
-class CustomToggle extends React.Component {
-    constructor(props, context) {
-      super(props, context);
-  
-      this.handleClick = this.handleClick.bind(this);
-    }
-  
-    handleClick(e) {
-      e.preventDefault();
-  
-      this.props.onClick(e);
-    }
-  
-    render() {
-      return (
-        <a href="" onClick={this.handleClick}>
-          {this.props.children}
-        </a>
-      );
-    }
+import React, { Component } from 'react';
+import { Dropdown } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
+import ModalContainer from '../modal/modal'
+import SignUp from '../../pages/signup'
+import Login from '../../pages/signin/signin'
+import { Row } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import './Dropdown.css';
+import Avatar from '../../assets/images/AVT.svg';
+class HeaderComponentM extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = { modalShow: false, login: false };
   }
-  
-  class CustomMenu extends React.Component {
-    constructor(props, context) {
-      super(props, context);
-  
-      this.handleChange = this.handleChange.bind(this);
-  
-      this.state = { value: '' };
-    }
-  
-    handleChange(e) {
-      this.setState({ value: e.target.value.toLowerCase().trim() });
-    }
-  
-    render() {
-      const {
-        children,
-        style,
-        className,
-        'aria-labelledby': labeledBy,
-      } = this.props;
-  
-      const { value } = this.state;
-  
-      return (
-        <div style={style} className={className} aria-labelledby={labeledBy}>
-          <FormControl
-            autoFocus
-            className="mx-3 my-2 w-auto"
-            placeholder="Type to filter..."
-            onChange={this.handleChange}
-            value={value}
-          />
-          <ul className="list-unstyled">
-            {React.Children.toArray(children).filter(
-              child =>
-                !value || child.props.children.toLowerCase().startsWith(value),
-            )}
-          </ul>
-        </div>
-      )
-    }
+  displaySignUp = () => {
+    this.setState({
+      modalShow: true,
+      login: false
+    })
   }
-  render(
-    <Dropdown>
-      <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
-        Custom toggle
-      </Dropdown.Toggle>
-  
-      <Dropdown.Menu as={CustomMenu}>
-        <Dropdown.Item eventKey="1">Red</Dropdown.Item>
-        <Dropdown.Item eventKey="2">Blue</Dropdown.Item>
-        <Dropdown.Item eventKey="3" active>
-          Orange
-        </Dropdown.Item>
-        <Dropdown.Item eventKey="1">Red-Orange</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
-  )
-  export default CustomToggle;
+  displayLogin = () => {
+    this.setState({
+      modalShow: true,
+      login: true
+    })
+  }
+  returnBodySignUp = () => {
+    return (
+      <SignUp />
+    )
+  }
+  returnBodyLogin = () => {
+    return <Login />
+  }
+  render() {
+    let modalClose = () => this.setState({ modalShow: false });
+    let ic_search = <FontAwesomeIcon className="ic_search " icon={faSearch} />
+    return (
+            <Dropdown className="abc">
+              <Dropdown.Toggle id="dropdown-custom-components">
+                <div className="ahaha">
+                   <img src={Avatar}/>
+                </div>
+            </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item eventKey="1">Red</Dropdown.Item>
+                <Dropdown.Item eventKey="2">Blue</Dropdown.Item>
+                <Dropdown.Item eventKey="3" active>
+                  Orange
+                </Dropdown.Item>
+                <Dropdown.Item eventKey="1">Red-Orange</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+
+    );
+  }
+}
+
+export default HeaderComponentM;
