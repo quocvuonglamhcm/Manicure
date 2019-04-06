@@ -1,16 +1,17 @@
 .SignInComponent--Nailer{
     background:#2995cc;
     border-radius:3px;
-    font-family:Open Sans;
+    font-family:'Open Sans',sans-serif;
     color:white;
     padding: 1.5rem 3rem;
 }
 
 .SignInComponent--Nailer .btnLogin{
-    background: #FF773C;
-    width: 50%;
-    font-family: Open Sans;
-    font-size:18px;
+    background: #FF773C !important;
+    width: 50% !important;
+    font-family: 'Open Sans',sans-serif !important;
+    font-size:18px !important;
+    color: #fff !important;
 }
 .box-icon  {
     border-radius: 5px;

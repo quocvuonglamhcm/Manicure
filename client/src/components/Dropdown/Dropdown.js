@@ -39,21 +39,33 @@ class HeaderComponentM extends Component {
     let modalClose = () => this.setState({ modalShow: false });
     let ic_search = <FontAwesomeIcon className="ic_search " icon={faSearch} />
     return (
-            <Dropdown className="abc">
-              <Dropdown.Toggle id="dropdown-custom-components">
-                <div className="ahaha">
-                   <img src={Avatar}/>
-                </div>
-            </Dropdown.Toggle>
-              <Dropdown.Menu>
-                <Dropdown.Item eventKey="1">Red</Dropdown.Item>
-                <Dropdown.Item eventKey="2">Blue</Dropdown.Item>
-                <Dropdown.Item eventKey="3" active>
-                  Orange
-                </Dropdown.Item>
-                <Dropdown.Item eventKey="1">Red-Orange</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+      <Dropdown >
+        <Dropdown.Toggle className='Ava' id="dropdown-custom-components">
+          <div className="ahaha">
+            <img src={Avatar} />
+          </div>
+        </Dropdown.Toggle>
+        <div className="abc">
+          <Dropdown.Menu>
+            <div className="ono">
+              <Dropdown.Item eventKey="1">
+                <img src={Avatar} />
+              </Dropdown.Item>
+            </div>
+            <div className="ava1">
+               Chào 0903235671
+            </div>
+            <Dropdown.Item eventKey="2"><Link to={'/ProfileClient'}>Thông tin cá nhân</Link> </Dropdown.Item>
+            <Dropdown.Item eventKey="3">
+              <Link to={'/ChangePassword'}>Đổi mật khẩu</Link>
+            </Dropdown.Item>
+            <Dropdown.Item eventKey="1">
+              <Link to={'/home'}>Đăng xuất </Link>
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </div>
+      </Dropdown>
+
 
     );
   }
