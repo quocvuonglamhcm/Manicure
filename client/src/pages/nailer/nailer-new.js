@@ -9,20 +9,20 @@ import NailerInfor from '../../components/nailer-id/nailer-infor'
 import NailerNewRight from '../../components/nailer-id/nailer-new-right'
 
 class NailerPageNew extends Component {
-    render() {
-        return (
-            <Container>
-                <Row>
-                    <Col sm={3} md={3} sx={3}>
-                        <NailerInfor />
-                    </Col>
-                    <Col sm={9} md={9} sx={9}>
-                        <NailerNewRight/>
-                    </Col>
-                </Row>
-            </Container>
-        );
-    }
+  render() {
+    return (
+      <Container>
+        <Row>
+          <Col sm={3} md={3} sx={3}>
+            <NailerInfor />
+          </Col>
+          <Col sm={9} md={9} sx={9}>
+            <NailerNewRight />
+          </Col>
+        </Row>
+      </Container>
+    );
+  }
 }
 
 export default NailerPageNew;
