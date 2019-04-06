@@ -19,7 +19,7 @@ import policyPage from '../pages/policy/policy';
 import policy1Page from '../pages/policy/policy1';
 import ProfileClient from '../pages/profileuser/profileuser'
 import ChangePassword from '../components/ChangePassword/ChangePassword';
-
+/*import CustomToggle from '../components/Dropdown/Dropdown';*/
 const MainRoute = () => (
  <main>
    <Switch>
@@ -42,6 +42,7 @@ const MainRoute = () => (
      <Route path='/policy1' component={policy1Page}/>
      <Route path='/ProfileClient' component={ProfileClient}/>
      <Route path='/ChangePassword' component={ChangePassword}/>
+     {/*<Route path='/CustomToggle' component={CustomToggle}/>*/}
    </Switch>
  </main>
 )

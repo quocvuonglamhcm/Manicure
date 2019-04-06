@@ -12,7 +12,7 @@ class HeaderComponent extends Component {
   constructor(props) {
     super(props)
 
-    this.state = { modalShow: false, login: false };
+    this.state = { modalShow: false, login: false};
   }
   displaySignUp = () => {
     this.setState({
