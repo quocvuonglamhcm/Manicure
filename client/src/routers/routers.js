@@ -26,6 +26,10 @@ import policy7Page from '../pages/policy/policy7';
 import ProfileClient from '../pages/profileuser/profileuser'
 import ChangePassword from '../components/ChangePassword/ChangePassword';
 import HeaderAfterSignIn  from '../components/Dropdown/Dropdown';
+import HeaderComponentM from '../components/Dropdown/Dropdown';
+import HeaderAfterSignIn from '../components/Dropdown/Dropdown';
+import Updateprofile from '../pages/nailer/updateprofile'
+
 const MainRoute = () => (
  <main>
    <Switch>
@@ -54,7 +58,9 @@ const MainRoute = () => (
      <Route path='/policy7' component={policy7Page}/>
      <Route path='/ProfileClient' component={ProfileClient}/>
      <Route path='/ChangePassword' component={ChangePassword}/>
+     <Route path='/HeaderComponentM' component={HeaderComponentM}/>
      <Route path='/HeaderAfterSignIn' component={HeaderAfterSignIn}/>
+     <Route path='/updateProfileNailer' component={Updateprofile}/>
    </Switch>
  </main>
 )
