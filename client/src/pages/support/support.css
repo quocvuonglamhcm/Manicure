@@ -1,4 +1,4 @@
-
+/* Welcome text */
 .slo
 {
     width: 40%;
@@ -8,22 +8,45 @@
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
 }
-#support input.form-control:focus {
 
+/* Search bar */
+.form-input:focus 
+{
     border: none;
     box-shadow: none;
     border: 1px solid#7d7d7d;
+    border-right: none;
 }
+.form-input{
+    margin-top: 15px !important;
+    border: 1px solid #7d7d7d !important;
+    border-right: none !important;
+    box-shadow: none !important;
+}
+.search-sp{
+    margin-top: 15px !important;
+    border: 1px solid #7d7d7d !important;
+    border-left: none !important;
+    box-shadow: none !important;
+    color: #000 !important;
+}
+.search-sp:focus{
+    border-left: none;
+    box-shadow: none;
+
+}
+
 /* Menu */
 .card
 {
-    width: 270px;
-    height: 200px;
-    margin-right: 30px;
+    width: 250px !important;
+    height: 180px !important;
+    margin-right: 30px !important;
+    border-color: #7d7d7d !important;
 }
 .card-title{
-    font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 17px !important;
+    font-family: 'Open Sans', sans-serif !important;
 }
 .card-img-top
 {
@@ -31,14 +54,20 @@
     height: 80px;
     margin-top: 30px;
 }
-/* Button */
+.card:hover{
+    cursor:pointer;
+}
+/* Support Contact */
 .btn-slo
 {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Open Sans',sans-serif;
 }
-.contact-btn:active
+.contact-btn
 {
-    background-color: #ff773c;
+    margin-top:15px !important;
+    background-color: #ff773c !important;
+    border:none !important;
+    box-shadow: none !important;
 }

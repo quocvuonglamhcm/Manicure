@@ -42,11 +42,14 @@ class SupportPage extends Component {
     let ic_search = <FontAwesomeIcon className="ic-search " icon={faSearch} />
     return (
       <Container className='text-center mt-4' id="support">
+
+        {/* Welcome text */}
         <Row >
           <Col>
             <div className='slo'>Xin chào, Nail Partner có thể giúp gì cho bạn?</div>
           </Col>
         </Row>
+        {/* Search Bar */}
         <Row className="justify-content-center m-3">
           <Col sm={6}>
             <InputGroup className="mb-3" size='sm'>
@@ -54,11 +57,13 @@ class SupportPage extends Component {
                 placeholder="Bạn có thắc mắc gì về Nail Partner"
               />
               <InputGroup.Append>
-                <Button variant="outline-secondary">{ic_search}</Button>
+                <Button type='button' className='search-sp'>{ic_search}</Button>
               </InputGroup.Append>
             </InputGroup>
           </Col>
         </Row>
+
+        {/* Menu */}
         <Row>
           <Col sm={3}>
             <Card>
@@ -93,6 +98,8 @@ class SupportPage extends Component {
             </Card>
           </Col>
         </Row>
+
+        {/* Support Contact */}
         <Row className="m-4">
           <Col>
             <div className="mb-2 btn-slo">Liên hệ với chúng tôi!</div>
