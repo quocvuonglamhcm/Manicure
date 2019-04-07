@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { Dropdown } from 'react-bootstrap'
 import './header-m.css';
 import { Link } from 'react-router-dom';
-import ModalContainer from '../modal/modal'
+//import ModalContainer from '../modal/modal'
 import SignUp from '../../pages/signup'
 import Login from '../../pages/signin/signin'
-import { Row } from 'react-bootstrap';
+//import { Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 

@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { Dropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
-import ModalContainer from '../modal/modal'
+// import ModalContainer from '../modal/modal'
 import SignUp from '../../pages/signup'
 import Login from '../../pages/signin/signin'
-import { Row } from 'react-bootstrap';
+//import { Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import './Dropdown.css';
 import Avatar from '../../assets/images/AVT.svg';
-class HeaderComponentM extends Component {
+class HeaderDropdown extends Component {
   constructor(props) {
     super(props)
 
@@ -42,14 +42,14 @@ class HeaderComponentM extends Component {
       <Dropdown >
         <Dropdown.Toggle className='Ava' id="dropdown-custom-components">
           <div className="ahaha">
-            <img src={Avatar} />
+            <img src={Avatar} alt=""/>
           </div>
         </Dropdown.Toggle>
         <div className="abc">
           <Dropdown.Menu>
             <div className="ono">
               <Dropdown.Item eventKey="1">
-                <img src={Avatar} />
+                <img src={Avatar} alt=""/>
               </Dropdown.Item>
             </div>
             <div className="ava1">
@@ -71,4 +71,4 @@ class HeaderComponentM extends Component {
   }
 }
 
-export default HeaderComponentM;
+export default HeaderDropdown;

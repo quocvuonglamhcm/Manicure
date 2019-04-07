@@ -23,11 +23,14 @@ import policy4Page from '../pages/policy/policy4';
 import policy5Page from '../pages/policy/policy5';
 import policy6Page from '../pages/policy/policy6';
 import policy7Page from '../pages/policy/policy7';
-import ProfileClient from '../pages/profileclient/profileuser';
-import ChangePassword from '../components/ChangePassword/ChangePassword';
-import HeaderComponentM from '../components/Dropdown/Dropdown';
 import HeaderNewComponent from '../components/HeaderNew/HeaderNew';
 import ProfileNailer from '../pages/ProfileNailer/ProfileNailer'
+import ProfileClient from '../pages/profileclient/profileuser'
+import ChangePassword from '../components/ChangePassword/ChangePassword';
+import HeaderComponentM from '../components/Dropdown/Dropdown';
+import HeaderAfterSignIn from '../components/Dropdown/Dropdown';
+import HeaderNew from '../components/HeaderNew/HeaderNew';
+import Updateprofile from '../pages/nailer/updateprofile'
 
 const MainRoute = () => (
  <main>
@@ -60,6 +63,9 @@ const MainRoute = () => (
      <Route path='/HeaderComponentM' component={HeaderComponentM}/>
      <Route path='/HeaderNewComponent' component={HeaderNewComponent}/>
      <Route path='/ProfileNailer' component={ProfileNailer}/>
+     <Route path='/HeaderAfterSignIn' component={HeaderAfterSignIn}/>
+     <Route path='/updateProfileNailer' component={Updateprofile}/>
+     <Route path='/HeaderNew' component={HeaderNew}/>
    </Switch>
  </main>
 )
