@@ -49,7 +49,7 @@ const RenderAvata = () => {
   return (
     <div className="avata">
       <div className='box--avata'>
-        <img src="https://picsum.photos/300" />
+        <img src="https://picsum.photos/300" alt="avata" />
       </div>
       <div className='user--infomation'>
         <div>Huynh thi B</div>

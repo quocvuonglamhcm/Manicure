@@ -50,7 +50,9 @@ export default class SignUp extends Component {
                 )
             case 3:
                 return (
-                    <Step3 prevStep={this.prevStep} />
+                    <Step3 prevStep={this.prevStep} 
+                        phoneNumber ={phone}
+                    />
                 )
             default:
                 return null;

@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-import { Col, Button, Container } from 'react-bootstrap';
+import { Col, Button, Container, Row } from 'react-bootstrap';
 
-import { Row } from 'react-bootstrap/';
 export default class Step1 extends Component {
-  constructor(props) {
-    super(props);
+  constructor(props, context) {
+    super(props, context);
     this.state = {
-      phone: ''
+      phone: '',
+      isLoading: false
     }
+  }
+
+  simulateNetworkRequest = () => {
+    return new Promise(resolve => setTimeout(resolve, 2000));
   }
 
   verify() {
@@ -27,7 +31,6 @@ export default class Step1 extends Component {
 
   handleOnChange = (e) => {
     this.setState({
-      // [e.target.name]: e.target.value
       phone: e.target.value
     })
   }
@@ -35,13 +38,20 @@ export default class Step1 extends Component {
     this.props.OnRecivePhone(phone)
   }
   Continue = (phone) => {
-    this.verify()
     this.onRecicePhone(phone)
-    this.props.nextStep();
+    this.setState({ isLoading: true }, () => {
+      this.simulateNetworkRequest()
+        .then(() => {
+          this.verify()
+        })
+        .then(() => {
+          this.props.nextStep();
+      })
+    })
   }
 
   render() {
-    let { phone } = this.state;
+    let { phone, isLoading } = this.state;
     return (
       <Container className='box-content'>
         <Row >
@@ -52,10 +62,17 @@ export default class Step1 extends Component {
               type='tell' placeholder="Nhập số điện thoại"
               name='phone' onChange={this.handleOnChange}
               className='mavung ' autoFocus />
-          </Col>    
+          </Col>
         </Row>
-        <Row>      
-            <Button variant="warning" onClick={() => this.Continue(phone)} className="btnĐK">Gửi mã xác nhận</Button>          
+        <Row>
+          <Button
+            variant="warning"
+            disabled={isLoading}
+            onClick={!isLoading ? () => this.Continue(phone) : null}
+            className="btnĐK"
+          >
+            {isLoading ? "Đang gửi..." : "Gửi mã xác nhận"}
+          </Button>
         </Row>
       </Container>
     )
