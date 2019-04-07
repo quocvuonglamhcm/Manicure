@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import './Dropdown.css';
 import Avatar from '../../assets/images/AVT.svg';
-class HeaderAfterSignIn extends Component {
+class HeaderDropdown extends Component {
   constructor(props) {
     super(props)
 
@@ -71,4 +71,4 @@ class HeaderAfterSignIn extends Component {
   }
 }
 
-export default HeaderAfterSignIn;
+export default HeaderDropdown;
