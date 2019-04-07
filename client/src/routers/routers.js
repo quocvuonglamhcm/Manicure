@@ -27,6 +27,8 @@ import ProfileClient from '../pages/profileclient/profileuser';
 import ChangePassword from '../components/ChangePassword/ChangePassword';
 import HeaderComponentM from '../components/Dropdown/Dropdown';
 import HeaderNewComponent from '../components/HeaderNew/HeaderNew';
+import ProfileNailer from '../pages/ProfileNailer/ProfileNailer'
+
 const MainRoute = () => (
  <main>
    <Switch>
@@ -57,6 +59,7 @@ const MainRoute = () => (
      <Route path='/ChangePassword' component={ChangePassword}/>
      <Route path='/HeaderComponentM' component={HeaderComponentM}/>
      <Route path='/HeaderNewComponent' component={HeaderNewComponent}/>
+     <Route path='/ProfileNailer' component={ProfileNailer}/>
    </Switch>
  </main>
 )

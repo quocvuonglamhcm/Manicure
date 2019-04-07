@@ -21,7 +21,7 @@ var Auth = {
         return FireBase.createNewUser(phone, password);
     },
     getInfoUser: () => {
-        return FireBase.getInfoUser();
+        return FireBase.getDataInfireStore();
     }
 }
 
@@ -135,13 +135,10 @@ module.exports.createNewUser = (req, res) => {
 
 }
 module.exports.getInfoUser = (req, res) => {
-    let data = Auth.getInfoUser();
-    if (data) {
-        console.log('singin')
-    } else {
-        console.log('no sign in')
-    }
-    // res.send({data}) 
+    Auth.getInfoUser().then((data)=>{
+        console.log(data)
+        res.send({success:true})
+    }).catch(e => {res.send({success:false,e})})
 }
 
 
