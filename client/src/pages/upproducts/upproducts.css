@@ -39,3 +39,17 @@
 .footer .sendButton {
 	width: 100%;
 }
+
+.uploadProduct .custom-file .custom-file-label::after {
+    content: 'Chọn Ảnh';
+    background-color: #8001FF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.uploadProduct .custom-file-input:lang(en) ~ .custom-file-label::after {
+    content: "Chọn Ảnh";
+    background-color: #8001FF;
+    color: #fff;
+    cursor: pointer;
+}

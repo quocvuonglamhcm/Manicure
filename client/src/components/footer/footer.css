@@ -67,9 +67,10 @@
 
 .footer .sendButton {
   border: 0px !important;
-  background-color: #5b00b7;
+  background-color: #5b00b7 !important;
+  color: #fff !important;
 }
 
 .footer .sendButton:hover {
-  background-color: #5101A2;
+  background-color: #5101A2 !important;
 }

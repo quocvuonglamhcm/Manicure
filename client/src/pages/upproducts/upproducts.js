@@ -18,7 +18,7 @@ class upProductsPage extends Component {
             <Col sm={4} md={4} sx={4}>
               <form>
                 <div className="form-group">
-                  <input class="form-control" type="text" placeholder="Tên sản phẩm" />
+                  <input className="form-control" type="text" placeholder="Tên sản phẩm" />
                 </div>
                 <div className="custom-file">
                   <input type="file" className="custom-file-input" id="customFile" accept="image/*" name="Chọn ảnh" />

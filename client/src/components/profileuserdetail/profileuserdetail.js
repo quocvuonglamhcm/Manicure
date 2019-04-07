@@ -35,7 +35,7 @@ class ProfileUserdetail extends Component {
         <Row className='mt-3 card-profile'>
           <div className='col-sm-4 text-card'> Mật khẩu  </div>
 
-          <input className='col-sm-4 height-50 border-card' placeholder='*********' />
+          <input type="password" className='col-sm-4 height-50 border-card' placeholder='*********' />
           <button className='col-sm-3 button button-mat-khau'> Đổi mật khẩu</button>
         </Row>
 
