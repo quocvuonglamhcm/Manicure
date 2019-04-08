@@ -6,7 +6,8 @@ export default class Step1 extends Component {
     super(props, context);
     this.state = {
       phone: '',
-      isLoading: false
+      isLoading: false,
+      defaultValueSelectOption : "+84",
     }
   }
 
@@ -15,25 +16,26 @@ export default class Step1 extends Component {
   }
 
   verify() {
+    let phone = `${this.state.defaultValueSelectOption}${this.state.phone}`
     fetch('/api/account/sms', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        to: this.state.phone
+        to: phone
       })
     })
-      .then((data) => {
-        console.log(data);
-      })
   }
 
   handleOnChange = (e) => {
+    let target = e.target;
+    let name = target.name;
     this.setState({
-      phone: e.target.value
+      [name]: e.target.value
     })
   }
+
   onRecicePhone(phone) {
     this.props.OnRecivePhone(phone)
   }
@@ -50,14 +52,18 @@ export default class Step1 extends Component {
     })
   }
 
+
   render() {
-    let { phone, isLoading } = this.state;
+    let { phone, isLoading, defaultValueSelectOption } = this.state;
     return (
       <Container className='box-content'>
         <Row >
           <Col className='d-flex justify-content-center'>
             <div className="sdt" style={{ userSelect: 'none' }}>Số điện thoại</div>
-            <input type='text' readOnly value='Viet Nam (+84)' className='mavung' />
+            <select className ="ml-2" onChange={this.handleOnChange} name="defaultValueSelectOption">
+              <option value="+84">Việt Nam (+84)</option>
+              <option value="+23">trung quoc (+23)</option>
+            </select>
             <input
               type='tell' placeholder="Nhập số điện thoại"
               name='phone' onChange={this.handleOnChange}
