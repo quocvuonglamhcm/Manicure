@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Form, Col} from 'react-bootstrap';
+import { Row, Form, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
@@ -9,7 +9,7 @@ class NailerUpdate extends Component {
     const ic_star = <FontAwesomeIcon className="fontSize25 yellow " icon={faStar} />
     return (
       <div className='NailerUpdate box '>
-        <div className='avatar mt-3'></div>
+        <div className='avatar mt-3 mb-3'></div>
         <div className="UpdateImage">
           <input type="file" className="UpdateImageInput" accept="image/*" name="Chọn ảnh" />
           Thay đổi ảnh
@@ -31,94 +31,92 @@ class NailerUpdate extends Component {
         </Row>
         <Form>
           <Form.Group as={Row} controlId="exampleForm.ControlSelect1">
-            <Form.Label column sm="6" md="6" sx="6">Giới tính</Form.Label>
-            <Form column sm="6" md="6" sx="6" as="select">
-              <option>Nam</option>
-              <option>Nữ</option>
-            </Form>
+            <Form.Label column sm="7" md="7" sx="7">Giới tính</Form.Label>
           </Form.Group>
+          <Form.Row>
+            <Col sm={4} md={4} sx={4}>
+              <Form.Group controlId="exampleForm.ControlSelect1">
+                <Form.Control as="select">
+                  <option>Nam</option>
+                  <option>Nữ</option>
+                </Form.Control>
+              </Form.Group>
+            </Col>
+          </Form.Row>
           <Form.Group as={Row} >
             <Form.Label column sm="6" md="6" sx="6">Ngày tháng năm sinh</Form.Label>
-            <Col sm={6} md={6} sx={6} className="FormUpdate" >
-              <Form.Control type="date" className="FormUpdate" />
-            </Col>
           </Form.Group>
+          <Form.Row>
+            <Col sm={4} md={4} sx={4}>
+              <Form.Group controlId="exampleForm.ControlSelect1">
+                <Form.Control as="select">
+                  <option>Ngày</option>
+                  <option>1</option>
+                  <option>2</option>
+                </Form.Control>
+              </Form.Group>
+            </Col>
+            <Col sm={4} md={4} sx={4}>
+              <Form.Group controlId="exampleForm.ControlSelect1">
+                <Form.Control as="select">
+                  <option>Tháng</option>
+                  <option>Tháng 1</option>
+                  <option>Tháng 2</option>
+                </Form.Control>
+              </Form.Group>
+            </Col>
+            <Col sm={4} md={4} sx={4}>
+              <Form.Group controlId="exampleForm.ControlSelect1">
+                <Form.Control as="select">
+                  <option>Năm</option>
+                  <option>1980</option>
+                  <option>1981</option>
+                </Form.Control>
+              </Form.Group>
+            </Col>
+          </Form.Row>
           <Form.Group as={Row} controlId="exampleForm.ControlSelect1">
             <Form.Label column sm="6" md="6" sx="6">Kinh nghiệm</Form.Label>
-            <Col sm={3} md={3} sx={3} className="FormUpdate">
+          </Form.Group>
+          <Form.Row className=" mb-3">
+            <Col sm={3} md={3} sx={3} className="FormUpdate ml-0">
               <Form.Control type="text" />
             </Col>
+            <Col sm={1} md={1} sx={1}></Col>
             <Form column sm="3" md="3" sx="3" as="select" >
               <option>Tháng</option>
               <option>Năm</option>
             </Form>
-          </Form.Group>
+          </Form.Row>
           <Row>
-            <Col sm={6} md={6} sx={6}>
-              <div classname="UpdateServicePrice">
-                Bảng giá dịch vụ
+            <Col sm={5} md={5} sx={5}>
+              <div >
+                <div className='UpdateServicePrice'>Bảng giá dịch vụ</div>
               </div>
             </Col>
-            <Col sm={6} md={6} sx={6}>
+            <Col sm={7} md={7} sx={7}>
               <Link to={'/banggiadichvu'} ><div className="UpdateImage">Cập nhật</div>
               </Link>
             </Col>
           </Row>
           <Form.Group as={Row} controlId="exampleForm.ControlSelect1" className="mt-2">
             <Form.Label column sm="6" md="6" sx="6">Địa chỉ</Form.Label>
-            <Form.Label column sm="3" md="3" sx="3">Số nhà</Form.Label>
-            <Col sm={3} md={3} sx={3} className="FormUpdate">
-              <Form.Control type="text" />
-            </Col>
           </Form.Group>
-          <Form.Row>
-            <Col sm={6} md={6} sx={6}>
-              <Form.Group controlId="exampleForm.ControlSelect1">
-                <Form.Control as="select">
-                  <option>Thành phố</option>
-                  <option>Thành phố Hồ Chí Minh</option>
-                  <option>Thành phố Hà Nội</option>
-                </Form.Control>
-              </Form.Group>
+          <Row>
+            <Col sm={12} md={12} sx={12}  >
+              <Form.Control type="text" placeholder="Số nhà, Đường, Phường, Quận"/>
             </Col>
-            <Col sm={6} md={6} sx={6}>
-              <Form.Group controlId="exampleForm.ControlSelect1">
-                <Form.Control as="select">
-                  <option>Quận</option>
-                  <option>Quận 1</option>
-                  <option>Quận 2</option>
-                </Form.Control>
-              </Form.Group>
-            </Col>
-          </Form.Row>
-          <Form.Row>
-            <Col sm={6} md={6} sx={6}>
-              <Form.Group controlId="exampleForm.ControlSelect1">
-                <Form.Control as="select">
-                  <option>Phường</option>
-                  <option>Phường 1 </option>
-                  <option>Phường 2</option>
-                </Form.Control>
-              </Form.Group>
-            </Col>
-            <Col sm={6} md={6} sx={6}>
-              <Form.Group controlId="exampleForm.ControlSelect1">
-                <Form.Control as="select">
-                  <option>Đường</option>
-                  <option>Đường Nguyễn Trãi</option>
-                  <option>Đường Hai Bà Trưng</option>
-                </Form.Control>
-              </Form.Group>
-            </Col>
-          </Form.Row>
+          </Row>
           <Form.Group as={Row} >
             <Form.Label column sm="6" md="6" sx="6">Email</Form.Label>
-            <Col sm={6} md={6} sx={6} className="FormUpdate" >
-              <Form.Control type="email" className="FormUpdate" />
-            </Col>
           </Form.Group>
+          <Row>
+            <Col sm={12} md={12} sx={12}  >
+              <Form.Control type="email" />
+            </Col>
+          </Row>
         </Form>
-        <center><input type="submit" className="UpdateImage" value="Hoàn thành" /></center>
+        <center><input type="submit" className="UpdateImage mt-3" value="Hoàn thành" /></center>
       </div>
     );
   }

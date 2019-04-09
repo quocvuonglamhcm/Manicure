@@ -8,7 +8,7 @@ class ProfileNailer extends Component {
   render() {
     return (
       <Container>
-        <Row className="mt-3">
+        <Row className="mt-3 mb-3">
           <Col sm={4} md={4} sx={4} >
             <NailerUpdate />
           </Col>
