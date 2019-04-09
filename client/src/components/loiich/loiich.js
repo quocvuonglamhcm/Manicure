@@ -11,33 +11,38 @@ class LoiIch extends Component {
     return (
       <div id='main-loi-ich' className=''>
         <Row className='mr-0 ml-0'><div className='pu-litle mt-4'> Nail Partner mang lại</div></Row>
-        {/* <Col sm={6} md={6} sx={6} className='card-left mt-3'>
-            <Col sm={12} md={12} sx={12} className='text-card-left mt-3'>Làm đẹp mọi lúc mọi nơi</Col>
-            <Col sm={12} md={12} sx={12} className='text-card-left mt-3'>Cập nhật xu hướng làm đẹp mới</Col>
-            <Col sm={12} md={12} sx={12} className='text-card-left mt-3'>Trao đổi với mọi người về tác phẩm đẹp</Col>
+
+        <Row className='card-left-1 hover-loi-ich mr-0 ml-0 mt-3 height-khach-hang-170px'>
+          <Col ml-2 sm={5} md={5} sx={5} className=''>
+            <Row className='text-card-left-1 mt-3'>Làm đẹp mọi lúc mọi nơi</Row>
+            <Row className='text-card-left-1 mt-3'>Cập nhật xu hướng làm đẹp mới</Row>
+            <Row className='text-card-left-1 mt-3'>Chia sẻ với mọi người về tác phẩm đẹp</Row>
           </Col>
 
-          <Row className='card-right mr-0 ml-0 mt-3'>
-            <div className='hinh-tron1 '> </div>
-            <div className='hinh-tron2'> </div>
-            <div className='hinh-tron3'> </div>
-          </Row> */}
-
-        <Row className='card-right-1 mr-0 ml-0 mt-3'>
-            <Col sm={5} md={5} sx={5} className='chu-tho-nail'>Thợ nails</Col>
-            <Col  className=''>
+          <Col className=''>
             <div className='line-loi-ich'></div>
-              <div className='icon-circle '> {ic_circle}</div>
-              {/* <div className='icon-circle mt-3 '> {ic_circle}</div> */}
-              {/* <div className='icon-circle mt-3 '> {ic_circle}</div> */}
+            <div className='icon-circle '> {ic_circle}</div>
+            <div className='icon-circle mt-5 '> {ic_circle}</div>
+            <div className='icon-circle m-top-88 '> {ic_circle}</div>
           </Col>
+          <Col sm={6} md={6} sx={6} className='height-khach-hang-170px'><div className='text-Khach-hang hover-zoom'> Khách hàng</div></Col>
+        </Row>
+
+        <Row className='card-right-1 hover-loi-ich mr-0 ml-0 height-khach-hang-170px'>
+          <Col sm={5} md={5} sx={5} className='height-khach-hang-170px'><div className='text-tho-nail hover-zoom'> Thợ nails</div></Col>
+          <Col className=''>
+            <div className='line-loi-ich'></div>
+            <div className='icon-circle '> {ic_circle}</div>
+            <div className='icon-circle mt-5 '> {ic_circle}</div>
+            <div className='icon-circle m-top-88 '> {ic_circle}</div>
+          </Col>
+
           <Col ml-2 sm={6} md={6} sx={6} className=''>
             <Row className='text-card-right-1 mt-3'>Thể hiện năng lực bản thân</Row>
             <Row className='text-card-right-1 mt-3'>Dễ dàng tiếp cận khách hàng mới</Row>
             <Row className='text-card-right-1 mt-3'>Chia sẻ kinh nghiệm làm đẹp với mọi người</Row>
           </Col>
         </Row>
-
       </div>
     );
   }
