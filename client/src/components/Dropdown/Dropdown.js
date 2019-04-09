@@ -40,11 +40,11 @@ class HeaderDropdown extends Component {
     let ic_search = <FontAwesomeIcon className="ic_search " icon={faSearch} />
     return (
       <Dropdown >
-        <Dropdown.Toggle className='Ava' id="dropdown-custom-components">
+        {/* <Dropdown.Toggle className='Ava' id="dropdown-custom-components">
           <div className="ahaha">
             <img src={Avatar} alt=""/>
           </div>
-        </Dropdown.Toggle>
+        </Dropdown.Toggle> */}
         <div className="abc">
           <Dropdown.Menu>
             <div className="ono">

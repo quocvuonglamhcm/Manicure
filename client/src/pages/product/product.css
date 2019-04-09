@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 .product {
-    height: 90vh;
+    height: 80vh;
     margin: 0;
 }
 .bgimg {
@@ -12,7 +12,6 @@
     background-size: cover;
     position: relative;
     color: white;
-    font-family: "Courier New", Courier, monospace;
     font-size: 25px;
   }
   
