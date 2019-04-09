@@ -54,7 +54,7 @@ export default class Step1 extends Component {
 
 
   render() {
-    let { phone, isLoading, defaultValueSelectOption } = this.state;
+    let { phone, isLoading} = this.state;
     return (
       <Container className='box-content'>
         <Row >
