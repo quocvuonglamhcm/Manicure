@@ -9,121 +9,60 @@
                 font-family: Open Sans;
                 font-style: normal;
                 font-weight: bold;
-                font-size: 20px;
+                font-size: 25px;
                 line-height: normal;
-                color: #000000;
+                color: #6645C5;
                 text-align: center !important;
                 margin: auto;
             }
 
-            #main-loi-ich .card-left .text-card-left{
+
+            .height-khach-hang-170px{
+                height: 170px;
+            }
+            .line-loi-ich{
+                width: 5px;
+                height: 150px;
+                background-color: #6645c5;
+                border-radius: 1px;
+                position: relative;
+                /* padding-left: 55px; */
+            }
+            .line-loi-ich-body{
+                padding-left: 55px !important;
+            }
+
+            .icon-circle{
+                position: absolute;
+                margin-left: -5px;
+                margin-top: 10px;
+                top: 15px;
+                color: #6645c5;
+            }
+
+            .m-top-88{
+                margin-top: 88px;
+            }
+
+            .height-tho-nail-250{
+                height: 200px;
+                width: 100%;
+            }
+           
+            .text-loi-ich{
+                width: 310px;
+                height: 24px;
+                margin-left: 25%;
+                line-height: 130px;
                 font-family: Open Sans;
                 font-style: normal;
-                font-weight: normal;
-                font-size: 20px;
-                line-height: normal;
-                color: #000000;
-                text-align: right;
-                /* position: relative; */
+                font-weight: 600;
+                font-size: 30px;
+                color: #6645C5;
             }
 
-            /* .text-card-left ::after{
-                content: ' ';
-                position: absolute;
-                width: 20px;
-                height: 200px;
-                background-color: #6645C5;
-
-            } */
-
-            #main-loi-ich .card-right{
-                width: 5px;
-                height: 150px;
-                background-color:rgba(102, 69, 197, 0.5);
-                margin-right: 0px !important;
-                margin-left: 0px !important;
-                /* border: 1px solid #664566; */
-                position: relative;
-            }
-
-            #main-loi-ich .card-right .hinh-tron1{
-                /* content: ' '; */
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                background-color: #6645c5;
-                margin-left: -7px;
-                margin-top: 20px;
-            }
-
-            #main-loi-ich .card-right .hinh-tron2{
-                /* content: ' '; */
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                background-color: #6645c5;
-                margin-left: -7px;
-                margin-top: 61px;
-            }
-
-            #main-loi-ich .card-right .hinh-tron3{
-                /* content: ' '; */
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                background-color: #6645c5;
-                margin-left: -7px;
-                margin-top: 107px;
-            }
-            
-            .float-right{
-                float: right;
-            }
-            #main-loi-ich .card-left-1{
-                width: 5px;
-                height: 150px;
-                background-color:rgba(102, 69, 197, 0.5);
-                margin-right: 0px !important;
-                position: relative;
-                margin-left: 30px;
-
-            }
-
-            #main-loi-ich .card-left-1 .hinh-tron4{
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                background-color: #6645c5;
-                margin-left: -7px;
-                margin-top: 19px;
-            }
-
-            #main-loi-ich .card-left-1 .hinh-tron5{
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                background-color: #6645c5;
-                margin-left: -7px;
-                margin-top: 68px;
-            }
-
-            #main-loi-ich .card-left-1 .hinh-tron6{
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                background-color: #6645c5;
-                margin-left: -7px;
-                margin-top: 117px;
-            }
-
-            #main-loi-ich .card-right-1{
-                margin-left: 35.5%;
+            .margin-top-loi-ich-10{
+                margin-top: 5px;
             }
             
             #main-loi-ich .card-right-1 .text-card-right-1{
@@ -133,5 +72,28 @@
                 font-size: 20px;
                 line-height: normal;
                 color: #000000;
-                text-align: left;
+                text-align:left ;
+                display: flex; /* float: right; */ 
+                justify-content: end;
+            }
+
+            #main-loi-ich .card-left-1 .text-card-left-1{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: normal;
+                color: #000000;
+                text-align: right;
+                display: flex; /* float: right; */ 
+                justify-content: flex-end;
+                
+            }
+
+            .height-khach-hang-200{
+                height: 200px;
+            }
+
+            .hover-loi-ich:hover .hover-zoom {
+                font-size: 40px;
             }

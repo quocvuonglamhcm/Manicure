@@ -5,12 +5,16 @@ import SignUp from '../../pages/signup'
 import Login from '../../pages/signin/signin'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import Avatar from '../../assets/images/AVT.svg';
+import Dropdown from 'react-bootstrap/Dropdown';
+import './HeaderNew.css';
+import HeaderDropdown from '../Dropdown/Dropdown';
 
 class HeaderNewComponent extends Component {
   constructor(props) {
     super(props)
 
-    this.state = { modalShow: false, login: false};
+    this.state = { modalShow: false, login: false };
   }
   displaySignUp = () => {
     this.setState({
@@ -37,9 +41,9 @@ class HeaderNewComponent extends Component {
     let ic_search = <FontAwesomeIcon className="ic_search " icon={faSearch} />
     return (
       <React.Fragment>
-        <div className="App-header">
-          <div className="header">
-            <div className="navbar2">
+        <div className="App-HeaderAfterSignIn">
+          <div className="headersignin">
+            <div className="navbarsignin2">
               <ul>
                 <li>
                   <a href='tel:084391239123'>
@@ -57,7 +61,9 @@ class HeaderNewComponent extends Component {
 
               </ul>
             </div>
-            <div className="navbar justify-content-end">
+
+            
+            <div className="navbarsignin justify-content-end">
               <ul>
                 <li> <Link to='/' className="whiteColor"> TRANG CHỦ </Link> </li>
                 <li> <Link to='/about' className="whiteColor"> GIỚI THIỆU </Link> </li>
@@ -69,6 +75,11 @@ class HeaderNewComponent extends Component {
                 <li> <Link to='/profileclient' className="whiteColor"> USER </Link> </li>
               </ul>
             </div>
+
+            <div className='avatar-h'>
+              <img src={Avatar} />
+            </div>
+            
           </div>
         </div>
         {!this.state.login

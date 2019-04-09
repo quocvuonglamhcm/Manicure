@@ -13,10 +13,10 @@ class NailerPageNew extends Component {
     return (
       <Container>
         <Row>
-          <Col sm={3} md={3} sx={3}>
+          <Col sm={4} md={4} sx={4}>
             <NailerInfor />
           </Col>
-          <Col sm={9} md={9} sx={9}>
+          <Col sm={8} md={8} sx={8}>
             <NailerNewRight />
           </Col>
         </Row>

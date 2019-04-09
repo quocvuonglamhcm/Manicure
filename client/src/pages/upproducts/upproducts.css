@@ -21,15 +21,16 @@
 }
 
 .uploadProduct .saveButton {
-    background-color: #8001FF;
+    background-color: #8001FF !important;
     width: 100%;
     margin-top: 1.6rem;
     margin-bottom: 2.2rem;
     border: 0px !important;
+    color: #fff !important;
 }
 
 .uploadProduct .saveButton:hover {
-    background-color: #5b00b7;
+    background-color: #5b00b7 !important;
 }
 
 .callText {

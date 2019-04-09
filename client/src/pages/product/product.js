@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import UpProductsPage from './upproducts/upproducts'
+import './product.css'
 class ProductPage extends Component {
   componentDidMount() {
     console.log(this.props)
@@ -8,9 +8,23 @@ class ProductPage extends Component {
   }
   render() {
     return (
-    	<h1>Trang sản phẩm</h1>
+      <div className="product">
+        <div className="bgimg">
+          <div className="topleft">
+            <p>Logo</p>
+          </div>
+          <div className="middle">
+            <h1>COMING SOON</h1>
+              <p>15 days left</p>
+          </div>
+          <div className="bottomleft">
+            <p>Coming soon</p>
+          </div>
+        </div>
+      </div>
+      
     );
   }
-}
+}    
 
 export default ProductPage;
