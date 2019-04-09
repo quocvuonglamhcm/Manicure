@@ -22,7 +22,6 @@ class ProductPage extends Component {
           </div>
         </div>
       </div>
-      
     );
   }
 }    
