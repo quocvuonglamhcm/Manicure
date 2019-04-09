@@ -53,3 +53,7 @@
     color: #fff;
     cursor: pointer;
 }
+
+.uploadProduct .custom-file-input:hover {
+    cursor: pointer;
+}
