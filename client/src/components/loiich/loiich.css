@@ -26,6 +26,10 @@
                 background-color: #6645c5;
                 border-radius: 1px;
                 position: relative;
+                /* padding-left: 55px; */
+            }
+            .line-loi-ich-body{
+                padding-left: 55px !important;
             }
 
             .icon-circle{
@@ -45,44 +49,7 @@
                 width: 100%;
             }
            
-            .text-tho-nail{
-                width: 310px;
-                height: 24px;
-                margin-left: 25%;
-                line-height: 130px;
-                font-family: Open Sans;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 40px;
-                color: #6645C5;
-            }
-
-            
-            #main-loi-ich .card-right-1 .text-card-right-1{
-                font-family: Open Sans;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 20px;
-                line-height: normal;
-                color: #000000;
-                text-align:left ;
-            }
-
-            #main-loi-ich .card-left-1 .text-card-left-1{
-                font-family: Open Sans;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 20px;
-                line-height: normal;
-                color: #000000;
-                text-align: right;
-            }
-
-            .height-khach-hang-200{
-                height: 200px;
-            }
-
-            .text-Khach-hang{
+            .text-loi-ich{
                 width: 310px;
                 height: 24px;
                 margin-left: 25%;
@@ -94,7 +61,39 @@
                 color: #6645C5;
             }
 
-            .hover-loi-ich:hover .hover-zoom {
-                font-size: 150%;
+            .margin-top-loi-ich-10{
+                margin-top: 5px;
+            }
+            
+            #main-loi-ich .card-right-1 .text-card-right-1{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: normal;
+                color: #000000;
+                text-align:left ;
+                display: flex; /* float: right; */ 
+                justify-content: end;
+            }
+
+            #main-loi-ich .card-left-1 .text-card-left-1{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: normal;
+                color: #000000;
+                text-align: right;
+                display: flex; /* float: right; */ 
+                justify-content: flex-end;
                 
+            }
+
+            .height-khach-hang-200{
+                height: 200px;
+            }
+
+            .hover-loi-ich:hover .hover-zoom {
+                font-size: 40px;
             }
