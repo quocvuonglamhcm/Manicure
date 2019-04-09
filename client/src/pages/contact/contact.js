@@ -34,15 +34,11 @@ class ContactPage extends Component {
               <div className="text2 mt-1">Nail Partner Commercial & Services Co.ltd</div>
               <div className="text1 mt-1">Địa chỉ: 38 Nail Street, New York, USA</div>
               <div className="text1 mt-1">
-                <a href='tel:+8431239123'>
-                Tel: +84 3123 9123
-                </a>
+                <a href='tel:+8431239123'>Tel: +84 3123 9123</a>
               </div>
               <div className="text1 mt-1">
-                <a href='mailto:nail.system.2019@gmail.com'>
-                Email: nail.system.2019@gmail.com
-                </a>
-                </div>
+                <a href='mailto:nail.system.2019@gmail.com'>Email: nail.system.2019@gmail.com</a>
+              </div>
             </Col>
           </Row>
           <Row>
