@@ -19,20 +19,22 @@ class LoiIch extends Component {
             <Row className='text-card-left-1 mt-3'>Chia sẻ với mọi người về tác phẩm đẹp</Row>
           </Col>
 
-          <Col className=''>
+          <Col className='line-loi-ich-body'>
+
             <div className='line-loi-ich'></div>
-            <div className='icon-circle '> {ic_circle}</div>
+            <div className='icon-circle margin-top-loi-ich-10'> {ic_circle}</div>
             <div className='icon-circle mt-5 '> {ic_circle}</div>
             <div className='icon-circle m-top-88 '> {ic_circle}</div>
           </Col>
-          <Col sm={6} md={6} sx={6} className='height-khach-hang-170px'><div className='text-Khach-hang hover-zoom'> Khách hàng</div></Col>
+          <Col sm={6} md={6} sx={6} className='height-khach-hang-170px'><div className='text-loi-ich hover-zoom'> Khách hàng</div></Col>
         </Row>
 
         <Row className='card-right-1 hover-loi-ich mr-0 ml-0 height-khach-hang-170px'>
-          <Col sm={5} md={5} sx={5} className='height-khach-hang-170px'><div className='text-tho-nail hover-zoom'> Thợ nails</div></Col>
-          <Col className=''>
+          <Col sm={5} md={5} sx={5} className='height-khach-hang-170px'><div className='text-loi-ich hover-zoom'> Thợ nails</div></Col>
+
+          <Col className='line-loi-ich-body'>
             <div className='line-loi-ich'></div>
-            <div className='icon-circle '> {ic_circle}</div>
+            <div className='icon-circle margin-top-loi-ich-10'> {ic_circle}</div>
             <div className='icon-circle mt-5 '> {ic_circle}</div>
             <div className='icon-circle m-top-88 '> {ic_circle}</div>
           </Col>
