@@ -87,20 +87,26 @@ module.exports.sms = (req, res) => {
 module.exports.verifySmsCode = (req, res) => {
     var Code = req.body.smsCode;
     var phone_number = req.body.to;
-
+    console.log('so dt gui len', phone_number)
+    console.log('macode gui len', Code)
     res.header('Content-Type', 'application/json');
-
 
     Auth.connectDatabaseRegister(phone_number).once('value')
         .then((data) => {
-            let smsCodeOnDatabase = data.val().smsCode;
-            if (smsCodeOnDatabase === Code) {
-                res.send({ success: true })
+            if (data.val().smsCode === Code) {
+                console.log(true)
+                res.json({ success: true })
             } else {
-                res.send({ success: false })
+                console.log(false)
+                res.json({ success: false })
             }
-
-        }).catch(e => res.send({ err: e }))
+        })
+        .catch(e => {
+            res.json({
+                success: false,
+                err: e
+            })
+        })
 }
 
 module.exports.createNewUser = (req, res) => {
@@ -135,10 +141,10 @@ module.exports.createNewUser = (req, res) => {
 
 }
 module.exports.getInfoUser = (req, res) => {
-    Auth.getInfoUser().then((data)=>{
+    Auth.getInfoUser().then((data) => {
         console.log(data)
-        res.send({success:true})
-    }).catch(e => {res.send({success:false,e})})
+        res.send({ success: true })
+    }).catch(e => { res.send({ success: false, e }) })
 }
 
 
