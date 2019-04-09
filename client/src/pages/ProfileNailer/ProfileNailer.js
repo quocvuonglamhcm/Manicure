@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Row, Container, Col } from 'react-bootstrap';
 import NailerUpdate from "./NailerUpdate";
-import NailerPruduct1 from "./NailerProduct1"
+import NailerPruduct from "./NailerProduct"
+import './ProfileNailer.css';
 
 class ProfileNailer extends Component {
   render() {
@@ -12,7 +13,7 @@ class ProfileNailer extends Component {
             <NailerUpdate />
           </Col>
           <Col sm={8} md={8} sx={8}>
-            <NailerPruduct1 />
+            <NailerPruduct />
           </Col>
         </Row>
       </Container>
