@@ -61,9 +61,6 @@
 .UpdateInformation{
     margin-top: 9x;
 }
-.FormUpdate{
-    padding-left: 0px !important;
-}
 .password{
     height: 36px;
     margin-bottom: 10px;
@@ -72,6 +69,5 @@
     margin-left: 0px !important;
 }
 .UpdateServicePrice{
-    margin-top: 18px !important;
-    height: fit-content;
+    margin-top: 17px;
 }
