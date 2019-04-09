@@ -94,7 +94,7 @@
                 color: #6645C5;
             }
 
-            .hover-loi-ich:hover+.hover-zoom {
+            .hover-loi-ich:hover .hover-zoom {
                 font-size: 150%;
                 
             }
