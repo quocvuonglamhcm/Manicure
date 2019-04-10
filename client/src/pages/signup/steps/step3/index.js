@@ -15,7 +15,7 @@ export default class Step3 extends Component {
   }
 
   simulateNetworkRequest = () => {
-    return new Promise(resolve => setTimeout(resolve, 2000));
+    return new Promise(resolve => setTimeout(resolve, 1000));
   }
 
   renderRedirect = () => {
@@ -51,6 +51,9 @@ export default class Step3 extends Component {
           })
       })
   }
+  loading = () =>  {
+    return <div>loading....</div>
+  }
   getPasswordValue = (e) => {
     let target = e.target;
     let value = target.value;
@@ -67,7 +70,10 @@ export default class Step3 extends Component {
           if (password === passwordAgain) {
             this.verify();
           }
+        }).then(() => {
+          console.log("loading....")
         })
+        .catch(e=>console.log(e))
     })
   }
   render() {
