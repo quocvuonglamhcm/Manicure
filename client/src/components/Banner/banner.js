@@ -52,14 +52,14 @@ class Background extends Component {
                         title="Đăng ký"
                         show={this.state.modalShow}
                         onHide={modalClose}
-                        status = {this.state.login}
+                        status = {this.state.login.toString()}
                     />
                     : <ModalContainer
                         body={this.returnBodyLogin}
                         title ="Đăng nhập"
                         show={this.state.modalShow}
                         onHide={modalClose}
-                        status = {this.state.login}
+                        status = {this.state.login.toString()}
                     />
                 }
             </React.Fragment>

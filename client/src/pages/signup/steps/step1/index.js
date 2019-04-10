@@ -52,6 +52,9 @@ export default class Step1 extends Component {
     })
   }
 
+  componentWillUnmount() {
+    clearTimeout(this.simulateNetworkRequest)
+  }
 
   render() {
     let { phone, isLoading} = this.state;

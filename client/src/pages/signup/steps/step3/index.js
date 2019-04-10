@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col, Button, Container, Form } from 'react-bootstrap';
+import { Redirect } from 'react-router-dom';
 
 
 export default class Step3 extends Component {
@@ -7,14 +8,48 @@ export default class Step3 extends Component {
     super(props);
     this.state = {
       password: "",
-      passwordAgain: ""
+      passwordAgain: "",
+      isRedirect: false,
+      isLoading: false
     }
   }
+
+  simulateNetworkRequest = () => {
+    return new Promise(resolve => setTimeout(resolve, 2000));
+  }
+
+  renderRedirect = () => {
+    if (this.state.isRedirect) {
+      return <Redirect to='/about' />
+    }
+  }
+
+
   prevStep = () => {
     this.props.prevStep();
   }
   verify = () => {
-    console.log(this.props.phoneNumber)
+    let phone = `+84${this.props.phoneNumber}`
+    fetch('/api/account/createUser', {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        password: this.state.password,
+        to: phone //nhận 1 props chứa phone number từ step 1 truyền vào
+      })
+    })
+      .then((data) => {
+        data.json()
+          .then(data => {
+            if (data.success === true) {
+              this.setState({
+                isRedirect: true
+              })
+            }
+          })
+      })
   }
   getPasswordValue = (e) => {
     let target = e.target;
@@ -25,17 +60,26 @@ export default class Step3 extends Component {
     })
   }
   finish = () => {
-    this.verify();
-    console.log(this.state)
+    let { password, passwordAgain } = this.state;
+    this.setState({ isLoading: true }, () => {
+      this.simulateNetworkRequest()
+        .then(() => {
+          if (password === passwordAgain) {
+            this.verify();
+          }
+        })
+    })
   }
   render() {
+    let { isLoading } = this.state;
     return (
       <Container className='box-content'>
+        {this.renderRedirect()}
         <div className="Content-Password">
           <Form>
             <Form.Group as={Row}>
               <Form.Label column sm="4" md="4" sx="4" className="Left-Password">
-                  Mật khẩu mới
+                Mật khẩu mới
               </Form.Label>
               <Col sm="8" md="8" sx="8">
                 <Form.Control
@@ -65,7 +109,9 @@ export default class Step3 extends Component {
             <Row>
               <Col sm="4" md="4" sx="4"></Col>
               <Col sm="8" md="8" sx="8">
-                <Button variant="warning" className='button-success ' onClick={this.finish}>Hoàn Thành</Button>
+                <Button variant="warning" className='button-success ' onClick={this.finish}>
+                  {isLoading ? "Đang tạo tài khoản" : "Hoàn Thành"}
+                </Button>
               </Col>
             </Row>
           </Form>

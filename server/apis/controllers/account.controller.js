@@ -128,15 +128,14 @@ module.exports.createNewUser = (req, res) => {
                         .then(() => {
                             Auth.login(phone, password)
                                 .then(() => {
-                                    res.send({ success: true })
+                                    res.json({ success: true })
                                 })
                         })
                 })
         })
 
         .catch(e => {
-            console.log(e)
-            res.send({ success: false, e: e })
+            res.json({ success: false, e: e })
         })
 
 }

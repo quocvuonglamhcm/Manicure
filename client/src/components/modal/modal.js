@@ -3,6 +3,7 @@ import { Modal } from 'react-bootstrap';
 import './modal.css'
 class ModalComponent extends Component {
   render() {
+    let status = this.props.status;
     return (
       <Modal
         {...this.props}
@@ -10,7 +11,7 @@ class ModalComponent extends Component {
         centered
       // {...this.props.status ? "" :  "size='lg'"}
       >
-        {!this.props.status
+        {!status.toString()
           ? <Modal.Header closeButton >
               <Modal.Title id="contained-modal-title-vcenter" >
                 {this.props.title}

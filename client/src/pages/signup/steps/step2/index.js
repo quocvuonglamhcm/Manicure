@@ -23,6 +23,7 @@ export default class Step2 extends React.Component {
         if (this.state.code.length < 4) {
             listError.push("sms code phải có 4 ký tự");
             this.setState({ listError, isLoading: false })
+            return listError
         }
         else {
             fetch('/api/account/verifySmsCode', {
@@ -43,7 +44,7 @@ export default class Step2 extends React.Component {
                         else {
                             listError.push('Mã xác nhận không đúng')
                             this.setState({ listError, isLoading: false })
-                            return
+                            return listError
                         }
                     })
             })
@@ -56,6 +57,9 @@ export default class Step2 extends React.Component {
                     this.verifySMS();
                 })
         })
+    }
+    componentWillUnmount() {
+        clearTimeout(this.simulateNetworkRequest)
     }
     render() {
         let { phone, isLoading, listError } = this.state

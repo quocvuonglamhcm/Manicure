@@ -13,7 +13,7 @@ class LoiIch extends Component {
         <Row className='mr-0 ml-0'><div className='pu-litle mt-4'> Nail Partner mang lại</div></Row>
 
         <Row className='card-left-1 hover-loi-ich mr-0 ml-0 mt-3 height-khach-hang-170px'>
-          <Col ml-2 sm={5} md={5} sx={5} className=''>
+          <Col className='ml-2' sm={5} md={5} sx={5}>
             <Row className='text-card-left-1 mt-3'>Làm đẹp mọi lúc mọi nơi</Row>
             <Row className='text-card-left-1 mt-3'>Cập nhật xu hướng làm đẹp mới</Row>
             <Row className='text-card-left-1 mt-3'>Chia sẻ với mọi người về tác phẩm đẹp</Row>
@@ -39,7 +39,7 @@ class LoiIch extends Component {
             <div className='icon-circle m-top-88 '> {ic_circle}</div>
           </Col>
 
-          <Col ml-2 sm={6} md={6} sx={6} className=''>
+          <Col  sm={6} md={6} sx={6} className='ml-2'>
             <Row className='text-card-right-1 mt-3'>Thể hiện năng lực bản thân</Row>
             <Row className='text-card-right-1 mt-3'>Dễ dàng tiếp cận khách hàng mới</Row>
             <Row className='text-card-right-1 mt-3'>Chia sẻ kinh nghiệm làm đẹp với mọi người</Row>

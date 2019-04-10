@@ -9,33 +9,33 @@ import { Redirect } from 'react-router-dom';
 // library.add(fab, fas)
 
 class App extends Component {
-    state = {
-        redirect: false
-      }
+  state = {
+    redirect: false
+  }
 
   setRedirect = () => {
-      this.setState({
-        redirect: true
-      })
-    }
+    this.setState({
+      redirect: true
+    })
+  }
 
-    renderRedirect = () => {
-       if (this.state.redirect) {
-         return <Redirect to='/contact' />
-       }
-     }
+  renderRedirect = () => {
+    if (this.state.redirect) {
+      return <Redirect to='/contact' />
+    }
+  }
 
   componentDidMount() {
     // const self = this;
     fireBase.auth().signOut();
-    fireBase.auth().onAuthStateChanged((user) =>{
+    fireBase.auth().onAuthStateChanged((user) => {
       if (user) {
-      console.log(user);
-    } else {
-      // self.setState({
-      //   redirect: true
-      // })
-    }
+        console.log(user);
+      } else {
+        // self.setState({
+        //   redirect: true
+        // })
+      }
     })
   }
   // componentDidMount() {
@@ -67,13 +67,13 @@ class App extends Component {
   // }
   render() {
     return (
-    	<div className="App">
+      <div className="App">
         {this.renderRedirect()}
-  			<HeaderComponent/>
-        <HeaderComponentM/>
-    		<MainRoute/>
-        <FooterComponent/>
-    	</div>
+        <HeaderComponent />
+        <HeaderComponentM />
+        <MainRoute />
+        <FooterComponent />
+      </div>
     );
   }
 }
