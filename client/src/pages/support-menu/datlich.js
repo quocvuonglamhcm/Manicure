@@ -42,17 +42,26 @@ class menu_datlich extends Component {
 
                 <Row>
                     <Col sm={3}>
-                        <div className ='support-menu'>
+                        <div className='support-menu'>
                             <img src={datlich} />
                             <div className='support-menu-title'>
                                 Đặt Lịch
                             </div>
                         </div>
                     </Col>
+                    <Col md={8}>
+                        <div className='questions'>
+                            <ol>
+                                <li className='direct-quest'>Tại sao chúng tôi chỉ có 30 phút đặt mua vé?</li>
+                                <li className='direct-quest'>Tôi có thể đặt lịch với nhiều thợ trong 1 đơn giao dịch không?</li>
+                                <li className='direct-quest'>Tôi có được hủy lịch không?</li>
+                            </ol>
+                        </div>
+                    </Col>
                 </Row>
                 <Row>
                     <Col sm={3}>
-                        <div className ='support-menu'>
+                        <div className='support-menu'>
                             <img src={kythuat} />
                             <div className='support-menu-title'>
                                 Kỹ thuật
@@ -62,7 +71,7 @@ class menu_datlich extends Component {
                 </Row>
                 <Row>
                     <Col sm={3}>
-                        <div className ='support-menu'>
+                        <div className='support-menu'>
                             <img src={taikhoan} />
                             <div className='support-menu-title'>
                                 Tài khoản
@@ -72,7 +81,7 @@ class menu_datlich extends Component {
                 </Row>
                 <Row>
                     <Col sm={3}>
-                        <div className ='support-menu'>
+                        <div className='support-menu'>
                             <img src={tho} />
                             <div className='support-menu-title'>
                                 Từ người thợ
@@ -80,26 +89,29 @@ class menu_datlich extends Component {
                         </div>
                     </Col>
                 </Row>
-        {/* Questions */}
-               <div>
-               <Row className='justify-content-center m-1'>
-                    <Col>
+                {/* Questions */}
+                {/* <div className='questions'>
+                        <ul>
+                            <li className='direct-quest'>Tại sao chúng tôi chỉ có 30 phút đặt mua vé?</li>
+                        </ul>
+                    </div> */}
+                {/* <Row className="mt-4 mb-5">
+                        <Col md={8}>
                         <div className='questions'>
-                            <ul>
-                                <li>Tại sao chúng tôi chỉ có 30 phút đặt mua vé</li>
-                            </ul>
-                        </div>
+                        <ul>
+                            <li className='direct-quest'>Tại sao chúng tôi chỉ có 30 phút đặt mua vé?</li>
+                        </ul>
+                    </div>
+                        </Col>
+                    </Row> */}
+                {/* Support Contact */}
+
+                <Row className="m-4">
+                    <Col>
+                        <div className="mb-2 menu-btn-slo">Liên hệ với chúng tôi!</div>
+                        <Button type='button' className='p-3 menu-contact-btn'>Trò chuyện ngay</Button>
                     </Col>
                 </Row>
-               </div>
-        {/* Support Contact */ }
-
-        <Row className="m-4">
-            <Col>
-                <div className="mb-2 menu-btn-slo">Liên hệ với chúng tôi!</div>
-                <Button type='button' className='p-3 menu-contact-btn'>Trò chuyện ngay</Button>
-            </Col>
-        </Row>
             </Container >
         );
     }

@@ -1,5 +1,6 @@
 #support-menu{
     font-family: 'Open Sans',sans-serif;
+    position: relative;
 }
 
 /* Welcome text */
@@ -56,15 +57,35 @@
     margin-left: -15px;
 }
 .support-menu-title{
-    width: 130px;
+    width: 125px;
     height: 25px;
     float: right;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    margin: 35px;
-    margin-left: -40px;
+    font-weight: bold;
+    margin: 30px;
+    margin-top: 35px;
+    margin-left: -35px;
     text-align: initial;
+}
+/* Questions */
+.questions{
+    position: absolute;
+
+}
+.questions ol {
+    margin-left: 30px;
+    text-align: initial;
+}
+.direct-quest{
+    width: 550px;
+    height: 30px;
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.direct-quest:hover{
+    cursor: pointer;
 }
 /* Support Contact */
 .menu-btn-slo
