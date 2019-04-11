@@ -4,6 +4,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { Button, Row, Col, Container, InputGroup, FormControl } from 'react-bootstrap/'
 import './support.css';
 import Card from 'react-bootstrap/Card'
+import { Link} from 'react-router-dom';
 
 import datlich from '../../assets/images/ic_datlich.svg';
 import kythuat from '../../assets/images/ic_.svg';
@@ -12,32 +13,6 @@ import tho from '../../assets/images/ic_tho.svg';
 
 
 class SupportPage extends Component {
-  // state = {
-  // 	name: [
-  // 		{
-  // 			name: 'Đặt lịch',
-  // 			image: { datlich }
-  // 		},
-  // 		{
-  // 			name: 'Kỹ thuật',
-  // 			image: { kythuat }
-  // 		},
-  // 		{
-  // 			name: 'Tài khoản',
-  // 			image: { taikhoan }
-  // 		},
-  // 		{
-  // 			name: 'Từ người thợ',
-  // 			image: { tho }
-  // 		}
-  // 	]
-  // 	// Image: [
-  // 	// 	{datlich},
-  // 	// 	{kythuat},
-  // 	// 	{taikhoan},
-  // 	// 	{tho}
-  // 	// ]
-  // }
   render() {
     let ic_search = <FontAwesomeIcon className="ic-search " icon={faSearch} />
     return (
@@ -66,12 +41,14 @@ class SupportPage extends Component {
         {/* Menu */}
         <Row>
           <Col sm={3}>
+          <Link className='menu-links' to={'/datlich'}>
             <Card>
               <Card.Img variant="top" src={datlich} />
               <Card.Body>
                 <Card.Title>Đặt lịch</Card.Title>
               </Card.Body>
             </Card>
+            </Link>
           </Col>
           <Col sm={3}>
             <Card>
@@ -103,7 +80,7 @@ class SupportPage extends Component {
         <Row className="m-4">
           <Col>
             <div className="mb-2 btn-slo">Liên hệ với chúng tôi!</div>
-            <Button variant="danger" className='p-3 contact-btn'>Trò chuyện ngay</Button>
+            <Button type='button' className='p-3 contact-btn'>Trò chuyện ngay</Button>
           </Col>
         </Row>
       </Container >

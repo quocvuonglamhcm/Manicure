@@ -30,11 +30,13 @@ import ChangePassword from '../components/ChangePassword/ChangePassword';
 import HeaderComponentM from '../components/Dropdown/Dropdown';
 import HeaderAfterSignIn from '../components/Dropdown/Dropdown';
 import HeaderNew from '../components/HeaderNew/HeaderNew';
-import Updateprofile from '../pages/nailer/updateprofile'
+import Updateprofile from '../pages/nailer/updateprofile';
+import menu_datlich from '../pages/support-menu/datlich';
 
 const MainRoute = () => (
  <main>
    <Switch>
+
      <Route exact path='/' component={HomePage}/>
      <Route path='/home' component={HomePage}/>
      <Route path='/about' component={AboutPage}/>
@@ -66,6 +68,7 @@ const MainRoute = () => (
      <Route path='/HeaderAfterSignIn' component={HeaderAfterSignIn}/>
      <Route path='/updateProfileNailer' component={Updateprofile}/>
      <Route path='/HeaderNew' component={HeaderNew}/>
+     <Route path='/datlich' component={menu_datlich}/>
    </Switch>
  </main>
 )
