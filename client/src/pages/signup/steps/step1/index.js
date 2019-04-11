@@ -43,9 +43,9 @@ export default class Step1 extends Component {
     this.onRecicePhone(phone)
     this.setState({ isLoading: true }, () => {
       this.simulateNetworkRequest()
-        .then(() => {
-          this.verify()
-        })
+        // .then(() => {
+        //   this.verify()
+        // })
         .then(() => {
           this.props.nextStep();
       })

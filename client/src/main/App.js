@@ -15,7 +15,7 @@ class App extends Component {
     isLoading: false,
   }
   simulateNetworkRequest = () => {
-    return new Promise(resolve => setTimeout(resolve, 1000));
+    return new Promise(resolve => setTimeout(resolve, 2000));
   }
   setRedirect = () => {
     this.setState({
@@ -41,6 +41,9 @@ class App extends Component {
     })
   }
 
+  componentWillUnmount() {
+    clearTimeout(this.simulateNetworkRequest)
+  }
   render() {
     return (
       <React.Fragment>

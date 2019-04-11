@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col, Button, Container, Form } from 'react-bootstrap';
 import { Redirect } from 'react-router-dom';
-
+import Loading from '../../../../components/loading'
 
 export default class Step3 extends Component {
   constructor(props) {
@@ -15,7 +15,7 @@ export default class Step3 extends Component {
   }
 
   simulateNetworkRequest = () => {
-    return new Promise(resolve => setTimeout(resolve, 1000));
+    return new Promise(resolve => setTimeout(resolve, 2000));
   }
 
   renderRedirect = () => {
@@ -51,7 +51,7 @@ export default class Step3 extends Component {
           })
       })
   }
-  loading = () =>  {
+  loading = () => {
     return <div>loading....</div>
   }
   getPasswordValue = (e) => {
@@ -69,60 +69,69 @@ export default class Step3 extends Component {
         .then(() => {
           if (password === passwordAgain) {
             this.verify();
+            this.simulateNetworkRequest().then(() => {
+              this.setState({ isLoading: false })
+            })
           }
-        }).then(() => {
-          console.log("loading....")
         })
-        .catch(e=>console.log(e))
+
+
+        .catch(e => console.log(e))
     })
+  }
+  componentWillMount() {
+    clearTimeout(this.simulateNetworkRequest)
   }
   render() {
     let { isLoading } = this.state;
     return (
-      <Container className='box-content'>
-        {this.renderRedirect()}
-        <div className="Content-Password">
-          <Form>
-            <Form.Group as={Row}>
-              <Form.Label column sm="4" md="4" sx="4" className="Left-Password">
-                Mật khẩu mới
+      <React.Fragment>
+        <Container className='box-content'>
+          {this.renderRedirect()}
+          <div className="Content-Password">
+            <Form>
+              <Form.Group as={Row}>
+                <Form.Label column sm="4" md="4" sx="4" className="Left-Password">
+                  Mật khẩu mới
               </Form.Label>
-              <Col sm="8" md="8" sx="8">
-                <Form.Control
-                  type="password"
-                  placeholder="Dài ít nhất 6 ký tự"
-                  className='password'
-                  minLength="6"
-                  name="password"
-                  onChange={this.getPasswordValue}
-                />
-              </Col>
-            </Form.Group>
-            <Form.Group as={Row}>
-              <Form.Label column sm="4" md="4" sx="4" className="Left-Password">
-                Xác nhận mật khẩu
+                <Col sm="8" md="8" sx="8">
+                  <Form.Control
+                    type="password"
+                    placeholder="Dài ít nhất 6 ký tự"
+                    className='password'
+                    minLength="6"
+                    name="password"
+                    onChange={this.getPasswordValue}
+                  />
+                </Col>
+              </Form.Group>
+              <Form.Group as={Row}>
+                <Form.Label column sm="4" md="4" sx="4" className="Left-Password">
+                  Xác nhận mật khẩu
                 </Form.Label>
-              <Col sm="8" md="8" sx="8">
-                <Form.Control
-                  type="password"
-                  placeholder="Vui lòng xác nhận mật khẩu mới"
-                  className='password'
-                  name="passwordAgain"
-                  onChange={this.getPasswordValue}
-                />
-              </Col>
-            </Form.Group>
-            <Row>
-              <Col sm="4" md="4" sx="4"></Col>
-              <Col sm="8" md="8" sx="8">
-                <Button variant="warning" className='button-success ' onClick={this.finish}>
-                  {isLoading ? "Đang tạo tài khoản" : "Hoàn Thành"}
-                </Button>
-              </Col>
-            </Row>
-          </Form>
-        </div>
-      </Container>
+                <Col sm="8" md="8" sx="8">
+                  <Form.Control
+                    type="password"
+                    placeholder="Vui lòng xác nhận mật khẩu mới"
+                    className='password'
+                    name="passwordAgain"
+                    onChange={this.getPasswordValue}
+                  />
+                </Col>
+              </Form.Group>
+              <Row>
+                <Col sm="4" md="4" sx="4"></Col>
+                <Col sm="8" md="8" sx="8">
+                  <Button variant="warning" className='button-success ' onClick={this.finish}>
+                    {isLoading ? "Đang tạo tài khoản" : "Hoàn Thành"}
+                  </Button>
+                </Col>
+              </Row>
+            </Form>
+          </div>
+        </Container>
+        {isLoading ? <Loading type="spin" /> : null}
+      </React.Fragment>
     )
   }
 }
