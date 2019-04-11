@@ -13,8 +13,7 @@ class NailerUpdate extends Component {
         <div className="UpdateImage">
           <input type="file" className="UpdateImageInput" accept="image/*" name="Chọn ảnh" />
           Thay đổi ảnh
-        </div>
-        <input type="file" className="UpdateImageInput" accept="image/*" name="Chọn ảnh" />
+        </div>        
         <div className='nailer-name whiteColor mt-2'>Huynh Thi B</div>
         <div className='nailer-rate mt-2 mb-2'>{ic_star}{ic_star}{ic_star}{ic_star}{ic_star}</div>
         <Row >
@@ -79,14 +78,17 @@ class NailerUpdate extends Component {
             <Form.Label column sm="6" md="6" sx="6">Kinh nghiệm</Form.Label>
           </Form.Group>
           <Form.Row className=" mb-3">
-            <Col sm={3} md={3} sx={3} className="FormUpdate ml-0">
+            <Col sm={4} md={4} sx={4} className="FormUpdate ml-0">
               <Form.Control type="text" />
             </Col>
-            <Col sm={1} md={1} sx={1}></Col>
-            <Form column sm="3" md="3" sx="3" as="select" >
-              <option>Tháng</option>
-              <option>Năm</option>
-            </Form>
+            <Col sm={4} md={4} sx={4}>
+              <Form.Group controlId="exampleForm.ControlSelect1">
+                <Form.Control as="select">
+                  <option>Tháng</option>
+                  <option>Năm</option>
+                </Form.Control>
+              </Form.Group>
+            </Col>          
           </Form.Row>
           <Row>
             <Col sm={5} md={5} sx={5}>
@@ -104,7 +106,7 @@ class NailerUpdate extends Component {
           </Form.Group>
           <Row>
             <Col sm={12} md={12} sx={12}  >
-              <Form.Control type="text" placeholder="Số nhà, Đường, Phường, Quận"/>
+              <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Số nhà, Đường, Phường, Quận, Thành phố" rows="2"></textarea>
             </Col>
           </Row>
           <Form.Group as={Row} >

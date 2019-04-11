@@ -31,7 +31,7 @@ export default function FooterComponent() {
               Nail Partner sinh ra để đáp ứng nhu cầu làm đẹp của mọi người. Bất cứ khi nào bạn muốn đôi bàn tay của mình trở nên lung linh hơn hãy nhớ đến chúng tôi. Vì Nail Partner luôn luôn 
               <div className="Slogan">ĐỒNG HÀNH CÙNG VẺ ĐẸP BẠN</div>
             </div>
-            <div className="font-weight-bold pt-2">Điều khoản hoạt động</div>
+            {/* <div className="font-weight-bold pt-2">Điều khoản hoạt động</div> */}
             <Link to={'/policy'}>
               <div className="font-weight-bold pt-2">Chính sách bảo mật</div>
             </Link>
