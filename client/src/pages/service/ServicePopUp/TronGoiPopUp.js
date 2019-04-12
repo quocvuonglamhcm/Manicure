@@ -3,22 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import '../service.css';
 import { Row, Col, Container } from 'react-bootstrap';
-// import { Modal } from 'react-bootstrap';
 
 class TronGoiPopUp extends Component {
   render() {
     const ic_check = <FontAwesomeIcon className="IconCheck " icon={faCheck} />
     return (
       <Container>
-      {/* <Modal
-        {...this.props}
-        size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Header closeButton>
-        </Modal.Header>
-        <Modal.Body> */}
           <Row>
             <Col sm={1} md={1} sx={1}>
               {ic_check}
@@ -74,9 +64,7 @@ class TronGoiPopUp extends Component {
             <Col sm={11} md={11} sx={11}>
               <div className="text1">Thoa dung dịch dưỡng da quanh móng giúp da tránh trầy xước và giảm thiểu tình trạng nấm móng.</div>
             </Col>
-          </Row>
-        {/* </Modal.Body>
-      </Modal> */}
+          </Row>       
       </Container>
 
     );

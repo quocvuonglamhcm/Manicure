@@ -57,6 +57,7 @@
 }
 .UpdateImage:hover{
     background-color: aqua;
+    cursor: pointer;
 }
 .UpdateInformation{
     margin-top: 9x;
@@ -69,5 +70,5 @@
     margin-left: 0px !important;
 }
 .UpdateServicePrice{
-    margin-top: 17px;
+    margin-top: 14px;
 }

@@ -6,10 +6,10 @@ class UpdateImage extends Component {
   render() {
     const ic_star = <FontAwesomeIcon className="fontSize25 yellow " icon={faStar} />
     return (
-      <div>
+      <React.Fragment>
         <div className='nailer-name whiteColor mt-2'>Huynh Thi B</div>
         <div className='nailer-rate mt-2 mb-2'>{ic_star}{ic_star}{ic_star}{ic_star}{ic_star}</div>
-      </div>
+      </React.Fragment>
     );
   }
 }
