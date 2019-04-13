@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
-import { Button, Row, Col, Container, InputGroup, FormControl, Media } from 'react-bootstrap/'
+import { Button, Row, Col, Container, InputGroup, FormControl} from 'react-bootstrap/'
 import './support-menu.css';
-import Card from 'react-bootstrap/Card'
+//import Card from 'react-bootstrap/Card'
 
 import datlich from '../../assets/images/ic_datlich.svg';
 import kythuat from '../../assets/images/ic_.svg';
@@ -43,7 +43,7 @@ class menu_datlich extends Component {
                 <Row>
                     <Col sm={3}>
                         <div className='support-menu'>
-                            <img src={datlich} />
+                            <img src={datlich} alt ="dl"/>
                             <div className='support-menu-title'>
                                 Đặt Lịch
                             </div>
@@ -62,7 +62,7 @@ class menu_datlich extends Component {
                 <Row>
                     <Col sm={3}>
                         <div className='support-menu'>
-                            <img src={kythuat} />
+                            <img src={kythuat} alt="kt"/>
                             <div className='support-menu-title'>
                                 Kỹ thuật
                             </div>
@@ -72,7 +72,7 @@ class menu_datlich extends Component {
                 <Row>
                     <Col sm={3}>
                         <div className='support-menu'>
-                            <img src={taikhoan} />
+                            <img src={taikhoan} alt="tk"/>
                             <div className='support-menu-title'>
                                 Tài khoản
                             </div>
@@ -82,7 +82,7 @@ class menu_datlich extends Component {
                 <Row>
                     <Col sm={3}>
                         <div className='support-menu'>
-                            <img src={tho} />
+                            <img src={tho} alt="th"/>
                             <div className='support-menu-title'>
                                 Từ người thợ
                             </div>

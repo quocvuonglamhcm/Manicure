@@ -6,9 +6,9 @@ import Login from '../../pages/signin/signin'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import AVT from '../../assets/images/AVT.svg';
-import Dropdown from 'react-bootstrap/Dropdown';
+//import Dropdown from 'react-bootstrap/Dropdown';
 import './HeaderNew.css';
-import HeaderDropdown from '../Dropdown/Dropdown';
+//import HeaderDropdown from '../Dropdown/Dropdown';
 
 class HeaderNewComponent extends Component {
   constructor(props) {
@@ -77,7 +77,7 @@ class HeaderNewComponent extends Component {
             </div>
 
             <div className='avatar-h'>
-              <img src={AVT} />
+              <img src={AVT} alt ="icon"/>
             </div>
             
           </div>

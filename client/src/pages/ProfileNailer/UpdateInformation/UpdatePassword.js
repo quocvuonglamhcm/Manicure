@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import ModalContainer from '../../../components/modal/modal';
 import ChangePassword from '../../../components/ChangePassword/ChangePassword';
 
