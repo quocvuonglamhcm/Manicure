@@ -8,7 +8,7 @@ import Login from '../../pages/signin/signin'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import './Dropdown.css';
-import Avatar from '../../assets/images/AVT.svg';
+import AVT from '../../assets/images/AVT.svg'
 class HeaderDropdown extends Component {
   constructor(props) {
     super(props)
@@ -42,14 +42,14 @@ class HeaderDropdown extends Component {
       <Dropdown >
         <Dropdown.Toggle className='Ava' id="dropdown-custom-components">
           <div className="ahaha">
-            <img src={Avatar} alt=""/>
+            <img src={AVT} alt=""/>
           </div>
         </Dropdown.Toggle>
         <div className="abc">
           <Dropdown.Menu>
             <div className="ono">
               <Dropdown.Item eventKey="1">
-                <img src={Avatar} alt=""/>
+                <img src={AVT} alt=""/>
               </Dropdown.Item>
             </div>
             <div className="ava1">
