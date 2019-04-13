@@ -9,7 +9,7 @@ class ModalComponent extends Component {
         {...this.props}
         aria-labelledby="contained-modal-title-vcenter"
         centered
-      // {...this.props.status ? "" :  "size='lg'"}
+       {...this.props.status ? "" :  "size='lg'"}
       >
         {!this.props.status//!status.toString()
           ? <Modal.Header closeButton >
