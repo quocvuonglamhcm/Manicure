@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col, Form, Container, Button } from 'react-bootstrap';
 import './ChangePassword.css';
 
-export default class TronGoi extends React.Component {
+export default class ChangePassword extends React.Component {
   render() {
     return (
       <Container>

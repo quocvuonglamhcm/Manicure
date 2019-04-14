@@ -1,9 +1,11 @@
 #main-profile-user{
     /* margin-left: 30%;
     margin-right: 30%; */
-    margin-top: 18px;
-    margin-bottom: 18px;
-    width: 100%;
+    margin-top: 18px !important;
+    margin-bottom: 18px !important;
+    border-radius: 5px !important;
+    width: 70%;
+    margin: auto;
     /* position: relative; */
         }
 
@@ -24,8 +26,7 @@
         }
         #profile-user-detail{
             width:  100% !important;
-            height: 900px;
-            width: 50%;
+                       width: 50%;
             /* margin: auto; */
 
             border: 1px solid #c4c4c4;
@@ -72,7 +73,7 @@
 
         #profile-user-detail .button3{
             background-color: #6645C5;
-            width: 25%;
+            padding: 10px;
             margin: auto;
             border-radius: 5px;
             /* height: 50px; */
@@ -108,12 +109,15 @@
             border-radius: 5px;
         }
 
+        .color-white-mk{
+            color: white;
+        }
         #profile-user-detail .card-profile .button-mat-khau{
             background-color: #6645C5;
             border-radius: 5px;
             margin-left: 8%;
             padding: 0;
-            color: white;
+            color: white !important;
         }
 
         #profile-user-detail .button-cap-nhat{

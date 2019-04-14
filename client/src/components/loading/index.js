@@ -4,7 +4,7 @@ import './index.css'
 
 const Loading = ({ type }) => (
     <div className='loading'>
-        <ReactLoading type={type} color="#fff" height={667} width={375} />
+        <ReactLoading type={type} color="#3399FF" height={667} width={375} />
     </div>
 );
 
