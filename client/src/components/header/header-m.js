@@ -57,7 +57,7 @@ class HeaderComponentM extends Component {
                             <Dropdown.Item> <Link to='/contact' className="blackColor nav-m-lish"> LIÊN HỆ </Link> </Dropdown.Item>
                             <Dropdown.Item> <Link to='/profileclient' className="blackColor nav-m-lish"> USER </Link> </Dropdown.Item>
                         </Dropdown.Menu>
-                    </Dropdown>;
+                    </Dropdown>
                     </div>
                     <div className='whiteColor Corp'>Nail Partner</div>
         </div>
