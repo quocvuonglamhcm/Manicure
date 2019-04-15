@@ -32,7 +32,7 @@ import HeaderAfterSignIn from '../components/Dropdown/Dropdown';
 import HeaderNew from '../components/HeaderNew/HeaderNew';
 import Updateprofile from '../pages/nailer/updateprofile';
 import menu_datlich from '../pages/support-menu/datlich';
-
+import NotfoundPage from '../pages/notfound/notfound';
 const MainRoute = () => (
  <main>
    <Switch>
@@ -69,6 +69,7 @@ const MainRoute = () => (
      <Route path='/updateProfileNailer' component={Updateprofile}/>
      <Route path='/HeaderNew' component={HeaderNew}/>
      <Route path='/datlich' component={menu_datlich}/>
+     <Route path='/pagenotfound' component={NotfoundPage}/>
    </Switch>
  </main>
 )
