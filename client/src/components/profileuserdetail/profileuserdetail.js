@@ -32,7 +32,7 @@ class ProfileUserdetail extends Component {
           <Row className=' mr-0 ml-0 mt-1'><div className='body-avt avt'></div>  </Row>
 
           <Row className=' mr-0 ml-0'>
-            <button className="button mt-1 button-avt button3" > Cập nhật ảnh </button>
+            <button className="button mt-1 button-avt button3"  > Cập nhật ảnh </button>
           </Row>
           {/* card hovaten */}
           <Row className='mt-3 card-profile'>

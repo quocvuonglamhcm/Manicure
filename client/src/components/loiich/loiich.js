@@ -36,9 +36,9 @@ class LoiIch extends Component {
         </Col>
 
         <Col sm={6} md={6} sx={6} className='mt-2 hover-loi-ich mbt-2'>
-          <Row className='text-card-right-1 mt-3'>Làm đẹp mọi lúc mọi nơi</Row>
-          <Row className='text-card-right-1 mt-3'>Cập nhật xu hướng làm đẹp mới</Row>
-          <Row className='text-card-right-1 mt-3'>Chia sẻ với mọi người về tác phẩm đẹp</Row>
+          <Row className='text-card-right-1 mt-3'>Thể hiện năng lực bản thân</Row>
+          <Row className='text-card-right-1 mt-3'>Dễ dàng tiếp cận khách hàng mới</Row>
+          <Row className='text-card-right-1 mt-3'>Chia sẻ kinh nghiệm làm đẹp với mọi người</Row>
         </Col>
       </Row>
     );
