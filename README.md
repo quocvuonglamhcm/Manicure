@@ -8,7 +8,7 @@ FrontEnd:
   - fontawesome 
   - bootstrap 
  
-FrontEnd: 
+BackEnd: 
   - ExpressJS (4.16.4)
   - body-parser (1.18.3)
   - Firebase (5.9.0)
