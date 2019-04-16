@@ -35,5 +35,5 @@ $ npm install
 $ npm run update-libs
 $ npm start
 
-nếu bạn muốn chỉ chạy  server  thì  dùng lệnh : npm  run  start-server 
-ngược lại, nếu bạn chỉ muốn chạy client thì dùng llệnh: npm run start-client
+nếu bạn muốn chỉ chạy  server  thì  dùng lệnh : **npm  run  start-server_**
+ngược lại, nếu bạn chỉ muốn chạy client thì dùng lệnh: **npm run start-client_**
