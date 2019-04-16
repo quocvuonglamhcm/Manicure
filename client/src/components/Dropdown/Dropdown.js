@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import { Dropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
-// import ModalContainer from '../modal/modal'
 import SignUp from '../../pages/signup'
 import Login from '../../pages/signin/signin'
-//import { Row } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import './Dropdown.css';
 import AVT from '../../assets/images/AVT.svg'
 class HeaderDropdown extends Component {
@@ -36,8 +34,8 @@ class HeaderDropdown extends Component {
     return <Login />
   }
   render() {
-    let modalClose = () => this.setState({ modalShow: false });
-    let ic_search = <FontAwesomeIcon className="ic_search " icon={faSearch} />
+    // let modalClose = () => this.setState({ modalShow: false });
+    // let ic_search = <FontAwesomeIcon className="ic_search " icon={faSearch} />
     return (
       <Dropdown >
         <Dropdown.Toggle className='Ava' id="dropdown-custom-components">

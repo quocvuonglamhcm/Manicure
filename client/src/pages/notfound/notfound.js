@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Container, Form} from 'react-bootstrap';
+import { Row, Col, Container} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './notfound.css';
 import Logo from './logo.svg';
@@ -13,7 +13,7 @@ class NotfoundPage extends Component {
 					<Col md={4}></Col>
 					<Col md={4}>
 						<div className="logo">
-							<img src={Logo} />
+							<img src={Logo} alt='logo' />
 						</div>
 					</Col>
 				</Row>
@@ -34,7 +34,7 @@ class NotfoundPage extends Component {
 				<Row>
 					<Col md={4}></Col>
 					<Col md={4} className="mt-5 mb-5">
-                        <Link to={'/'}><button type="button" className="btn btn-primary backHomeButton">VỀ TRANG CHỦ</button></Link>    
+            <Link to={'/'}><button type="button" className="btn btn-primary backHomeButton">VỀ TRANG CHỦ</button></Link>    
 					</Col>
 				</Row>
 			</Container>

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
-import { Button, Row, Col, Container, InputGroup, FormControl} from 'react-bootstrap/'
+import { Button, Row, Col, Container, InputGroup, FormControl } from 'react-bootstrap/'
+// import Collapse from 'react-bootstrap/Collapse';
 import './support-menu.css';
 //import Card from 'react-bootstrap/Card'
 
@@ -11,8 +12,19 @@ import taikhoan from '../../assets/images/ic_taikhoan.svg';
 import tho from '../../assets/images/ic_tho.svg';
 
 
+
 class menu_datlich extends Component {
+
+    constructor(props, context) {
+        super(props, context);
+
+        this.state = {
+            open: false,
+        };
+    }
     render() {
+
+        // const { open } = this.state;
         let ic_search = <FontAwesomeIcon className="ic-search " icon={faSearch} />
         return (
             <Container className='text-center mt-4' id="support-menu">
@@ -43,7 +55,7 @@ class menu_datlich extends Component {
                 <Row>
                     <Col sm={3}>
                         <div className='support-menu'>
-                            <img src={datlich} alt ="dl"/>
+                            <img src={datlich} alt="dl" />
                             <div className='support-menu-title'>
                                 Đặt Lịch
                             </div>
@@ -51,18 +63,14 @@ class menu_datlich extends Component {
                     </Col>
                     <Col md={8}>
                         <div className='questions'>
-                            <ol>
-                                <li className='direct-quest'>Tại sao chúng tôi chỉ có 30 phút đặt mua vé?</li>
-                                <li className='direct-quest'>Tôi có thể đặt lịch với nhiều thợ trong 1 đơn giao dịch không?</li>
-                                <li className='direct-quest'>Tôi có được hủy lịch không?</li>
-                            </ol>
+                            {/* <Cauhoi/> */}
                         </div>
                     </Col>
                 </Row>
                 <Row>
                     <Col sm={3}>
                         <div className='support-menu'>
-                            <img src={kythuat} alt="kt"/>
+                            <img src={kythuat} alt="kt" />
                             <div className='support-menu-title'>
                                 Kỹ thuật
                             </div>
@@ -72,7 +80,7 @@ class menu_datlich extends Component {
                 <Row>
                     <Col sm={3}>
                         <div className='support-menu'>
-                            <img src={taikhoan} alt="tk"/>
+                            <img src={taikhoan} alt="tk" />
                             <div className='support-menu-title'>
                                 Tài khoản
                             </div>
@@ -82,7 +90,7 @@ class menu_datlich extends Component {
                 <Row>
                     <Col sm={3}>
                         <div className='support-menu'>
-                            <img src={tho} alt="th"/>
+                            <img src={tho} alt="th" />
                             <div className='support-menu-title'>
                                 Từ người thợ
                             </div>
@@ -90,20 +98,7 @@ class menu_datlich extends Component {
                     </Col>
                 </Row>
                 {/* Questions */}
-                {/* <div className='questions'>
-                        <ul>
-                            <li className='direct-quest'>Tại sao chúng tôi chỉ có 30 phút đặt mua vé?</li>
-                        </ul>
-                    </div> */}
-                {/* <Row className="mt-4 mb-5">
-                        <Col md={8}>
-                        <div className='questions'>
-                        <ul>
-                            <li className='direct-quest'>Tại sao chúng tôi chỉ có 30 phút đặt mua vé?</li>
-                        </ul>
-                    </div>
-                        </Col>
-                    </Row> */}
+
                 {/* Support Contact */}
 
                 <Row className="m-4">
@@ -116,4 +111,28 @@ class menu_datlich extends Component {
         );
     }
 }
+// questions = [
+//     {
+//         id: 1,
+//         name: 'Tại sao chúng tôi chỉ có 30 phút đặt mua vé?',
+//         answers: 'Chúng tôi mong muốn mang lại cơ hội đặt lịch cho tất cả mọi người là như nhau, vì vậy nếu bạn không hoàn thành việc đặt mua vé trong vòng 30 phút, cơ hội sẽ dành cho những người khác.'
+//     },
+//     {
+//         id: 2,
+//         name: 'sTại sao chúng tôi chỉ có 30 phút đặt mua vé?',
+//         answers: 'Chúng tôi mong muốn mang lại cơ hội đặt lịch cho tất cả mọi người là như nhau, vì vậy nếu bạn không hoàn thành việc đặt mua vé trong vòng 30 phút, cơ hội sẽ dành cho những người khác.'
+//     },
+// ];
+// var Cauhoi = (props) => {
+//     let cauhoi = props.cauhoi;
+//     let element = cauhoi.map((questions) => {
+//         return (
+//             <ol>
+//                 <li onClick={() => this.setState({ open: !open })} key={element.id}>{element.name}</li>
+//                 <Collapse in={this.state.open}><div>{element.answers}</div></Collapse>
+//             </ol>
+//         );
+//     })
+
+// }
 export default menu_datlich;

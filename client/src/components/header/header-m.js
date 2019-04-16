@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 import SignUp from '../../pages/signup'
 import Login from '../../pages/signin/signin'
 //import { Row } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 class HeaderComponentM extends Component {
     constructor(props) {
@@ -36,8 +36,8 @@ class HeaderComponentM extends Component {
         return <Login />
     }
     render() {
-        let modalClose = () => this.setState({ modalShow: false });
-        let ic_search = <FontAwesomeIcon className="ic_search " icon={faSearch} />
+        // let modalClose = () => this.setState({ modalShow: false });
+        // let ic_search = <FontAwesomeIcon className="ic_search " icon={faSearch} />
         return (
             <React.Fragment>
                 <div className="App-header-m">
