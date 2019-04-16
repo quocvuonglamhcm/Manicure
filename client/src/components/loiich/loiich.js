@@ -9,7 +9,7 @@ class LoiIch extends Component {
   render() {
     let ic_circle = <FontAwesomeIcon className="ic_circle " icon={faCircle} />
     return (
-      <Row id='main-loi-ich' className='hover-loi-ich-1'>
+      <Row id='main-loi-ich' className='hover-loi-ich-1 mb-5'>
         <Col sm={12} md={12} sx={12} className='mr-0 ml-0 mt-2 pu-litle'> Nail Partner mang lại</Col>
         <Col className='card-left-1 mr-0 ml-0 mt-3 height-khach-hang-170px hover-loi-ich-1' sm={5} md={5} sx={5}>
           <Row className='text-card-left-1 mt-3'>Làm đẹp mọi lúc mọi nơi</Row>
