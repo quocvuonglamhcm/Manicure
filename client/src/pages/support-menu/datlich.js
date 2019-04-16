@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
-import { Button, Row, Col, Container, InputGroup, FormControl } from 'react-bootstrap/'
+import { Button, Row, Col, Container, InputGroup, FormControl, Collapse } from 'react-bootstrap/'
 // import Collapse from 'react-bootstrap/Collapse';
 import './support-menu.css';
 //import Card from 'react-bootstrap/Card'
@@ -24,7 +24,7 @@ class menu_datlich extends Component {
     }
     render() {
 
-        // const { open } = this.state;
+        const { open } = this.state;
         let ic_search = <FontAwesomeIcon className="ic-search " icon={faSearch} />
         return (
             <Container className='text-center mt-4' id="support-menu">
@@ -63,6 +63,16 @@ class menu_datlich extends Component {
                     </Col>
                     <Col md={8}>
                         <div className='questions'>
+                            <ol>
+                                <li className='direct-quest'  onClick={() => this.setState({ open: !open })}>Tại sao chúng tôi chỉ có 30 phút đặt mua vé?</li>
+                                <Collapse in={this.state.open}>
+                                    <div className='answers'>
+                                    Chúng tôi mong muốn mang lại cơ hội đặt lịch cho tất cả mọi người là như nhau, vì vậy nếu bạn không hoàn thành việc đặt mua vé trong vòng 30 phút, cơ hội sẽ dành cho những người khác.
+                                    </div>
+                                </Collapse>
+                                <li className='direct-quest'  onClick={() => this.setState({ open: !open })}>Tôi có được đặt lịch với nhiều thợ trong cùng một đơn giao dịch không?</li>
+                                
+                            </ol>
                             {/* <Cauhoi/> */}
                         </div>
                     </Col>

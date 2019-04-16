@@ -87,6 +87,13 @@
 .direct-quest:hover{
     cursor: pointer;
 }
+.answers{
+    color: #7d7d7d;
+    font-size:14px;
+}
+.collapse{
+    margin-bottom: 2px;
+}
 /* Support Contact */
 .menu-btn-slo
 {
