@@ -1,27 +1,66 @@
 import React, { Component } from 'react';
+import ReactDOM from "react-dom";
 import { Row, Col, Container } from 'react-bootstrap';
-import './upproducts.css'
+import './upproducts.css';
+import ImageUpload from './imageupload';
+import './imageupload.css'
 
 class upProductsPage extends Component {
+  constructor() {
+    super()
+    this.state = { file: "", imagePreviewUrl: "" };
+  }
+
+  _handleSubmit(e) {
+    e.preventDefault();
+    console.log("handle uploading-", this.state.file);
+  }
+
+  _handleImageChange(e) {
+    e.preventDefault();
+
+    let reader = new FileReader();
+    let file = e.target.files[0];
+
+    reader.onloadend = () => {
+      this.setState({
+        file: file,
+        imagePreviewUrl: reader.result
+      });
+    };
+
+    reader.readAsDataURL(file);
+  }
+
   render() {
+    let { imagePreviewUrl } = this.state;
+    let $imagePreview = null;
+    if (imagePreviewUrl) {
+      $imagePreview = <img src={imagePreviewUrl} />;
+    } else {
+      $imagePreview = (
+        <div className="previewText">Chọn ảnh để đăng lên</div>
+      );
+    }
+
     return (
       <div className='uploadProduct'>
         <Container>
           <Row className="mt-5">
-            <Col sm={3} md={3} sx={3}></Col>
-            <Col sm={6} md={6} sx={6} className="callText textSize1">
+            <Col md={3}></Col>
+            <Col md={6}className="callText textSize1">
               Đăng sản phẩm độc đáo theo phong cách riêng của bạn
-                </Col>
+            </Col>
           </Row>
           <Row className='mt-5'>
-            <Col sm={1} md={1} sx={1}></Col>
-            <Col sm={4} md={4} sx={4}>
+            <Col md={1}></Col>
+            <Col md={4}>
               <form>
                 <div className="form-group">
                   <input className="form-control" type="text" placeholder="Tên sản phẩm" />
                 </div>
                 <div className="custom-file">
-                  <input type="file" className="custom-file-input" id="customFile" accept="image/*" name="Chọn ảnh" />
+                  <input type="file" className="custom-file-input" id="customFile" accept="image/*" name="Chọn ảnh" onChange={e => this._handleImageChange(e)}/>
                   <label className="custom-file-label" htmlFor="customFile">Tải tác phẩm lên...</label>
                 </div>
                 <div className="form-group mt-3">
@@ -40,13 +79,14 @@ class upProductsPage extends Component {
                 </div>
               </form>
             </Col>
-            <Col sm={6} md={6} sx={6}>
-              <div className="pictureView">Xem trước ảnh tác phẩm</div>
+            <Col md={6}>
+              <div className="imgPreview">{$imagePreview}</div>
+              {/* <ImageUpload /> */}
             </Col>
           </Row>
           <Row>
-            <Col sm={5} md={5} sx={5}></Col>
-            <Col sm={2} md={2} sx={2}>
+            <Col md={5}></Col>
+            <Col md={2}>
               <input className="btn btn-primary saveButton" type="submit" value="Đăng ảnh" />
             </Col>
           </Row>
