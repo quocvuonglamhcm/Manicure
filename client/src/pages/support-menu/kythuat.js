@@ -14,7 +14,7 @@ import tho from '../../assets/images/ic_tho.svg';
 
 
 
-class menu_datlich extends Component {
+class menu_kythuat extends Component {
 
     constructor(props, context) {
         super(props, context);
@@ -69,22 +69,37 @@ class menu_datlich extends Component {
                     <Col md={8}>
                         <div className='questions'>
                             <ol>
-                                <li className='direct-quest' onClick={() => this.setState({ open: !open })}>Tại sao chúng tôi chỉ có 30 phút đặt mua vé?</li>
+                                <li className='direct-quest' onClick={() => this.setState({ open: !open })}>Ứng dụng gặp sự cố trên hệ điều hành Android</li>
                                 <Collapse in={this.state.open}>
                                     <div className='answers'>
-                                        Chúng tôi mong muốn mang lại cơ hội đặt lịch cho tất cả mọi người là như nhau, vì vậy nếu bạn không hoàn thành việc đặt mua vé trong vòng 30 phút, cơ hội sẽ dành cho những người khác.
+                                        Bạn đã thử tắt và bật lại ứng dụng chưa? Việc cài đặt lại ứng dụng Nail Partner thường sẽ giải quyết các vấn đề phổ biến. Điều này sẽ giúp bạn có phiên bản mới nhất, tốt nhất, an toàn nhất của ứng dụng. Hướng dẫn gỡ cài đặt và cài đặt lại được liệt kê dưới đây:
+                                        <ol>
+                                            <li>Trên điện thoại hoặc máy tính bảng Android, hãy mở ứng dụng Cửa hàng Google Play.</li>
+                                            <li>Nhấn vào Menu     Ứng dụng và trò chơi của tôi   Thư viện.</li>
+                                            <li>Nhấn vào ứng dụng Nail Partner. Nếu bạn không thấy nó, hãy thử chọn xem tất cả ứng dụng hoặc thông tin ứng dụng.</li>
+                                            <li>Nhấn Gỡ cài đặt</li>
+                                            <li>Khởi động lại thiết bị của bạn</li>
+                                            <li>Mở ứng dụng Cửa hàng Google Play.</li>
+                                            <li>Nhấn vào Menu Ứng dụng và trò chơi của tôi Thư viện.</li>
+                                            <li>Nhấn vào ứng dụng Nail Partner.</li>
+                                            <li>Nhấn vào Cài đặt hoặc Bật.</li>
+                                        </ol>
                                     </div>
                                 </Collapse>
-                                <li className='direct-quest' onClick={() => this.setState({ open1: !open1 })}>Tôi có được đặt lịch với nhiều thợ trong cùng một đơn giao dịch không?</li>
+                                <li className='direct-quest' onClick={() => this.setState({ open1: !open1 })}>Ứng dụng gặp sự cố trên hệ điều hành IOS</li>
                                 <Collapse in={this.state.open1}>
                                     <div className='answers'>
-                                        Hiện tại bạn chỉ có thể đặt lịch với 1 thợ duy nhất trong 1 đơn giao dịch.
-                                    </div>
-                                </Collapse>
-                                <li className='direct-quest' onClick={() => this.setState({ open2: !open2 })}>Tôi có được hủy lịch không?</li>
-                                <Collapse in={this.state.open2}>
-                                    <div className='answers'>
-                                        Bạn hoàn toàn có thể.
+                                        Bạn đã thử tắt và bật lại ứng dụng chưa? Việc cài đặt lại ứng dụng Nail Partner thường sẽ giải quyết các vấn đề phổ biến. Điều này sẽ giúp bạn có phiên bản mới nhất, tốt nhất, an toàn nhất của ứng dụng. Hướng dẫn gỡ cài đặt và cài đặt lại được liệt kê dưới đây:
+                                    <ol>
+                                            <li>Chạm và giữ biểu tượng ứng dụng Nail Partner cho đến khi nó rung</li>
+                                            <li>Nhấn vào X ở góc trên bên trái của ứng dụng</li>
+                                            <li>Nhấn vào Xóa để xác nhận</li>
+                                            <li>Khởi động lại thiết bị của bạn</li>
+                                            <li>Mở ứng dụng App Store, sau đó nhấn Ứng dụng ở phía dưới</li>
+                                            <li>Nhấn vào biểu tượng hồ sơ ở góc trên bên phải, sau đó nhấn Đã mua</li>
+                                            <li>Chuyển sang thẻ Không phải trên (thiết bị) này</li>
+                                            <li>Tìm Nail Partner, sau đó nhấn vào biểu tượng đám mây để cài đặt lại</li>
+                                        </ol>
                                     </div>
                                 </Collapse>
                             </ol>
@@ -142,28 +157,4 @@ class menu_datlich extends Component {
         );
     }
 }
-// questions = [
-//     {
-//         id: 1,
-//         name: 'Tại sao chúng tôi chỉ có 30 phút đặt mua vé?',
-//         answers: 'Chúng tôi mong muốn mang lại cơ hội đặt lịch cho tất cả mọi người là như nhau, vì vậy nếu bạn không hoàn thành việc đặt mua vé trong vòng 30 phút, cơ hội sẽ dành cho những người khác.'
-//     },
-//     {
-//         id: 2,
-//         name: 'sTại sao chúng tôi chỉ có 30 phút đặt mua vé?',
-//         answers: 'Chúng tôi mong muốn mang lại cơ hội đặt lịch cho tất cả mọi người là như nhau, vì vậy nếu bạn không hoàn thành việc đặt mua vé trong vòng 30 phút, cơ hội sẽ dành cho những người khác.'
-//     },
-// ];
-// var Cauhoi = (props) => {
-//     let cauhoi = props.cauhoi;
-//     let element = cauhoi.map((questions) => {
-//         return (
-//             <ol>
-//                 <li onClick={() => this.setState({ open: !open })} key={element.id}>{element.name}</li>
-//                 <Collapse in={this.state.open}><div>{element.answers}</div></Collapse>
-//             </ol>
-//         );
-//     })
-
-// }
-export default menu_datlich;
+export default menu_kythuat;

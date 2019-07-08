@@ -32,6 +32,9 @@ import HeaderAfterSignIn from '../components/Dropdown/Dropdown';
 import HeaderNew from '../components/HeaderNew/HeaderNew';
 import Updateprofile from '../pages/nailer/updateprofile';
 import menu_datlich from '../pages/support-menu/datlich';
+import menu_kythuat from '../pages/support-menu/kythuat';
+import menu_taikhoan from '../pages/support-menu/taikhoan';
+import menu_tho from '../pages/support-menu/tho';
 import NotfoundPage from '../pages/notfound/notfound';
 const MainRoute = () => (
  <main>
@@ -69,6 +72,9 @@ const MainRoute = () => (
      <Route path='/updateProfileNailer' component={Updateprofile}/>
      <Route path='/HeaderNew' component={HeaderNew}/>
      <Route path='/datlich' component={menu_datlich}/>
+     <Route path='/kythuat' component={menu_kythuat}/>
+     <Route path='/taikhoan' component={menu_taikhoan}/>
+     <Route path='/tho' component={menu_tho}/>
      <Route path='/pagenotfound' component={NotfoundPage}/>
    </Switch>
  </main>

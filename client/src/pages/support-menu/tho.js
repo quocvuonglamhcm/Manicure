@@ -14,7 +14,7 @@ import tho from '../../assets/images/ic_tho.svg';
 
 
 
-class menu_datlich extends Component {
+class menu_taikhoan extends Component {
 
     constructor(props, context) {
         super(props, context);
@@ -28,6 +28,8 @@ class menu_datlich extends Component {
         const { open } = this.state;
         const { open1 } = this.state;
         const { open2 } = this.state;
+        const { open3 } = this.state;
+        const { open4 } = this.state;
         let ic_search = <FontAwesomeIcon className="ic-search " icon={faSearch} />
         return (
             <Container className='text-center mt-4' id="support-menu">
@@ -69,22 +71,34 @@ class menu_datlich extends Component {
                     <Col md={8}>
                         <div className='questions'>
                             <ol>
-                                <li className='direct-quest' onClick={() => this.setState({ open: !open })}>Tại sao chúng tôi chỉ có 30 phút đặt mua vé?</li>
+                                <li className='direct-quest' onClick={() => this.setState({ open: !open })}>Trao đổi giữa mọi người sau khi thực hiện dịch vụ</li>
                                 <Collapse in={this.state.open}>
                                     <div className='answers'>
-                                        Chúng tôi mong muốn mang lại cơ hội đặt lịch cho tất cả mọi người là như nhau, vì vậy nếu bạn không hoàn thành việc đặt mua vé trong vòng 30 phút, cơ hội sẽ dành cho những người khác.
+                                        Khách hàng sẽ để lại một bình luận trên trang tác phẩm:
+                                        Trang tác phẩm là một nơi hoàn hảo để thu hút khách hàng tích cực trong trang của bạn vì người tham dự sẽ được thông báo khi người khác nhận xét sản phẩm bằng thông báo đẩy hoặc email.
+                                        Hãy đăng ngay trên trang tác phẩm khi vừa thực hiện xong dịch vụ. Chúng tôi khuyên bạn nên chia sẻ ảnh tác phẩm như một lời cảm ơn của bạn với tất cả những khách hàng, một bản tóm tắt ngắn về tác phẩm để giới thiệu với các khách hang tiếp theo của bạn.
                                     </div>
                                 </Collapse>
-                                <li className='direct-quest' onClick={() => this.setState({ open1: !open1 })}>Tôi có được đặt lịch với nhiều thợ trong cùng một đơn giao dịch không?</li>
+                                <li className='direct-quest' onClick={() => this.setState({ open1: !open1 })}>Xem đánh giá từ khách hàng</li>
                                 <Collapse in={this.state.open1}>
                                     <div className='answers'>
-                                        Hiện tại bạn chỉ có thể đặt lịch với 1 thợ duy nhất trong 1 đơn giao dịch.
+                                        Trong một cuộc khảo sát gần đây với các thợ nail, bạn đã nói với chúng tôi rằng nhận phản hồi từ các khách hàng là một trong những thách thức lớn nhất của bạn. Bây giờ, chúng tôi sẽ thu thập thông tin phản hồi trực tiếp từ các khách hàng và chia sẻ nó với thợ nail.
+                                        Thợ nail có thể xem phản hồi từ các khách hàng về các tác phẩm gần đây bao gồm xếp hạng sao và phản hồi ngắn dựa trên xếp hạng của họ.
                                     </div>
                                 </Collapse>
-                                <li className='direct-quest' onClick={() => this.setState({ open2: !open2 })}>Tôi có được hủy lịch không?</li>
+                                <li className='direct-quest' onClick={() => this.setState({ open2: !open2 })}>Cập nhật tác phẩm</li>
                                 <Collapse in={this.state.open2}>
                                     <div className='answers'>
-                                        Bạn hoàn toàn có thể.
+                                        Mang tính đồng dạng, linh hoạt
+                                        Chúng tôi sẽ tạo biểu mẫu cho bạn để tăng tính linh hoạt cho việc bạn có thể tự thêm những tác phẩm mới. Nó giúp bạn kiểm soát nhiều hơn các tác phẩm mà bạn cần.
+                                    </div>
+                                </Collapse>
+                                <li className='direct-quest' onClick={() => this.setState({ open3: !open3 })}>Cắt ảnh và định vị ảnh tác phẩm nail</li>
+                                <Collapse in={this.state.open3}>
+                                    <div className='answers'>
+                                        Bạn có công cụ để làm cho ảnh tác phẩm nổi bật và trông tuyệt vời trên trang của mình
+                                        Bây giờ khi bạn tải lên ảnh tác phẩm, bạn có thể dễ dàng cắt và định vị hình ảnh sao cho phù hợp với không gian 16: 9. Lấy các đường cắt từ bất kỳ góc nào để tạo khung ảnh đẹp nhất.
+                                        Công cụ này hiện có sẵn trên web máy tính và web di động.
                                     </div>
                                 </Collapse>
                             </ol>
@@ -142,28 +156,5 @@ class menu_datlich extends Component {
         );
     }
 }
-// questions = [
-//     {
-//         id: 1,
-//         name: 'Tại sao chúng tôi chỉ có 30 phút đặt mua vé?',
-//         answers: 'Chúng tôi mong muốn mang lại cơ hội đặt lịch cho tất cả mọi người là như nhau, vì vậy nếu bạn không hoàn thành việc đặt mua vé trong vòng 30 phút, cơ hội sẽ dành cho những người khác.'
-//     },
-//     {
-//         id: 2,
-//         name: 'sTại sao chúng tôi chỉ có 30 phút đặt mua vé?',
-//         answers: 'Chúng tôi mong muốn mang lại cơ hội đặt lịch cho tất cả mọi người là như nhau, vì vậy nếu bạn không hoàn thành việc đặt mua vé trong vòng 30 phút, cơ hội sẽ dành cho những người khác.'
-//     },
-// ];
-// var Cauhoi = (props) => {
-//     let cauhoi = props.cauhoi;
-//     let element = cauhoi.map((questions) => {
-//         return (
-//             <ol>
-//                 <li onClick={() => this.setState({ open: !open })} key={element.id}>{element.name}</li>
-//                 <Collapse in={this.state.open}><div>{element.answers}</div></Collapse>
-//             </ol>
-//         );
-//     })
 
-// }
-export default menu_datlich;
+export default menu_taikhoan;

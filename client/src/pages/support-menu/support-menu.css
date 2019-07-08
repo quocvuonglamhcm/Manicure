@@ -68,10 +68,13 @@
     margin-left: -35px;
     text-align: initial;
 }
+.menu-links{
+    color: #000;
+}
 /* Questions */
 .questions{
     position: absolute;
-
+    box-sizing: content-box;
 }
 .questions ol {
     margin-left: 30px;
@@ -100,12 +103,13 @@
     font-size: 20px;
     font-weight: bold;
     font-family: 'Open Sans',sans-serif;
+    margin-top: 70px;
 }
 .menu-contact-btn
 {
     width: 250px !important;
     height: 60px !important;
-    margin-top:15px !important;
+    margin-top:5px !important;
     background-color: #ff773c !important;
     border:none !important;
     box-shadow: none !important;

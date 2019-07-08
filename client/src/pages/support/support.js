@@ -51,28 +51,34 @@ class SupportPage extends Component {
             </Link>
           </Col>
           <Col sm={3}>
-            <Card>
+          <Link className='menu-links' to={'/kythuat'}>
+          <Card>
               <Card.Img variant="top" src={kythuat} />
               <Card.Body>
                 <Card.Title>Kỹ thuật</Card.Title>
               </Card.Body>
             </Card>
+          </Link>
           </Col>
           <Col sm={3}>
+          <Link className='menu-links' to={'/taikhoan'}>
             <Card>
               <Card.Img variant="top" src={taikhoan} />
               <Card.Body>
                 <Card.Title>Tài khoản</Card.Title>
               </Card.Body>
             </Card>
+          </Link>
           </Col>
           <Col sm={3}>
+          <Link className='menu-links' to={'/tho'}>
             <Card>
               <Card.Img variant="top" src={tho} />
               <Card.Body>
                 <Card.Title>Từ người thợ</Card.Title>
               </Card.Body>
             </Card>
+          </Link>
           </Col>
         </Row>
 
