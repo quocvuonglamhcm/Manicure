@@ -29,11 +29,9 @@ class policy2Page extends Component {
                     Chúng tôi có thể sử dụng thông tin về bạn cho các mục đích khác nhau liên quan đến việc vận hành ứng dụng của chúng tôi, bao gồm:
                                     </li><br />
                   <li>
-                    <ul>
-                      <li>
                         Sử dụng thông tin về vị trí của khách hàng để tìm kiếm nhà cung cấp dịch vụ có sẵn xung quanh khu vực của khách hàng, giúp nhà cung cấp dịch vụ tính toán chi phí
                         và phân tích các chỉ số của ứng dụng nhằm sử dụng cho việc cải thiện hiệu năng của ứng dụng.
-                                            </li>
+                    <ul>                      
                       <li>
                         Cung cấp, duy trì và cải thiện  ứng dụng của chúng tôi, bao gồm xử lý các giao dịch, phát triển các nội dung mới và quản lý hiệu suất của ứng dụng của chúng tôi.
                                             </li>
