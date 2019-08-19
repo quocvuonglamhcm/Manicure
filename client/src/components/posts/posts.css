@@ -20,3 +20,24 @@
         line-height: normal;
         color: #000;
 }
+
+.BackgroundNew {
+    background-image: url('../../assets/images/BackgroundNew.svg');
+    width: 100%;
+    padding-top: 50px;
+    height: 500px;
+    text-align: center;
+}
+
+.NewTitle{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #000000;
+    margin-bottom: 29px;
+    margin-left: auto;
+    margin-right: auto;
+}

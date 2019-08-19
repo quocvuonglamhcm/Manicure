@@ -5,16 +5,16 @@ import Post from './post.js'
 
 export default function Posts() {
 
-    return (
-        <div className='background-main mb-5'>
-        <Container className=''>
-        <Row><div className='download-title'>Bài viết</div></Row>
-            <Row>
-                <Col sm={4}><Post/></Col>
-                <Col sm={4}><Post/></Col>
-                <Col sm={4}><Post/></Col>
-            </Row>
-        </Container>
-        </div>
-    )
+  return (
+    <div className='BackgroundNew mb-5'>
+      <Container >
+        <Row><div className='NewTitle'>Bài viết</div></Row>
+        <Row>
+          <Col sm={4}><Post /></Col>
+          <Col sm={4}><Post /></Col>
+          <Col sm={4}><Post /></Col>
+        </Row>
+      </Container>
+    </div>
+  )
 }

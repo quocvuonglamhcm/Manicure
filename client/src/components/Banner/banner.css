@@ -1,13 +1,13 @@
 .banner{
-	height: 80vh;
-	background-image: url('../../assets/images/bg_img.svg');
+	height: 550px;
+	background-image: url('../../assets/images/BannerHomePage.svg');
 	background-position: center;
 	background-size: cover;
 	position: relative;
 	width: 100%;
 	text-align: center;
 	margin: 0 auto !important ;
-	margin-bottom: 10px;
+	padding: 0;
 }
 
 .banner .banner-opacity {

@@ -1,19 +1,21 @@
 .background-main {
-    background-color: #6645c5;
+    background-image: url('../../assets/images/universe.svg');
     width: 100%;
-    height: auto;
-    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50 px;
 }
 
 .download-mobile {
-    background-image: url('../../assets/images/app.png');
+    background-image: url('../../assets/images/app.svg');
     background-repeat: no-repeat;
     border-right: 3px #fff solid;
     height: 465px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .download-chplay {
-    background-image: url('../../assets/images/chplay.png');
+    background-image: url('../../assets/images/chplay.svg');
     width: 100%;
     height: 75px;
     background-repeat: no-repeat;
@@ -21,7 +23,7 @@
 }
 
 .download-appstore {
-    background-image: url('../../assets/images/appstore.png');
+    background-image: url('../../assets/images/appstore.svg');
     width: 100%;
     height: 75px;
     background-repeat: no-repeat;
@@ -29,10 +31,11 @@
 }
 
 .download-qrcode {
-    background-image: url('../../assets/images/qrcode.png');
+    background-image: url('../../assets/images/qr.svg');
     width: 100%;
     height: 255px;
     background-repeat: no-repeat;
+    margin-bottom: 30px;
 }
 
 .download-title {
@@ -40,9 +43,9 @@
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: normal;
-
-    color: #FFFFFF;
+    line-height: 27px;
+    /* identical to box height */
+    color: #000000;
     text-align: center !important;
     width: 100%;
     margin-bottom: 30px;

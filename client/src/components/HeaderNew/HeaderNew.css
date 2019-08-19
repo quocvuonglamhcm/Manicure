@@ -74,18 +74,18 @@
 .search {
 	width: 250px;
 	outline: none;
-	color: #FFF;
+	color: #000000;
 	background-color: transparent;
 	border: none;
-	border-bottom: 1px solid #FFFFFF;
+	border-bottom: 1px solid#000000;
 }
 
 .ic_search{
-	color: #FFF;
+	color:#000000;
 	background-color: transparent;
 	border: none;
-	border-bottom: 1px solid #FFFFFF;
-	margin-bottom: -3px;
+	border-bottom: 1px solid#000000;
+	margin-bottom: -5px;
 	padding-bottom: 4px;
 	height: 16px;
 }

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import { Row, Col, Container } from 'react-bootstrap';
 import './upproducts.css';
-import ImageUpload from './imageupload';
+// import ImageUpload from './imageupload';
 import './imageupload.css'
 
 class upProductsPage extends Component {
