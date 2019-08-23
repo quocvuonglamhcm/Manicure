@@ -1,10 +1,10 @@
-import React from 'react'
-import { render } from "react-dom";
+import * as React from 'react'
+import * as ReactDom from "react-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './public/index.css'
 import './public/comon.css'
-import App from "./main/App";
+import { App } from './screen/HomeScreen/index'
 
-render(
+ReactDom.render(
     <App />,
     document.getElementById('app'))

@@ -1,6 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { CheckerPlugin } = require('awesome-typescript-loader')
 
 const VENDOR_LIBS = [
     'axios',
@@ -14,7 +15,7 @@ const VENDOR_LIBS = [
 
 module.exports = {
     entry: {
-        bundle: './index.js',
+        bundle: './index.tsx',
         vendor: VENDOR_LIBS
     },
     output: {
@@ -26,11 +27,15 @@ module.exports = {
         open: true
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
     },
+    devtool: "source-map",
     module: {
         rules: [
-            { test: /\.(js|jsx)$/, exclude: /node_modules/, use: 'babel-loader' },
+            {
+                test: /\.tsx?$/,
+                loader: 'awesome-typescript-loader'
+            },
             { test: /\.scss$|.css$/, use: ["style-loader", "css-loader", "sass-loader"] },
             { test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.woff2$|\.eot$|\.ttf$|\.wav$|\.mp3$|\.ico$/, use: 'file-loader' },
         ]
@@ -47,6 +52,7 @@ module.exports = {
         }
     },
     plugins: [
+        new CheckerPlugin(),
         new HtmlWebpackPlugin({ template: './public/index.html' }),
     ]
 }

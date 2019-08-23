@@ -1,7 +1,14 @@
 {
-    "presets": [
-        "@babel/preset-env",
-        "@babel/preset-react",
-    ],
-    "plugins": ["@babel/plugin-proposal-class-properties"]
+    "useBabel": true,
+    "babelOptions": {
+        "babelrc": false,
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react",
+        ]
+    },
+    "babelCore": "@babel/core",
+    "plugins": [
+        "@babel/plugin-proposal-class-properties"
+    ]
 }
