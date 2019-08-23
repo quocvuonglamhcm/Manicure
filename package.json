@@ -1,0 +1,20 @@
+{
+  "name": "KLTN",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/TMTzMinhTri/KLTN.git",
+  "author": "Trần Minh Trí <tmtzminhtri@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "concurrently \"cd client_app && yarn run build\"",
+    "install": "concurrently \"cd client_app && yarn install\"",
+    "dev": "concurrently \"nodemon server.js\" \"cd client_app && yarn start\" \"cd client_app && yarn run css\" "
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "nodemon": "^1.19.1"
+  }
+}
