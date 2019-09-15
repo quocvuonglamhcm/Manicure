@@ -23,7 +23,7 @@
 }
 
 .header {
-	background: rgba(248, 194, 243, 0.4);
+	background: rgba(248, 194, 243);
 	backdrop-filter:  0.5;	
 	padding-top: 20px;
 	position: sticky;
